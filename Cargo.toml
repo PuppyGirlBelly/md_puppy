@@ -1,0 +1,11 @@
+[package]
+name = "md_puppy"
+version = "0.1.0"
+edition = "2018"
+authors = ["AnnaLee <softannalee.github.io>"]
+description = "A personal static site generator writeen by AnnaLee"
+homepage = "https://softannalee.github.io"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
