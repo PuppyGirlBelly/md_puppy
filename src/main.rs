@@ -1,7 +1,8 @@
 use std::env;
 use std::process;
 
-use md_puppy::{Config, parse_markdown_file, usage};
+mod lib;
+use lib::{parse_markdown_file, run, usage, Config};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -11,14 +12,16 @@ fn main() {
         process::exit(1);
     });
 
-    if let Err(e) = md_puppy::run(config) {
+    if let Err(e) = run(config) {
         eprintln!("Application error: {}", e);
 
         process::exit(1);
     };
 
     match args.len() {
-        2 => parse_markdown_file(&args[1]),
+        2 => {
+            parse_markdown_file(&args[1]).expect("Error: Could not parse file");
+        }
         _ => {
             eprintln!("Error: Invalid Invocation");
             usage();

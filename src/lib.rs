@@ -1,9 +1,11 @@
 use std::error::Error;
 use std::fs;
 use std::fs::File;
+use std::io::Write;
 // use std::env;
 use std::path::Path;
-use std::io::{BufRead, BufReader, Write};
+
+use pulldown_cmark::{html, Options, Parser};
 
 pub struct Config {
     pub filename: String,
@@ -17,9 +19,7 @@ impl Config {
 
         let filename = args[1].clone();
 
-        Ok(Config { 
-            filename,
-        })
+        Ok(Config { filename })
     }
 }
 
@@ -30,8 +30,7 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
 }
 
 pub fn usage() {
-    println!("puppy_md, a personal static site generator by AnnaLee");
-    println!("The Version: {}", get_version());
+    print_long_banner();
 }
 
 fn get_title() -> String {
@@ -42,17 +41,16 @@ fn get_title() -> String {
     the_title.push_str(") ");
     the_title.push_str(&get_description()[..]);
 
-    return the_title;
+    the_title
 }
 
-fn get_version () -> String {
+fn get_version() -> String {
     String::from(env!("CARGO_PKG_VERSION"))
 }
 
-fn get_description () -> String {
+fn get_description() -> String {
     String::from(env!("CARGO_PKG_DESCRIPTION"))
 }
-
 
 fn print_short_banner() {
     println!("{}", get_title());
@@ -60,94 +58,88 @@ fn print_short_banner() {
 
 fn print_long_banner() {
     print_short_banner();
-    println!("Written by: {}\nHomepage: {}\nUsage: puppy_md build\n",
+    println!(
+        "Written by: {}\nHomepage: {}\nUsage: puppy_md build\n",
         env!("CARGO_PKG_AUTHORS"),
         env!("CARGO_PKG_HOMEPAGE")
     );
 }
 
-pub fn parse_markdown_file(filename: &str) {
+pub fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {
     print_short_banner();
     println!("[ INFO ] Trying to parse {}...", filename);
 
-    let input_filename = Path::new(filename);
-    let file = File::open(&input_filename)
-       .expect("[ ERROR ] Filed to open file!");
+    let path: &Path = Path::new(filename);
+    let input: String = fs::read_to_string(path).expect("[ ERROR ] Failed to open file!");
 
-    let mut ptag: bool = false; // Paragraph tag flag
-    let mut htag: bool = false; // H1 tag flag
-    let mut tokens: Vec<String> = Vec::new();
-    let reader = BufReader::new(file);
+    // Setup options and commonmark parser
+    let mut parser_options = pulldown_cmark::Options::empty();
+    parser_options.insert(Options::ENABLE_STRIKETHROUGH);
+    let parser = Parser::new_ext(&input, parser_options);
 
-    for line in reader.lines() {
-        let line_contents = line.unwrap();
-        let mut first_char: Vec<char> = line_contents.chars().take(1).collect();
-        let mut output_line = String::new();
+    // Write to String buffer
+    let mut html_output = String::new();
+    html::push_html(&mut html_output, parser);
 
-        match first_char.pop() {
-            Some('#') => {
-                if ptag {
-                    ptag = false;
-                    output_line.push_str("</p>\n");
-                }
-                if htag {
-                    ptag = false;
-                    output_line.push_str("</h1>\n");
-                } 
-                htag = true;
-                output_line.push_str("\n\n<h1>");
-                output_line.push_str(&line_contents[2..]);
-            },
-            _ => {
-                if !ptag {
-                    ptag = true;
-                    output_line.push_str("<p>");
-                }
-                output_line.push_str(&line_contents);
-            }
-        }
+    println!("[ INFO ] Parsing {:?} complete!", path);
+    Ok(html_output)
+}
 
-        if ptag {
-            ptag = false;
-            output_line.push_str("</p>\n");
-        }
-        if htag {
-            htag = false;
-            output_line.push_str("</h1>\n");
-        } 
-
-        if output_line != "<p></p>\n" {
-            tokens.push(output_line);
-        }
-    }
-
-    let mut output_filename = String::from(&filename[..filename.len()-3]);
+fn _markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
+    let input: String = parse_markdown_file(filename)?;
+    let mut output_filename = String::from(&filename[..filename.len() - 3]);
     output_filename.push_str(".html");
 
-    let mut outfile = File::create(output_filename)
-        .expect("[ ERROR ] Could not create output file!");
+    let mut outfile =
+        File::create(output_filename).expect("[ ERROR ] Could not create output file!");
 
-    for line in &tokens {
-        outfile.write_all(line.as_bytes())
+    for line in input.lines() {
+        outfile
+            .write_all(line.as_bytes())
             .expect("[ ERROR ] Could not write to output file!");
     }
 
     println!("[ INFO ] Parsing complete!");
+    Ok(())
 }
 
 #[cfg(test)]
-mod tests{
-    // use super::*;
+mod tests {
+    use super::*;
 
-    // #[test]
-    // fn case_sensitive() {
-    //     let query = "duct";
-    //     let contents = "\
-// Rust:
-// safe, fast, productive.
-// Pick three.
-// Duct tape.";
+    #[test]
+    fn markdown_parse_test() {
+        let input: String = parse_markdown_file("src/example_short.md").unwrap();
+        let output = "\
+<h1>An h1 header</h1>
+<p>============</p>
+<p>Paragraphs are separated by a blank line.</p>
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+look like:</p>
+<ul>
+<li>this one</li>
+<li>that one</li>
+<li>the other one</li>
+</ul>
+";
+        assert_eq!(input, output);
+    }
 
-    //     assert_eq!(vec!["safe, fast, productive."], search(query,contents));
-    // }
+    #[test]
+    fn markdown_to_html_test() {
+        assert!(_markdown_to_html("src/example_short.md").is_ok());
+        let output: String = fs::read_to_string("src/example_short.html").unwrap();
+        let answer = "\
+<h1>An h1 header</h1>\
+<p>============</p>\
+<p>Paragraphs are separated by a blank line.</p>\
+<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists\
+look like:</p>\
+<ul>\
+<li>this one</li>\
+<li>that one</li>\
+<li>the other one</li>\
+</ul>";
+        assert_eq!(output, answer);
+    }
 }
