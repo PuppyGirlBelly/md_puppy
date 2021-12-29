@@ -1,559 +1,563 @@
 !_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
 !_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
-AMP_ESCAPE	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static AMP_ESCAPE: &str = "&amp;";$/;"	v
-Active	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Active,$/;"	e	enum:TableParseMode
-Alignment	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Alignment {$/;"	g
-AlignmentIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct AlignmentIndex(usize);$/;"	s
-Allocations	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Allocations<'a> {$/;"	c
-Allocations	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<AlignmentIndex> for Allocations<'a> {$/;"	c
-Allocations	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<CowIndex> for Allocations<'a> {$/;"	c
-Allocations	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<LinkIndex> for Allocations<'a> {$/;"	c
-Allocations	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct Allocations<'a> {$/;"	s
-Autolink	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Autolink,$/;"	e	enum:LinkType
-BEGIN_TAGS	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    static BEGIN_TAGS: &[&[u8]; 3] = &[b"pre", b"style", b"script"];$/;"	v	function:get_html_end_tag
-BlockQuote	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BlockQuote,$/;"	e	enum:ItemBody
-BlockQuote	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BlockQuote,$/;"	e	enum:Tag
-Body	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    Body,$/;"	e	enum:TableState
-Borrowed	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Borrowed(&'a str),$/;"	e	enum:CowStr
-Boxed	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Boxed(Box<str>),$/;"	e	enum:CowStr
-BreakAtWith	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BreakAtWith(usize, T),$/;"	e	enum:LoopInstruction
-BrokenLink	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct BrokenLink<'a> {$/;"	s
-BrokenLinkCallback	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub type BrokenLinkCallback<'a> =$/;"	t
-Center	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Center,$/;"	e	enum:Alignment
-Code	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Code(CowIndex),$/;"	e	enum:ItemBody
-Code	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Code(CowStr<'a>),$/;"	e	enum:Event
-CodeBlock	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    CodeBlock(CodeBlockKind<'a>),$/;"	e	enum:Tag
-CodeBlockKind	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> CodeBlockKind<'a> {$/;"	c
-CodeBlockKind	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum CodeBlockKind<'a> {$/;"	g
-CodeDelims	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl CodeDelims {$/;"	c
-CodeDelims	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct CodeDelims {$/;"	s
-Collapsed	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed(Option<TreeIndex>),$/;"	e	enum:RefScan
-Collapsed	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed,$/;"	e	enum:LinkType
-CollapsedUnknown	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    CollapsedUnknown,$/;"	e	enum:LinkType
-Config	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^impl Config {$/;"	c
-Config	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^pub struct Config {$/;"	s
-ContinueAndSkip	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ContinueAndSkip(usize),$/;"	e	enum:LoopInstruction
-CowIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct CowIndex(usize);$/;"	s
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> AsRef<str> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Borrow<str> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Deref for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<&'a str> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<String> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<char> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Hash for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> fmt::Display for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::clone::Clone for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::cmp::PartialEq<CowStr<'a>> for CowStr<'a> {$/;"	c
-CowStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub enum CowStr<'a> {$/;"	g
-Disabled	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:LinkStackTy
-Disabled	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:TableParseMode
-Email	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Email,$/;"	e	enum:LinkType
-Emphasis	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Emphasis,$/;"	e	enum:ItemBody
-Emphasis	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Emphasis,$/;"	e	enum:Tag
-End	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    End(Tag<'a>),$/;"	e	enum:Event
-Error	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Error = StringTooLongError;$/;"	t	implementation:InlineStr
-Event	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Event<'a> {$/;"	g
-Failed	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Failed,$/;"	e	enum:RefScan
-Fenced	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Fenced(CowStr<'a>),$/;"	e	enum:CodeBlockKind
-FencedCodeBlock	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FencedCodeBlock(CowIndex),$/;"	e	enum:ItemBody
-FirstPass	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a, 'b> FirstPass<'a, 'b> {$/;"	c
-FirstPass	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct FirstPass<'a, 'b> {$/;"	s
-Footnote	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    Footnote(CowStr<'a>),$/;"	e	enum:ReferenceLabel
-FootnoteDefinition	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteDefinition(CowIndex),$/;"	e	enum:ItemBody
-FootnoteDefinition	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteDefinition(CowStr<'a>),$/;"	e	enum:Tag
-FootnoteReference	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteReference(CowIndex),$/;"	e	enum:ItemBody
-FootnoteReference	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteReference(CowStr<'a>),$/;"	e	enum:Event
-HEX_CHARS	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HEX_CHARS: &[u8] = b"0123456789ABCDEF";$/;"	v
-HREF_SAFE	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HREF_SAFE: [u8; 128] = [$/;"	v
-HTML_ESCAPES	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPES: [&'static str; 5] = ["", "&quot;", "&amp;", "&lt;", "&gt;"];$/;"	v
-HTML_ESCAPE_TABLE	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPE_TABLE: [u8; 256] = create_html_escape_table();$/;"	v
-HardBreak	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    HardBreak,$/;"	e	enum:Event
-HardBreak	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    HardBreak,$/;"	e	enum:ItemBody
-Head	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    Head,$/;"	e	enum:TableState
-Heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Heading(u32), \/\/ heading level$/;"	e	enum:ItemBody
-Heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Heading(u32),$/;"	e	enum:Tag
-Html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Html(CowStr<'a>),$/;"	e	enum:Event
-Html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Html,$/;"	e	enum:ItemBody
-HtmlScanGuard	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) struct HtmlScanGuard {$/;"	s
-HtmlWriter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^impl<'a, I, W> HtmlWriter<'a, I, W>$/;"	c
-HtmlWriter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^struct HtmlWriter<'a, I, W> {$/;"	s
-Image	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image(LinkIndex),$/;"	e	enum:ItemBody
-Image	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image(LinkType, CowStr<'a>, CowStr<'a>),$/;"	e	enum:Tag
-Image	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image,$/;"	e	enum:LinkStackTy
-IndentCodeBlock	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    IndentCodeBlock,$/;"	e	enum:ItemBody
-Indented	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Indented,$/;"	e	enum:CodeBlockKind
-Inline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Inline,$/;"	e	enum:LinkType
-InlineEl	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct InlineEl {$/;"	s
-InlineStack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl InlineStack {$/;"	c
-InlineStack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct InlineStack {$/;"	s
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl Deref for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl From<char> for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl Hash for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl TryFrom<&str> for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl fmt::Display for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> AsRef<str> for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::cmp::PartialEq<InlineStr> for InlineStr {$/;"	c
-InlineStr	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub struct InlineStr {$/;"	s
-Inlined	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Inlined(InlineStr),$/;"	e	enum:CowStr
-Item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Item,$/;"	e	enum:Tag
-Item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Item = (Event<'a>, Range<usize>);$/;"	t	implementation:OffsetIter
-Item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Item = Event<'a>;$/;"	t	implementation:Parser
-Item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct Item {$/;"	s
-ItemBody	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum ItemBody {$/;"	g
-ItemBody	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Default for ItemBody {$/;"	c
-ItemBody	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> ItemBody {$/;"	c
-Left	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Left,$/;"	e	enum:Alignment
-LineStart	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^impl<'a> LineStart<'a> {$/;"	c
-LineStart	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub struct LineStart<'a> {$/;"	s
-Link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    Link(CowStr<'a>),$/;"	e	enum:ReferenceLabel
-Link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link(LinkIndex),$/;"	e	enum:ItemBody
-Link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link(LinkType, CowStr<'a>, CowStr<'a>),$/;"	e	enum:Tag
-Link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link,$/;"	e	enum:LinkStackTy
-LinkDef	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkDef<'a> {$/;"	s
-LinkIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkIndex(usize);$/;"	s
-LinkLabel	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub type LinkLabel<'a> = UniCase<CowStr<'a>>;$/;"	t
-LinkLabel	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    LinkLabel(CowStr<'a>, usize),$/;"	e	enum:RefScan
-LinkStack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl LinkStack {$/;"	c
-LinkStack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkStack {$/;"	s
-LinkStackEl	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkStackEl {$/;"	s
-LinkStackTy	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum LinkStackTy {$/;"	g
-LinkType	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl LinkType {$/;"	c
-LinkType	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum LinkType {$/;"	g
-List	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    List(Option<u64>), \/\/ TODO: add delim and tight for ast (not needed for html)$/;"	e	enum:Tag
-List	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    List(bool, u8, u64), \/\/ is_tight, list character, list start index$/;"	e	enum:ItemBody
-ListItem	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ListItem(usize),     \/\/ indent level$/;"	e	enum:ItemBody
-LookupTable	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) struct LookupTable {$/;"	s
-LookupTable	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^type LookupTable = [bool; 256];$/;"	t
-LoopInstruction	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) enum LoopInstruction<T> {$/;"	g
-MaybeCode	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeCode(usize, bool), \/\/ number of backticks, preceeded by backslash$/;"	e	enum:ItemBody
-MaybeEmphasis	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeEmphasis(usize, bool, bool),$/;"	e	enum:ItemBody
-MaybeHtml	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeHtml,$/;"	e	enum:ItemBody
-MaybeImage	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeImage,$/;"	e	enum:ItemBody
-MaybeLinkClose	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeLinkClose(bool),$/;"	e	enum:ItemBody
-MaybeLinkOpen	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeLinkOpen,$/;"	e	enum:ItemBody
-MaybeSmartQuote	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeSmartQuote(u8, bool, bool),$/;"	e	enum:ItemBody
-Node	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct Node<T> {$/;"	s
-None	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    None,$/;"	e	enum:Alignment
-OffsetIter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Iterator for OffsetIter<'a> {$/;"	c
-OffsetIter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct OffsetIter<'a> {$/;"	s
-Output	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = (LinkType, CowStr<'a>, CowStr<'a>);$/;"	t	implementation:Allocations
-Output	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = CowStr<'a>;$/;"	t	implementation:Allocations
-Output	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = Vec<Alignment>;$/;"	t	implementation:Allocations
-Output	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    type Output = Node<T>;$/;"	t	implementation:Tree
-Output	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    type Output = TreeIndex;$/;"	t	implementation:TreeIndex
-OwnedHtml	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    OwnedHtml(CowIndex),$/;"	e	enum:ItemBody
-Paragraph	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Paragraph,$/;"	e	enum:ItemBody
-Paragraph	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Paragraph,$/;"	e	enum:Tag
-Parser	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Iterator for Parser<'a> {$/;"	c
-Parser	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Parser<'a> {$/;"	c
-Parser	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct Parser<'a> {$/;"	s
-RefScan	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum RefScan<'a> {$/;"	g
-Reference	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Reference,$/;"	e	enum:LinkType
-ReferenceLabel	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub enum ReferenceLabel<'a> {$/;"	g
-ReferenceUnknown	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ReferenceUnknown,$/;"	e	enum:LinkType
-Right	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Right,$/;"	e	enum:Alignment
-Root	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Root,$/;"	e	enum:ItemBody
-Rule	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Rule,$/;"	e	enum:Event
-Rule	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Rule,$/;"	e	enum:ItemBody
-SLASH_ESCAPE	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static SLASH_ESCAPE: &str = "&#x27;";$/;"	v
-ST_BEGIN_TAGS	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    static ST_BEGIN_TAGS: &[&[u8]; 3] = &[b"!--", b"?", b"![CDATA["];$/;"	v	function:get_html_end_tag
-Scan	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Scan,$/;"	e	enum:TableParseMode
-Shortcut	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Shortcut,$/;"	e	enum:LinkType
-ShortcutUnknown	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ShortcutUnknown,$/;"	e	enum:LinkType
-SoftBreak	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SoftBreak,$/;"	e	enum:Event
-SoftBreak	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SoftBreak,$/;"	e	enum:ItemBody
-Start	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Start(Tag<'a>),$/;"	e	enum:Event
-StrWrite	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub trait StrWrite {$/;"	i
-Strikethrough	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:ItemBody
-Strikethrough	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:Tag
-String	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<'w> StrWrite for String {$/;"	c
-StringTooLongError	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub struct StringTooLongError;$/;"	s
-Strong	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:ItemBody
-Strong	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:Tag
-SynthesizeChar	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SynthesizeChar(char),$/;"	e	enum:ItemBody
-SynthesizeText	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SynthesizeText(CowIndex),$/;"	e	enum:ItemBody
-Table	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Table(AlignmentIndex),$/;"	e	enum:ItemBody
-Table	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Table(Vec<Alignment>),$/;"	e	enum:Tag
-TableCell	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableCell,$/;"	e	enum:ItemBody
-TableCell	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableCell,$/;"	e	enum:Tag
-TableHead	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableHead,$/;"	e	enum:ItemBody
-TableHead	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableHead,$/;"	e	enum:Tag
-TableParseMode	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum TableParseMode {$/;"	g
-TableRow	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableRow,$/;"	e	enum:ItemBody
-TableRow	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableRow,$/;"	e	enum:Tag
-TableState	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^enum TableState {$/;"	g
-Tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Tag<'a> {$/;"	g
-Target	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Target = str;$/;"	t	implementation:CowStr
-Target	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Target = str;$/;"	t	implementation:InlineStr
-TaskListMarker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TaskListMarker(bool), \/\/ true for checked$/;"	e	enum:ItemBody
-TaskListMarker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TaskListMarker(bool),$/;"	e	enum:Event
-Text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Text(CowStr<'a>),$/;"	e	enum:Event
-Text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Text,$/;"	e	enum:ItemBody
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Tree<Item> {$/;"	c
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T: Default> Tree<T> {$/;"	c
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::fmt::Debug for Tree<T>$/;"	c
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::ops::Index<TreeIndex> for Tree<T> {$/;"	c
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::ops::IndexMut<TreeIndex> for Tree<T> {$/;"	c
-Tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct Tree<T> {$/;"	s
-TreeIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl Add<usize> for TreeIndex {$/;"	c
-TreeIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl Sub<usize> for TreeIndex {$/;"	c
-TreeIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl TreeIndex {$/;"	c
-TreeIndex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct TreeIndex(NonZeroUsize);$/;"	s
-W	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for &'_ mut W$/;"	c
-WriteWrapper	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for WriteWrapper<W>$/;"	c
-WriteWrapper	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub struct WriteWrapper<W>(pub W);$/;"	s
-_markdown_to_html	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn _markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {$/;"	f
-add	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn add(self, rhs: usize) -> Self {$/;"	P	implementation:TreeIndex
-alignments	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    alignments: Vec<Vec<Alignment>>,$/;"	m	struct:Allocations
-allocate_alignment	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_alignment(&mut self, alignment: Vec<Alignment>) -> AlignmentIndex {$/;"	P	implementation:Allocations
-allocate_cow	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_cow(&mut self, cow: CowStr<'a>) -> CowIndex {$/;"	P	implementation:Allocations
-allocate_link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_link(&mut self, ty: LinkType, url: CowStr<'a>, title: CowStr<'a>) -> LinkIndex {$/;"	P	implementation:Allocations
-allocs	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    allocs: Allocations<'a>,$/;"	m	struct:FirstPass
-allocs	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    allocs: Allocations<'a>,$/;"	m	struct:Parser
-append	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn append(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
-append_code_text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_code_text(&mut self, remaining_space: usize, start: usize, end: usize) {$/;"	P	implementation:FirstPass
-append_html_line	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_html_line(&mut self, remaining_space: usize, start: usize, end: usize) {$/;"	P	implementation:FirstPass
-append_text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_text(&mut self, start: usize, end: usize) {$/;"	P	implementation:Tree
-as_ref	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:CowStr
-as_ref	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:InlineStr
-begin_list_item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    begin_list_item: bool,$/;"	m	struct:FirstPass
-body	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    body: ItemBody,$/;"	m	struct:Item
-body_size	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn body_size() {$/;"	f	module:test
-border_skip	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn border_skip() {$/;"	f	module:simd_test
-borrow	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn borrow(&self) -> &str {$/;"	P	implementation:CowStr
-both	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    both: bool, \/\/ can both open and close$/;"	m	struct:InlineEl
-brief	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn brief(program: &str) -> String {$/;"	f
-broken_link_callback	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    broken_link_callback: BrokenLinkCallback<'a>,$/;"	m	struct:Parser
-broken_links_called_only_once	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn broken_links_called_only_once() {$/;"	f	module:test
-bytes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    bytes: &'a [u8],$/;"	m	struct:LineStart
-bytes_scanned	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn bytes_scanned(&self) -> usize {$/;"	P	implementation:LineStart
-c	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    c: u8,      \/\/ b'*' or b'_'$/;"	m	struct:InlineEl
-calc_indent	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn calc_indent(text: &[u8], max: usize) -> (usize, usize) {$/;"	f
-cdata	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub cdata: usize,$/;"	m	struct:HtmlScanGuard
-char_from_codepoint	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn char_from_codepoint(input: usize) -> Option<char> {$/;"	f
-check_expected_indices	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn check_expected_indices(bytes: &[u8], expected: &[usize], skip: usize) {$/;"	f	module:simd_test
-child	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub child: Option<TreeIndex>,$/;"	m	struct:Node
-clear	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn clear(&mut self) {$/;"	P	implementation:CodeDelims
-clear	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn clear(&mut self) {$/;"	P	implementation:LinkStack
-clone	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn clone(&self) -> Self {$/;"	P	implementation:CowStr
-code_block_kind_check_fenced	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_fenced() {$/;"	f	module:test
-code_block_kind_check_indented	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_indented() {$/;"	f	module:test
-compute_lookup	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn compute_lookup(options: &Options) -> [u8; 16] {$/;"	f
-compute_mask	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn compute_mask(bytes: &[u8], offset: usize) -> i32 {$/;"	f	module:simd
-continue_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn continue_list(&mut self, start: usize, ch: u8, index: u64) {$/;"	P	implementation:FirstPass
-count	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    count: usize,$/;"	m	struct:InlineEl
-count_header_cols	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn count_header_cols($/;"	f
-cows	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    cows: Vec<CowStr<'a>>,$/;"	m	struct:Allocations
-cowstr_char_to_string	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_char_to_string() {$/;"	f	module:test_special_string
-cowstr_size	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_size() {$/;"	f	module:test_special_string
-create_html_escape_table	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^const fn create_html_escape_table() -> [u8; 256] {$/;"	f
-create_lookup	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    const fn create_lookup() -> [u8; 16] {$/;"	f	module:simd
-create_lut	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) fn create_lut(options: &Options) -> LookupTable {$/;"	f
-create_node	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn create_node(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
-cur	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    cur: Option<TreeIndex>,$/;"	m	struct:Tree
-cur	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn cur(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
-debug_tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^        fn debug_tree<T>($/;"	f	function:fmt
-declaration	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub declaration: usize,$/;"	m	struct:HtmlScanGuard
-default	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn default() -> Self {$/;"	P	implementation:ItemBody
-delim_run_can_close	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_close(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
-delim_run_can_open	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_open(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
-deref	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn deref(&self) -> &str {$/;"	P	implementation:CowStr
-deref	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn deref(&self) -> &str {$/;"	P	implementation:InlineStr
-dest	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    dest: CowStr<'a>,$/;"	m	struct:LinkDef
-disable_all_links	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn disable_all_links(&mut self) {$/;"	P	implementation:LinkStack
-disabled_ix	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    disabled_ix: usize,$/;"	m	struct:LinkStack
-dry_run	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn dry_run(text: &str, opts: Options) {$/;"	f
-end	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    end: usize,$/;"	m	struct:Item
-end_newline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    end_newline: bool,$/;"	m	struct:HtmlWriter
-end_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn end_tag(&mut self, tag: Tag) -> io::Result<()> {$/;"	f
-entities	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod entities;$/;"	n
-eq	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &CowStr) -> bool {$/;"	P	implementation:CowStr
-eq	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &InlineStr) -> bool {$/;"	P	implementation:InlineStr
-escape	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^pub mod escape;$/;"	n
-escape_href	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub fn escape_href<W>(mut w: W, s: &str) -> io::Result<()>$/;"	f
-escape_html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    pub(crate) fn escape_html<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f	module:simd
-escape_html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub fn escape_html<W: StrWrite>(w: W, s: &str) -> io::Result<()> {$/;"	f
-escape_html_scalar	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^fn escape_html_scalar<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f
-exhaustive_search	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn exhaustive_search() {$/;"	f	module:simd_test
-filename	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^    pub filename: String,$/;"	m	struct:Config
-find	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find(&mut self, open_ix: TreeIndex, count: usize) -> Option<TreeIndex> {$/;"	P	implementation:CodeDelims
-find_match	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find_match($/;"	P	implementation:InlineStack
-finish_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn finish_list(&mut self, ix: usize) {$/;"	P	implementation:FirstPass
-finish_list_marker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn finish_list_marker($/;"	P	implementation:LineStart
-fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:CowStr
-fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:InlineStr
-fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {$/;"	f
-footnote_offsets	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn footnote_offsets() {$/;"	f	module:test
-foreach_special_simd	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn foreach_special_simd<F>($/;"	f	module:simd
-from	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(c: char) -> Self {$/;"	P	implementation:CowStr
-from	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(c: char) -> Self {$/;"	P	implementation:InlineStr
-from	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: &'a str) -> Self {$/;"	P	implementation:CowStr
-from	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: String) -> Self {$/;"	P	implementation:CowStr
-get	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn get(self) -> usize {$/;"	P	implementation:TreeIndex
-get_description	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn get_description() -> String {$/;"	f
-get_entity	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/entities.rs	/^pub(crate) fn get_entity(bytes: &[u8]) -> Option<&'static str> {$/;"	f
-get_html_end_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn get_html_end_tag(text_bytes: &[u8]) -> Option<&'static str> {$/;"	f
-get_lowerbound	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn get_lowerbound(&self, c: u8, count: usize, both: bool) -> usize {$/;"	P	implementation:InlineStack
-get_title	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn get_title() -> String {$/;"	f
-get_version	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn get_version() -> String {$/;"	f
-handle_emphasis	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_emphasis(&mut self) {$/;"	P	implementation:Parser
-handle_inline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline(&mut self) {$/;"	P	implementation:Parser
-handle_inline_pass1	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline_pass1(&mut self) {$/;"	P	implementation:Parser
-hash	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn hash<H: Hasher>(&self, state: &mut H) {$/;"	P	implementation:CowStr
-hash	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn hash<H: Hasher>(&self, state: &mut H) {$/;"	P	implementation:InlineStr
-html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^pub mod html;$/;"	n
-html_scan_guard	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    html_scan_guard: HtmlScanGuard,$/;"	m	struct:Parser
-html_scan_tests	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    mod html_scan_tests {$/;"	n	module:simd
-index	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: AlignmentIndex) -> &Self::Output {$/;"	P	implementation:Allocations
-index	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: CowIndex) -> &Self::Output {$/;"	P	implementation:Allocations
-index	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: LinkIndex) -> &Self::Output {$/;"	P	implementation:Allocations
-index	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn index(&self, ix: TreeIndex) -> &Self::Output {$/;"	P	implementation:Tree
-index_mut	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn index_mut(&mut self, ix: TreeIndex) -> &mut Node<T> {$/;"	P	implementation:Tree
-inline_stack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inline_stack: InlineStack,$/;"	m	struct:Parser
-inlinestr_ascii	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_ascii() {$/;"	f	module:test_special_string
-inlinestr_fits_twentytwo	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_fits_twentytwo() {$/;"	f	module:test_special_string
-inlinestr_not_fits_twentythree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_not_fits_twentythree() {$/;"	f	module:test_special_string
-inlinestr_unicode	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_unicode() {$/;"	f	module:test_special_string
-inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: HashMap<usize, VecDeque<TreeIndex>>,$/;"	m	struct:CodeDelims
-inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: Parser<'a>,$/;"	m	struct:OffsetIter
-inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: Vec<LinkStackEl>,$/;"	m	struct:LinkStack
-inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    inner: [u8; MAX_INLINE_STR_LEN],$/;"	m	struct:InlineStr
-insert	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn insert(&mut self, count: usize, ix: TreeIndex) {$/;"	P	implementation:CodeDelims
-interrupt_paragraph_by_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn interrupt_paragraph_by_list(&self, suffix: &[u8]) -> bool {$/;"	P	implementation:FirstPass
-into_offset_iter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn into_offset_iter(self) -> OffsetIter<'a> {$/;"	P	implementation:Parser
-into_string	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    pub fn into_string(self) -> String {$/;"	P	implementation:CowStr
-is_ascii_alpha	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_alpha(c: u8) -> bool {$/;"	f
-is_ascii_alphanumeric	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_alphanumeric(c: u8) -> bool {$/;"	f
-is_ascii_letterdigitdash	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_letterdigitdash(c: u8) -> bool {$/;"	f
-is_ascii_punctuation	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^pub fn is_ascii_punctuation(c: u8) -> bool {$/;"	f
-is_ascii_whitespace	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_ascii_whitespace(c: u8) -> bool {$/;"	f
-is_ascii_whitespace_no_nl	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_ascii_whitespace_no_nl(c: u8) -> bool {$/;"	f
-is_at_eol	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn is_at_eol(&self) -> bool {$/;"	P	implementation:LineStart
-is_digit	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_digit(c: u8) -> bool {$/;"	f
-is_empty	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn is_empty(&self) -> bool {$/;"	P	implementation:Tree
-is_fenced	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn is_fenced(&self) -> bool {$/;"	P	implementation:CodeBlockKind
-is_html_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_html_tag(tag: &[u8]) -> bool {$/;"	f
-is_indented	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn is_indented(&self) -> bool {$/;"	P	implementation:CodeBlockKind
-is_inline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn is_inline(&self) -> bool {$/;"	P	implementation:ItemBody
-is_populated	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn is_populated(&self) -> bool {$/;"	P	implementation:CodeDelims
-is_punctuation	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^pub fn is_punctuation(c: char) -> bool {$/;"	f
-is_valid_unquoted_attr_value_char	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_valid_unquoted_attr_value_char(c: u8) -> bool {$/;"	f
-item	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub item: T,$/;"	m	struct:Node
-item_to_event	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_event<'a>(item: Item, text: &'a str, allocs: &Allocations<'a>) -> Event<'a> {$/;"	f
-item_to_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_tag<'a>(item: &Item, allocs: &Allocations<'a>) -> Tag<'a> {$/;"	f
-iter	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    iter: I,$/;"	m	struct:HtmlWriter
-iterate_special_bytes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn iterate_special_bytes<F, T>($/;"	f
-iterate_special_bytes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn iterate_special_bytes<F, T>($/;"	f
-ix	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    ix: usize,$/;"	m	struct:LineStart
-last_line_blank	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    last_line_blank: bool,$/;"	m	struct:FirstPass
-lib	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/main.rs	/^mod lib;$/;"	n
-link_def_at_eof	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn link_def_at_eof() {$/;"	f	module:test
-link_stack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    link_stack: LinkStack,$/;"	m	struct:Parser
-link_type	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub link_type: LinkType,$/;"	m	struct:BrokenLink
-linklabel	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod linklabel;$/;"	n
-links	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    links: Vec<(LinkType, CowStr<'a>, CowStr<'a>)>,$/;"	m	struct:Allocations
-list_nesting	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    list_nesting: usize,$/;"	m	struct:FirstPass
-lone_hashtag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn lone_hashtag() {$/;"	f	module:test
-long_match	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn long_match() {$/;"	f	module:simd_test
-lookup_table	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    lookup_table: &'b LookupTable,$/;"	m	struct:FirstPass
-lots_of_backslashes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn lots_of_backslashes() {$/;"	f	module:test
-lower_bounds	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    lower_bounds: [usize; 7],$/;"	m	struct:InlineStack
-main	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^pub fn main() -> std::io::Result<()> {$/;"	f
-main	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/main.rs	/^fn main() {$/;"	f
-make_code_span	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn make_code_span(&mut self, open: TreeIndex, close: TreeIndex, preceding_backslash: bool) {$/;"	P	implementation:Parser
-markdown_parse_test	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^    fn markdown_parse_test() {$/;"	f	module:tests
-markdown_to_html_test	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^    fn markdown_to_html_test() {$/;"	f	module:tests
-max_inline_str_len_atleast_five	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn max_inline_str_len_atleast_five() {$/;"	f	module:test_special_string
-min_hrule_offset	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    min_hrule_offset: usize,$/;"	m	struct:LineStart
-multichunk	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^        fn multichunk() {$/;"	f	module:simd::html_scan_tests
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn new(iter: I, writer: W) -> Self {$/;"	f
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new() -> Self {$/;"	P	implementation:Allocations
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new() -> Self {$/;"	P	implementation:CodeDelims
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new(text: &'a str, options: Options, lookup_table: &'b LookupTable) -> FirstPass<'a, 'b> /;"	P	implementation:FirstPass
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new(text: &'a str) -> Parser<'a> {$/;"	P	implementation:Parser
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn new(bytes: &[u8]) -> LineStart {$/;"	P	implementation:LineStart
-new	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn new(i: usize) -> Self {$/;"	P	implementation:TreeIndex
-new	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^    pub fn new(args: &[String]) -> Result<Config, &str> {$/;"	P	implementation:Config
-new_ext	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_ext(text: &'a str, options: Options) -> Parser<'a> {$/;"	P	implementation:Parser
-new_with_broken_link_callback	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_with_broken_link_callback($/;"	P	implementation:Parser
-next	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn next(&mut self) -> Option<Event<'a>> {$/;"	P	implementation:Parser
-next	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:OffsetIter
-next	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub next: Option<TreeIndex>,$/;"	m	struct:Node
-next_sibling	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn next_sibling(&mut self, cur_ix: TreeIndex) -> Option<TreeIndex> {$/;"	P	implementation:Tree
-no_dest_refdef	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn no_dest_refdef() {$/;"	f	module:test
-no_footnote_refs_without_option	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn no_footnote_refs_without_option() {$/;"	f	module:test
-node	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    node: TreeIndex,$/;"	m	struct:LinkStackEl
-node_size	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn node_size() {$/;"	f	module:test
-nodes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    nodes: Vec<Node<T>>,$/;"	m	struct:Tree
-numbers	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    numbers: HashMap<CowStr<'a>, usize>,$/;"	m	struct:HtmlWriter
-offset_iter_issue_378	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn offset_iter_issue_378() {$/;"	f	module:test
-offset_iter_issue_404	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn offset_iter_issue_404() {$/;"	f	module:test
-only_right_bytes_matched	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^        fn only_right_bytes_matched() {$/;"	f	module:simd::html_scan_tests
-options	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    options: Options,$/;"	m	struct:FirstPass
-options	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    options: Options,$/;"	m	struct:Parser
-overflow_by_addition	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_by_addition() {$/;"	f	module:test
-overflow_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_list() {$/;"	f	module:test
-parse	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod parse;$/;"	n
-parse_atx_heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_atx_heading(&mut self, mut ix: usize, atx_size: usize) -> usize {$/;"	P	implementation:FirstPass
-parse_block	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_block(&mut self, mut start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
-parse_decimal	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn parse_decimal(bytes: &[u8]) -> (usize, usize) {$/;"	f
-parse_fenced_code_block	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_fenced_code_block($/;"	P	implementation:FirstPass
-parse_footnote	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_footnote(&mut self, start: usize) -> Option<usize> {$/;"	P	implementation:FirstPass
-parse_hex	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn parse_hex(bytes: &[u8]) -> (usize, usize) {$/;"	f
-parse_hrule	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_hrule(&mut self, hrule_size: usize, ix: usize) -> usize {$/;"	P	implementation:FirstPass
-parse_html_block_type_1_to_5	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_1_to_5($/;"	P	implementation:FirstPass
-parse_html_block_type_6_or_7	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_6_or_7($/;"	P	implementation:FirstPass
-parse_indented_code_block	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_indented_code_block(&mut self, start_ix: usize, mut remaining_space: usize) -> usiz/;"	P	implementation:FirstPass
-parse_line	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_line(&mut self, start: usize, mode: TableParseMode) -> (usize, Option<Item>) {$/;"	P	implementation:FirstPass
-parse_markdown_file	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^pub fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {$/;"	f
-parse_paragraph	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_paragraph(&mut self, start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
-parse_refdef_label	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_label(&self, start: usize) -> Option<(usize, CowStr<'a>)> {$/;"	P	implementation:FirstPass
-parse_refdef_total	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_total(&mut self, start: usize) -> Option<(usize, LinkLabel<'a>, LinkDef<'a>)/;"	P	implementation:FirstPass
-parse_setext_heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_setext_heading(&mut self, ix: usize, node_ix: TreeIndex) -> Option<usize> {$/;"	P	implementation:FirstPass
-parse_table	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table(&mut self, table_cols: usize, head_start: usize, body_start: usize) -> usize /;"	P	implementation:FirstPass
-parse_table_row	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table_row(&mut self, mut ix: usize, row_cells: usize) -> Option<(usize, TreeIndex)>/;"	P	implementation:FirstPass
-parse_table_row_inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table_row_inner(&mut self, mut ix: usize, row_cells: usize) -> (usize, TreeIndex) {$/;"	P	implementation:FirstPass
-parser_with_extensions	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parser_with_extensions(text: &str) -> Parser<'_> {$/;"	f	module:test
-peek_grandparent	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn peek_grandparent(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
-peek_up	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn peek_up(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
-pop	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop(&mut self) -> Option<LinkStackEl> {$/;"	P	implementation:LinkStack
-pop	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop(&mut self, ix: usize) {$/;"	P	implementation:FirstPass
-pop	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn pop(&mut self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
-pop_all	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop_all(&mut self, tree: &mut Tree<Item>) {$/;"	P	implementation:InlineStack
-print_events	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn print_events(text: &str, opts: Options) {$/;"	f
-print_long_banner	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn print_long_banner() {$/;"	f
-print_short_banner	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^fn print_short_banner() {$/;"	f
-process_mask	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn process_mask<F, T>($/;"	f
-processing	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub processing: usize,$/;"	m	struct:HtmlScanGuard
-puncttable	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod puncttable;$/;"	n
-push	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn push(&mut self, el: InlineEl) {$/;"	P	implementation:InlineStack
-push	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn push(&mut self, el: LinkStackEl) {$/;"	P	implementation:LinkStack
-push	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn push(&mut self) -> TreeIndex {$/;"	P	implementation:Tree
-push_html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^pub fn push_html<'a, I>(s: &mut String, iter: I)$/;"	f
-raw_text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn raw_text(&mut self) -> io::Result<()> {$/;"	f
-ref_def_at_eof	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn ref_def_at_eof() {$/;"	f	module:test
-refdefs	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    refdefs: HashMap<LinkLabel<'a>, LinkDef<'a>>,$/;"	m	struct:Allocations
-reference	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub reference: &'a str,$/;"	m	struct:BrokenLink
-remaining_space	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn remaining_space(&self) -> usize {$/;"	P	implementation:LineStart
-reset	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn reset(&mut self) {$/;"	P	implementation:Tree
-return_carriage_linefeed_ok	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn return_carriage_linefeed_ok() {$/;"	f	module:test
-run	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    pub fn run(mut self) -> io::Result<()> {$/;"	f
-run	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn run(mut self) -> (Tree<Item>, Allocations<'a>) {$/;"	P	implementation:FirstPass
-run	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^pub fn run(config: Config) -> Result<(), Box<dyn Error>> {$/;"	f
-scalar	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub scalar: [bool; 256],$/;"	m	struct:LookupTable
-scan_all_space	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_all_space(&mut self) {$/;"	P	implementation:LineStart
-scan_attr_value_chars	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attr_value_chars(data: &[u8]) -> usize {$/;"	f
-scan_attribute	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute($/;"	f
-scan_attribute_name	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute_name(data: &[u8]) -> Option<usize> {$/;"	f
-scan_attribute_value	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute_value($/;"	f
-scan_atx_heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_atx_heading(data: &[u8]) -> Option<usize> {$/;"	f
-scan_autolink	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_autolink(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>, LinkType)/;"	f
-scan_blank_line	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_blank_line(bytes: &[u8]) -> Option<usize> {$/;"	f
-scan_blockquote_marker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_blockquote_marker(&mut self) -> bool {$/;"	P	implementation:LineStart
-scan_blockquote_start	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_blockquote_start(data: &[u8]) -> Option<usize> {$/;"	f
-scan_ch	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn scan_ch(&mut self, c: u8) -> bool {$/;"	P	implementation:LineStart
-scan_ch	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_ch(data: &[u8], c: u8) -> usize {$/;"	f
-scan_ch_repeat	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_ch_repeat(data: &[u8], c: u8) -> usize {$/;"	f
-scan_closing_code_fence	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_closing_code_fence($/;"	f
-scan_code_fence	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_code_fence(data: &[u8]) -> Option<(usize, u8)> {$/;"	f
-scan_containers	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_containers(tree: &Tree<Item>, line_start: &mut LineStart) -> usize {$/;"	f
-scan_email	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_email(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>)> {$/;"	f
-scan_empty_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_empty_list(data: &[u8]) -> bool {$/;"	f
-scan_entity	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_entity(bytes: &[u8]) -> (usize, Option<CowStr<'static>>) {$/;"	f
-scan_eol	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_eol(bytes: &[u8]) -> Option<usize> {$/;"	f
-scan_hrule	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_hrule(bytes: &[u8]) -> Result<usize, usize> {$/;"	f
-scan_html_block_inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_block_inner($/;"	f
-scan_html_block_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_block_tag(data: &[u8]) -> (usize, &[u8]) {$/;"	f
-scan_html_type_7	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_type_7(data: &[u8]) -> Option<usize> {$/;"	f
-scan_inline_html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_inline_html(&mut self, bytes: &[u8], ix: usize) -> Option<(Vec<u8>, usize)> {$/;"	P	implementation:Parser
-scan_inline_html_comment	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_inline_html_comment($/;"	f
-scan_inline_html_processing	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_inline_html_processing($/;"	f
-scan_inline_link	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_inline_link($/;"	P	implementation:Parser
-scan_link_dest	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_link_dest($/;"	f
-scan_link_label	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_link_label<'text, 'tree>($/;"	f
-scan_link_label_rest	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub(crate) fn scan_link_label_rest<'t>($/;"	f
-scan_link_title	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_link_title($/;"	P	implementation:Parser
-scan_list_marker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_list_marker(&mut self) -> Option<(u8, u64, usize)> {$/;"	P	implementation:LineStart
-scan_listitem	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_listitem(bytes: &[u8]) -> Option<(usize, u8, usize, usize)> {$/;"	f
-scan_nextline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_nextline(bytes: &[u8]) -> usize {$/;"	f
-scan_nodes_to_ix	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_nodes_to_ix($/;"	f
-scan_paragraph_interrupt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_paragraph_interrupt(bytes: &[u8]) -> bool {$/;"	f
-scan_refdef	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_refdef(&self, start: usize) -> Option<(usize, LinkDef<'a>)> {$/;"	P	implementation:FirstPass
-scan_refdef_space	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_refdef_space(&self, bytes: &[u8], mut i: usize) -> Option<(usize, usize)> {$/;"	P	implementation:FirstPass
-scan_refdef_title	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_refdef_title(text: &str) -> Option<(usize, &str)> {$/;"	f
-scan_reference	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_reference<'a, 'b>($/;"	f
-scan_rev_while	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_rev_while<F>(data: &[u8], mut f: F) -> usize$/;"	f
-scan_setext_heading	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_setext_heading(data: &[u8]) -> Option<(usize, u32)> {$/;"	f
-scan_space	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_space(&mut self, n_space: usize) -> bool {$/;"	P	implementation:LineStart
-scan_space_inner	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn scan_space_inner(&mut self, mut n_space: usize) -> usize {$/;"	P	implementation:LineStart
-scan_space_upto	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_space_upto(&mut self, n_space: usize) -> usize {$/;"	P	implementation:LineStart
-scan_table_head	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_table_head(data: &[u8]) -> (usize, Vec<Alignment>) {$/;"	f
-scan_task_list_marker	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_task_list_marker(&mut self) -> Option<bool> {$/;"	P	implementation:LineStart
-scan_uri	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_uri(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>)> {$/;"	f
-scan_while	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_while<F>(data: &[u8], mut f: F) -> usize$/;"	f
-scan_whitespace_no_nl	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_whitespace_no_nl(data: &[u8]) -> usize {$/;"	f
-scan_whitespace_with_newline_handler	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_whitespace_with_newline_handler($/;"	f
-scanners	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod scanners;$/;"	n
-seen_first	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    seen_first: bool,$/;"	m	struct:CodeDelims
-set_lowerbound	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn set_lowerbound(&mut self, c: u8, count: usize, both: bool, new_bound: usize) {$/;"	P	implementation:InlineStack
-simd	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^mod simd {$/;"	n
-simd	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod simd;$/;"	n
-simd	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub simd: [u8; 16],$/;"	m	struct:LookupTable
-simd_test	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^mod simd_test {$/;"	n
-simple_broken_link_callback	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn simple_broken_link_callback() {$/;"	f	module:test
-simple_match	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn simple_match() {$/;"	f	module:simd_test
-simple_no_match	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn simple_no_match() {$/;"	f	module:simd_test
-single_open_fish	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn single_open_fish() {$/;"	f	module:simd_test
-single_open_fish_bracket	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn single_open_fish_bracket() {$/;"	f	module:test
-small_boxed_str_clones_to_stack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn small_boxed_str_clones_to_stack() {$/;"	f	module:test_special_string
-spaces_remaining	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    spaces_remaining: usize,$/;"	m	struct:LineStart
-span	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub span: std::ops::Range<usize>,$/;"	m	struct:BrokenLink
-special_bytes	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn special_bytes(options: &Options) -> [bool; 256] {$/;"	f
-spine	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    spine: Vec<TreeIndex>, \/\/ indices of nodes on path to current node$/;"	m	struct:Tree
-spine_len	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn spine_len(&self) -> usize {$/;"	P	implementation:Tree
-stack	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    stack: Vec<InlineEl>,$/;"	m	struct:InlineStack
-start	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    start: TreeIndex, \/\/ offset of tree node$/;"	m	struct:InlineEl
-start	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    start: usize,$/;"	m	struct:Item
-start_tag	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn start_tag(&mut self, tag: Tag<'a>) -> io::Result<()> {$/;"	f
-str	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPES: [&'static str; 5] = ["", "&quot;", "&amp;", "&lt;", "&gt;"];$/;"	v
-strings	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod strings;$/;"	n
-sub	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn sub(self, rhs: usize) -> Self {$/;"	P	implementation:TreeIndex
-surgerize_tight_list	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn surgerize_tight_list(tree: &mut Tree<Item>, list_ix: TreeIndex) {$/;"	f
-tab_start	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    tab_start: usize,$/;"	m	struct:LineStart
-table_alignments	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_alignments: Vec<Alignment>,$/;"	m	struct:HtmlWriter
-table_cell_index	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_cell_index: usize,$/;"	m	struct:HtmlWriter
-table_offset	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn table_offset() {$/;"	f	module:test
-table_state	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_state: TableState,$/;"	m	struct:HtmlWriter
-test	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^mod test {$/;"	n
-test	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^mod test {$/;"	n
-test	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^mod test {$/;"	n
-test_ascii	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_ascii() {$/;"	f	module:tests
-test_special_string	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^mod test_special_string {$/;"	n
-test_unicode	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_unicode() {$/;"	f	module:tests
-tests	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^mod tests {$/;"	n
-tests	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^mod tests {$/;"	n
-text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:FirstPass
-text	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:Parser
-title	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    title: Option<CowStr<'a>>,$/;"	m	struct:LinkDef
-to_unknown	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn to_unknown(self) -> Self {$/;"	P	implementation:LinkType
-tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod tree;$/;"	n
-tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:FirstPass
-tree	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:Parser
-try_from	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn try_from(s: &str) -> Result<InlineStr, StringTooLongError> {$/;"	P	implementation:InlineStr
-ty	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ty: LinkStackTy,$/;"	m	struct:LinkStackEl
-unescape	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn unescape(input: &str) -> CowStr<'_> {$/;"	f
-usage	/mnt/c/Users/SamanthaC/rust/markdown_puppy/src/lib.rs	/^pub fn usage() {$/;"	f
-walk_spine	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn walk_spine(&self) -> impl std::iter::DoubleEndedIterator<Item = &TreeIndex> {$/;"	P	implementation:Tree
-whitespace_normalization	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn whitespace_normalization() {$/;"	f	module:test
-with_capacity	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn with_capacity(cap: usize) -> Tree<T> {$/;"	P	implementation:Tree
-write	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn write(&mut self, s: &str) -> io::Result<()> {$/;"	f
-write_fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()> {$/;"	P	implementation:String
-write_fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()> {$/;"	f
-write_fmt	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()>;$/;"	P	interface:StrWrite
-write_html	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^pub fn write_html<'a, I, W>(writer: W, iter: I) -> io::Result<()>$/;"	f
-write_newline	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn write_newline(&mut self) -> io::Result<()> {$/;"	f
-write_str	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()> {$/;"	P	implementation:String
-write_str	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()> {$/;"	f
-write_str	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()>;$/;"	P	interface:StrWrite
-writer	/home/samanthac/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    writer: W,$/;"	m	struct:HtmlWriter
+AMP_ESCAPE	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static AMP_ESCAPE: &str = "&amp;";$/;"	v
+Active	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Active,$/;"	e	enum:TableParseMode
+Alignment	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Alignment {$/;"	g
+AlignmentIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct AlignmentIndex(usize);$/;"	s
+Allocations	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Allocations<'a> {$/;"	c
+Allocations	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<AlignmentIndex> for Allocations<'a> {$/;"	c
+Allocations	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<CowIndex> for Allocations<'a> {$/;"	c
+Allocations	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Index<LinkIndex> for Allocations<'a> {$/;"	c
+Allocations	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct Allocations<'a> {$/;"	s
+Autolink	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Autolink,$/;"	e	enum:LinkType
+BEGIN_TAGS	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    static BEGIN_TAGS: &[&[u8]; 3] = &[b"pre", b"style", b"script"];$/;"	v	function:get_html_end_tag
+BlockQuote	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BlockQuote,$/;"	e	enum:ItemBody
+BlockQuote	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BlockQuote,$/;"	e	enum:Tag
+Body	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    Body,$/;"	e	enum:TableState
+Borrowed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Borrowed(&'a str),$/;"	e	enum:CowStr
+Boxed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Boxed(Box<str>),$/;"	e	enum:CowStr
+BreakAtWith	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    BreakAtWith(usize, T),$/;"	e	enum:LoopInstruction
+BrokenLink	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct BrokenLink<'a> {$/;"	s
+BrokenLinkCallback	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub type BrokenLinkCallback<'a> =$/;"	t
+Center	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Center,$/;"	e	enum:Alignment
+Code	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Code(CowIndex),$/;"	e	enum:ItemBody
+Code	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Code(CowStr<'a>),$/;"	e	enum:Event
+CodeBlock	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    CodeBlock(CodeBlockKind<'a>),$/;"	e	enum:Tag
+CodeBlockKind	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> CodeBlockKind<'a> {$/;"	c
+CodeBlockKind	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum CodeBlockKind<'a> {$/;"	g
+CodeDelims	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl CodeDelims {$/;"	c
+CodeDelims	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct CodeDelims {$/;"	s
+Collapsed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed(Option<TreeIndex>),$/;"	e	enum:RefScan
+Collapsed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed,$/;"	e	enum:LinkType
+CollapsedUnknown	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    CollapsedUnknown,$/;"	e	enum:LinkType
+Config	/home/sammi/rust/md_puppy/src/lib.rs	/^impl Config {$/;"	c
+Config	/home/sammi/rust/md_puppy/src/lib.rs	/^pub struct Config {$/;"	s
+ContinueAndSkip	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ContinueAndSkip(usize),$/;"	e	enum:LoopInstruction
+CowIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct CowIndex(usize);$/;"	s
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> AsRef<str> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Borrow<str> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Deref for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<&'a str> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<String> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> From<char> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> Hash for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> fmt::Display for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::clone::Clone for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::cmp::PartialEq<CowStr<'a>> for CowStr<'a> {$/;"	c
+CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub enum CowStr<'a> {$/;"	g
+Disabled	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:LinkStackTy
+Disabled	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:TableParseMode
+Email	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Email,$/;"	e	enum:LinkType
+Emphasis	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Emphasis,$/;"	e	enum:ItemBody
+Emphasis	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Emphasis,$/;"	e	enum:Tag
+End	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    End(Tag<'a>),$/;"	e	enum:Event
+Error	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Error = StringTooLongError;$/;"	t	implementation:InlineStr
+Event	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Event<'a> {$/;"	g
+Failed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Failed,$/;"	e	enum:RefScan
+Fenced	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Fenced(CowStr<'a>),$/;"	e	enum:CodeBlockKind
+FencedCodeBlock	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FencedCodeBlock(CowIndex),$/;"	e	enum:ItemBody
+FirstPass	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a, 'b> FirstPass<'a, 'b> {$/;"	c
+FirstPass	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct FirstPass<'a, 'b> {$/;"	s
+Footnote	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    Footnote(CowStr<'a>),$/;"	e	enum:ReferenceLabel
+FootnoteDefinition	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteDefinition(CowIndex),$/;"	e	enum:ItemBody
+FootnoteDefinition	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteDefinition(CowStr<'a>),$/;"	e	enum:Tag
+FootnoteReference	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteReference(CowIndex),$/;"	e	enum:ItemBody
+FootnoteReference	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    FootnoteReference(CowStr<'a>),$/;"	e	enum:Event
+HEX_CHARS	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HEX_CHARS: &[u8] = b"0123456789ABCDEF";$/;"	v
+HREF_SAFE	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HREF_SAFE: [u8; 128] = [$/;"	v
+HTML_ESCAPES	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPES: [&'static str; 5] = ["", "&quot;", "&amp;", "&lt;", "&gt;"];$/;"	v
+HTML_ESCAPE_TABLE	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPE_TABLE: [u8; 256] = create_html_escape_table();$/;"	v
+HardBreak	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    HardBreak,$/;"	e	enum:Event
+HardBreak	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    HardBreak,$/;"	e	enum:ItemBody
+Head	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    Head,$/;"	e	enum:TableState
+Heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Heading(u32), \/\/ heading level$/;"	e	enum:ItemBody
+Heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Heading(u32),$/;"	e	enum:Tag
+Html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Html(CowStr<'a>),$/;"	e	enum:Event
+Html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Html,$/;"	e	enum:ItemBody
+HtmlScanGuard	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) struct HtmlScanGuard {$/;"	s
+HtmlWriter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^impl<'a, I, W> HtmlWriter<'a, I, W>$/;"	c
+HtmlWriter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^struct HtmlWriter<'a, I, W> {$/;"	s
+Image	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image(LinkIndex),$/;"	e	enum:ItemBody
+Image	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image(LinkType, CowStr<'a>, CowStr<'a>),$/;"	e	enum:Tag
+Image	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Image,$/;"	e	enum:LinkStackTy
+IndentCodeBlock	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    IndentCodeBlock,$/;"	e	enum:ItemBody
+Indented	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Indented,$/;"	e	enum:CodeBlockKind
+Inline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Inline,$/;"	e	enum:LinkType
+InlineEl	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct InlineEl {$/;"	s
+InlineStack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl InlineStack {$/;"	c
+InlineStack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct InlineStack {$/;"	s
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl Deref for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl From<char> for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl Hash for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl TryFrom<&str> for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl fmt::Display for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> AsRef<str> for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> std::cmp::PartialEq<InlineStr> for InlineStr {$/;"	c
+InlineStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub struct InlineStr {$/;"	s
+Inlined	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Inlined(InlineStr),$/;"	e	enum:CowStr
+Item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Item,$/;"	e	enum:Tag
+Item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Item = (Event<'a>, Range<usize>);$/;"	t	implementation:OffsetIter
+Item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Item = Event<'a>;$/;"	t	implementation:Parser
+Item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct Item {$/;"	s
+ItemBody	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum ItemBody {$/;"	g
+ItemBody	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Default for ItemBody {$/;"	c
+ItemBody	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> ItemBody {$/;"	c
+Left	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Left,$/;"	e	enum:Alignment
+LineStart	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^impl<'a> LineStart<'a> {$/;"	c
+LineStart	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub struct LineStart<'a> {$/;"	s
+Link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    Link(CowStr<'a>),$/;"	e	enum:ReferenceLabel
+Link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link(LinkIndex),$/;"	e	enum:ItemBody
+Link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link(LinkType, CowStr<'a>, CowStr<'a>),$/;"	e	enum:Tag
+Link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Link,$/;"	e	enum:LinkStackTy
+LinkDef	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkDef<'a> {$/;"	s
+LinkIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkIndex(usize);$/;"	s
+LinkLabel	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub type LinkLabel<'a> = UniCase<CowStr<'a>>;$/;"	t
+LinkLabel	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    LinkLabel(CowStr<'a>, usize),$/;"	e	enum:RefScan
+LinkStack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl LinkStack {$/;"	c
+LinkStack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkStack {$/;"	s
+LinkStackEl	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct LinkStackEl {$/;"	s
+LinkStackTy	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum LinkStackTy {$/;"	g
+LinkType	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl LinkType {$/;"	c
+LinkType	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum LinkType {$/;"	g
+List	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    List(Option<u64>), \/\/ TODO: add delim and tight for ast (not needed for html)$/;"	e	enum:Tag
+List	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    List(bool, u8, u64), \/\/ is_tight, list character, list start index$/;"	e	enum:ItemBody
+ListItem	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ListItem(usize),     \/\/ indent level$/;"	e	enum:ItemBody
+LookupTable	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) struct LookupTable {$/;"	s
+LookupTable	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^type LookupTable = [bool; 256];$/;"	t
+LoopInstruction	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) enum LoopInstruction<T> {$/;"	g
+MaybeCode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeCode(usize, bool), \/\/ number of backticks, preceeded by backslash$/;"	e	enum:ItemBody
+MaybeEmphasis	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeEmphasis(usize, bool, bool),$/;"	e	enum:ItemBody
+MaybeHtml	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeHtml,$/;"	e	enum:ItemBody
+MaybeImage	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeImage,$/;"	e	enum:ItemBody
+MaybeLinkClose	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeLinkClose(bool),$/;"	e	enum:ItemBody
+MaybeLinkOpen	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeLinkOpen,$/;"	e	enum:ItemBody
+MaybeSmartQuote	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    MaybeSmartQuote(u8, bool, bool),$/;"	e	enum:ItemBody
+Node	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct Node<T> {$/;"	s
+None	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    None,$/;"	e	enum:Alignment
+OffsetIter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Iterator for OffsetIter<'a> {$/;"	c
+OffsetIter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct OffsetIter<'a> {$/;"	s
+Output	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = (LinkType, CowStr<'a>, CowStr<'a>);$/;"	t	implementation:Allocations
+Output	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = CowStr<'a>;$/;"	t	implementation:Allocations
+Output	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    type Output = Vec<Alignment>;$/;"	t	implementation:Allocations
+Output	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    type Output = Node<T>;$/;"	t	implementation:Tree
+Output	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    type Output = TreeIndex;$/;"	t	implementation:TreeIndex
+OwnedHtml	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    OwnedHtml(CowIndex),$/;"	e	enum:ItemBody
+Paragraph	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Paragraph,$/;"	e	enum:ItemBody
+Paragraph	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Paragraph,$/;"	e	enum:Tag
+Parser	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Iterator for Parser<'a> {$/;"	c
+Parser	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Parser<'a> {$/;"	c
+Parser	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub struct Parser<'a> {$/;"	s
+RefScan	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum RefScan<'a> {$/;"	g
+Reference	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Reference,$/;"	e	enum:LinkType
+ReferenceLabel	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub enum ReferenceLabel<'a> {$/;"	g
+ReferenceUnknown	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ReferenceUnknown,$/;"	e	enum:LinkType
+Right	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Right,$/;"	e	enum:Alignment
+Root	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Root,$/;"	e	enum:ItemBody
+Rule	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Rule,$/;"	e	enum:Event
+Rule	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Rule,$/;"	e	enum:ItemBody
+SLASH_ESCAPE	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static SLASH_ESCAPE: &str = "&#x27;";$/;"	v
+ST_BEGIN_TAGS	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    static ST_BEGIN_TAGS: &[&[u8]; 3] = &[b"!--", b"?", b"![CDATA["];$/;"	v	function:get_html_end_tag
+Scan	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Scan,$/;"	e	enum:TableParseMode
+Shortcut	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Shortcut,$/;"	e	enum:LinkType
+ShortcutUnknown	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ShortcutUnknown,$/;"	e	enum:LinkType
+SoftBreak	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SoftBreak,$/;"	e	enum:Event
+SoftBreak	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SoftBreak,$/;"	e	enum:ItemBody
+Start	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Start(Tag<'a>),$/;"	e	enum:Event
+StrWrite	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub trait StrWrite {$/;"	i
+Strikethrough	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:ItemBody
+Strikethrough	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:Tag
+String	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<'w> StrWrite for String {$/;"	c
+StringTooLongError	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub struct StringTooLongError;$/;"	s
+Strong	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:ItemBody
+Strong	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:Tag
+SynthesizeChar	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SynthesizeChar(char),$/;"	e	enum:ItemBody
+SynthesizeText	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    SynthesizeText(CowIndex),$/;"	e	enum:ItemBody
+Table	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Table(AlignmentIndex),$/;"	e	enum:ItemBody
+Table	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Table(Vec<Alignment>),$/;"	e	enum:Tag
+TableCell	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableCell,$/;"	e	enum:ItemBody
+TableCell	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableCell,$/;"	e	enum:Tag
+TableHead	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableHead,$/;"	e	enum:ItemBody
+TableHead	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableHead,$/;"	e	enum:Tag
+TableParseMode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^enum TableParseMode {$/;"	g
+TableRow	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableRow,$/;"	e	enum:ItemBody
+TableRow	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TableRow,$/;"	e	enum:Tag
+TableState	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^enum TableState {$/;"	g
+Tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub enum Tag<'a> {$/;"	g
+Target	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Target = str;$/;"	t	implementation:CowStr
+Target	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    type Target = str;$/;"	t	implementation:InlineStr
+TaskListMarker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TaskListMarker(bool), \/\/ true for checked$/;"	e	enum:ItemBody
+TaskListMarker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    TaskListMarker(bool),$/;"	e	enum:Event
+Text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Text(CowStr<'a>),$/;"	e	enum:Event
+Text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Text,$/;"	e	enum:ItemBody
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Tree<Item> {$/;"	c
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T: Default> Tree<T> {$/;"	c
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::fmt::Debug for Tree<T>$/;"	c
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::ops::Index<TreeIndex> for Tree<T> {$/;"	c
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::ops::IndexMut<TreeIndex> for Tree<T> {$/;"	c
+Tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct Tree<T> {$/;"	s
+TreeIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl Add<usize> for TreeIndex {$/;"	c
+TreeIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl Sub<usize> for TreeIndex {$/;"	c
+TreeIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl TreeIndex {$/;"	c
+TreeIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^pub struct TreeIndex(NonZeroUsize);$/;"	s
+W	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for &'_ mut W$/;"	c
+WriteWrapper	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for WriteWrapper<W>$/;"	c
+WriteWrapper	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub struct WriteWrapper<W>(pub W);$/;"	s
+_markdown_to_html	/home/sammi/rust/md_puppy/src/lib.rs	/^fn _markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {$/;"	f
+add	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn add(self, rhs: usize) -> Self {$/;"	P	implementation:TreeIndex
+add_lookup_byte	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^fn add_lookup_byte(lookup: &mut [u8; 16], byte: u8) {$/;"	f
+alignments	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    alignments: Vec<Vec<Alignment>>,$/;"	m	struct:Allocations
+allocate_alignment	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_alignment(&mut self, alignment: Vec<Alignment>) -> AlignmentIndex {$/;"	P	implementation:Allocations
+allocate_cow	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_cow(&mut self, cow: CowStr<'a>) -> CowIndex {$/;"	P	implementation:Allocations
+allocate_link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn allocate_link(&mut self, ty: LinkType, url: CowStr<'a>, title: CowStr<'a>) -> LinkIndex {$/;"	P	implementation:Allocations
+allocs	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    allocs: Allocations<'a>,$/;"	m	struct:FirstPass
+allocs	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    allocs: Allocations<'a>,$/;"	m	struct:Parser
+append	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn append(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
+append_code_text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_code_text(&mut self, remaining_space: usize, start: usize, end: usize) {$/;"	P	implementation:FirstPass
+append_html_line	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_html_line(&mut self, remaining_space: usize, start: usize, end: usize) {$/;"	P	implementation:FirstPass
+append_text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_text(&mut self, start: usize, end: usize) {$/;"	P	implementation:Tree
+as_ref	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:CowStr
+as_ref	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:InlineStr
+begin_list_item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    begin_list_item: bool,$/;"	m	struct:FirstPass
+body	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    body: ItemBody,$/;"	m	struct:Item
+body_size	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn body_size() {$/;"	f	module:test
+border_skip	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn border_skip() {$/;"	f	module:simd_test
+borrow	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn borrow(&self) -> &str {$/;"	P	implementation:CowStr
+both	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    both: bool, \/\/ can both open and close$/;"	m	struct:InlineEl
+brief	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn brief(program: &str) -> String {$/;"	f
+broken_link_callback	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    broken_link_callback: BrokenLinkCallback<'a>,$/;"	m	struct:Parser
+broken_links_called_only_once	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn broken_links_called_only_once() {$/;"	f	module:test
+bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    bytes: &'a [u8],$/;"	m	struct:LineStart
+bytes_scanned	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn bytes_scanned(&self) -> usize {$/;"	P	implementation:LineStart
+c	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    c: u8,      \/\/ b'*' or b'_'$/;"	m	struct:InlineEl
+calc_indent	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn calc_indent(text: &[u8], max: usize) -> (usize, usize) {$/;"	f
+cdata	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub cdata: usize,$/;"	m	struct:HtmlScanGuard
+char_from_codepoint	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn char_from_codepoint(input: usize) -> Option<char> {$/;"	f
+check_expected_indices	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn check_expected_indices(bytes: &[u8], expected: &[usize], skip: usize) {$/;"	f	module:simd_test
+child	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub child: Option<TreeIndex>,$/;"	m	struct:Node
+clear	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn clear(&mut self) {$/;"	P	implementation:CodeDelims
+clear	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn clear(&mut self) {$/;"	P	implementation:LinkStack
+clone	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn clone(&self) -> Self {$/;"	P	implementation:CowStr
+code_block_kind_check_fenced	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_fenced() {$/;"	f	module:test
+code_block_kind_check_indented	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_indented() {$/;"	f	module:test
+compute_lookup	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn compute_lookup(options: &Options) -> [u8; 16] {$/;"	f
+compute_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn compute_mask(bytes: &[u8], offset: usize) -> i32 {$/;"	f	module:simd
+compute_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn compute_mask(lut: &[u8; 16], bytes: &[u8], ix: usize) -> i32 {$/;"	f
+continue_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn continue_list(&mut self, start: usize, ch: u8, index: u64) {$/;"	P	implementation:FirstPass
+count	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    count: usize,$/;"	m	struct:InlineEl
+count_header_cols	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn count_header_cols($/;"	f
+cows	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    cows: Vec<CowStr<'a>>,$/;"	m	struct:Allocations
+cowstr_char_to_string	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_char_to_string() {$/;"	f	module:test_special_string
+cowstr_size	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_size() {$/;"	f	module:test_special_string
+create_html_escape_table	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^const fn create_html_escape_table() -> [u8; 256] {$/;"	f
+create_lookup	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    const fn create_lookup() -> [u8; 16] {$/;"	f	module:simd
+create_lut	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) fn create_lut(options: &Options) -> LookupTable {$/;"	f
+create_node	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn create_node(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
+cur	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    cur: Option<TreeIndex>,$/;"	m	struct:Tree
+cur	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn cur(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
+debug_tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^        fn debug_tree<T>($/;"	f	function:fmt
+declaration	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub declaration: usize,$/;"	m	struct:HtmlScanGuard
+default	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn default() -> Self {$/;"	P	implementation:ItemBody
+delim_run_can_close	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_close(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
+delim_run_can_open	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_open(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
+deref	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn deref(&self) -> &str {$/;"	P	implementation:CowStr
+deref	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn deref(&self) -> &str {$/;"	P	implementation:InlineStr
+dest	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    dest: CowStr<'a>,$/;"	m	struct:LinkDef
+disable_all_links	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn disable_all_links(&mut self) {$/;"	P	implementation:LinkStack
+disabled_ix	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    disabled_ix: usize,$/;"	m	struct:LinkStack
+dry_run	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn dry_run(text: &str, opts: Options) {$/;"	f
+end	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    end: usize,$/;"	m	struct:Item
+end_newline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    end_newline: bool,$/;"	m	struct:HtmlWriter
+end_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn end_tag(&mut self, tag: Tag) -> io::Result<()> {$/;"	f
+entities	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod entities;$/;"	n
+eq	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &CowStr) -> bool {$/;"	P	implementation:CowStr
+eq	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &InlineStr) -> bool {$/;"	P	implementation:InlineStr
+escape	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^pub mod escape;$/;"	n
+escape_href	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub fn escape_href<W>(mut w: W, s: &str) -> io::Result<()>$/;"	f
+escape_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    pub(crate) fn escape_html<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f	module:simd
+escape_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub fn escape_html<W: StrWrite>(w: W, s: &str) -> io::Result<()> {$/;"	f
+escape_html_scalar	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^fn escape_html_scalar<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f
+exhaustive_search	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn exhaustive_search() {$/;"	f	module:simd_test
+filename	/home/sammi/rust/md_puppy/src/lib.rs	/^    pub filename: String,$/;"	m	struct:Config
+find	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find(&mut self, open_ix: TreeIndex, count: usize) -> Option<TreeIndex> {$/;"	P	implementation:CodeDelims
+find_match	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find_match($/;"	P	implementation:InlineStack
+finish_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn finish_list(&mut self, ix: usize) {$/;"	P	implementation:FirstPass
+finish_list_marker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn finish_list_marker($/;"	P	implementation:LineStart
+fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:CowStr
+fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:InlineStr
+fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn fmt(&self, f: &mut std::fmt::Formatter) -> std::fmt::Result {$/;"	f
+footnote_offsets	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn footnote_offsets() {$/;"	f	module:test
+foreach_special_simd	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn foreach_special_simd<F>($/;"	f	module:simd
+from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(c: char) -> Self {$/;"	P	implementation:CowStr
+from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(c: char) -> Self {$/;"	P	implementation:InlineStr
+from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: &'a str) -> Self {$/;"	P	implementation:CowStr
+from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: String) -> Self {$/;"	P	implementation:CowStr
+get	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn get(self) -> usize {$/;"	P	implementation:TreeIndex
+get_description	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_description() -> String {$/;"	f
+get_entity	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/entities.rs	/^pub(crate) fn get_entity(bytes: &[u8]) -> Option<&'static str> {$/;"	f
+get_html_end_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn get_html_end_tag(text_bytes: &[u8]) -> Option<&'static str> {$/;"	f
+get_lowerbound	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn get_lowerbound(&self, c: u8, count: usize, both: bool) -> usize {$/;"	P	implementation:InlineStack
+get_title	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_title() -> String {$/;"	f
+get_version	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_version() -> String {$/;"	f
+handle_emphasis	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_emphasis(&mut self) {$/;"	P	implementation:Parser
+handle_inline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline(&mut self) {$/;"	P	implementation:Parser
+handle_inline_pass1	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline_pass1(&mut self) {$/;"	P	implementation:Parser
+hash	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn hash<H: Hasher>(&self, state: &mut H) {$/;"	P	implementation:CowStr
+hash	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn hash<H: Hasher>(&self, state: &mut H) {$/;"	P	implementation:InlineStr
+html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^pub mod html;$/;"	n
+html_scan_guard	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    html_scan_guard: HtmlScanGuard,$/;"	m	struct:Parser
+html_scan_tests	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    mod html_scan_tests {$/;"	n	module:simd
+index	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: AlignmentIndex) -> &Self::Output {$/;"	P	implementation:Allocations
+index	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: CowIndex) -> &Self::Output {$/;"	P	implementation:Allocations
+index	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn index(&self, ix: LinkIndex) -> &Self::Output {$/;"	P	implementation:Allocations
+index	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn index(&self, ix: TreeIndex) -> &Self::Output {$/;"	P	implementation:Tree
+index_mut	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn index_mut(&mut self, ix: TreeIndex) -> &mut Node<T> {$/;"	P	implementation:Tree
+inline_stack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inline_stack: InlineStack,$/;"	m	struct:Parser
+inlinestr_ascii	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_ascii() {$/;"	f	module:test_special_string
+inlinestr_fits_twentytwo	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_fits_twentytwo() {$/;"	f	module:test_special_string
+inlinestr_not_fits_twentythree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_not_fits_twentythree() {$/;"	f	module:test_special_string
+inlinestr_unicode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn inlinestr_unicode() {$/;"	f	module:test_special_string
+inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: HashMap<usize, VecDeque<TreeIndex>>,$/;"	m	struct:CodeDelims
+inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: Parser<'a>,$/;"	m	struct:OffsetIter
+inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    inner: Vec<LinkStackEl>,$/;"	m	struct:LinkStack
+inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    inner: [u8; MAX_INLINE_STR_LEN],$/;"	m	struct:InlineStr
+insert	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn insert(&mut self, count: usize, ix: TreeIndex) {$/;"	P	implementation:CodeDelims
+interrupt_paragraph_by_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn interrupt_paragraph_by_list(&self, suffix: &[u8]) -> bool {$/;"	P	implementation:FirstPass
+into_offset_iter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn into_offset_iter(self) -> OffsetIter<'a> {$/;"	P	implementation:Parser
+into_string	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    pub fn into_string(self) -> String {$/;"	P	implementation:CowStr
+is_ascii_alpha	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_alpha(c: u8) -> bool {$/;"	f
+is_ascii_alphanumeric	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_alphanumeric(c: u8) -> bool {$/;"	f
+is_ascii_letterdigitdash	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_ascii_letterdigitdash(c: u8) -> bool {$/;"	f
+is_ascii_punctuation	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^pub fn is_ascii_punctuation(c: u8) -> bool {$/;"	f
+is_ascii_whitespace	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_ascii_whitespace(c: u8) -> bool {$/;"	f
+is_ascii_whitespace_no_nl	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_ascii_whitespace_no_nl(c: u8) -> bool {$/;"	f
+is_at_eol	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn is_at_eol(&self) -> bool {$/;"	P	implementation:LineStart
+is_digit	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_digit(c: u8) -> bool {$/;"	f
+is_empty	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn is_empty(&self) -> bool {$/;"	P	implementation:Tree
+is_fenced	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn is_fenced(&self) -> bool {$/;"	P	implementation:CodeBlockKind
+is_html_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn is_html_tag(tag: &[u8]) -> bool {$/;"	f
+is_indented	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn is_indented(&self) -> bool {$/;"	P	implementation:CodeBlockKind
+is_inline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn is_inline(&self) -> bool {$/;"	P	implementation:ItemBody
+is_populated	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn is_populated(&self) -> bool {$/;"	P	implementation:CodeDelims
+is_punctuation	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^pub fn is_punctuation(c: char) -> bool {$/;"	f
+is_valid_unquoted_attr_value_char	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn is_valid_unquoted_attr_value_char(c: u8) -> bool {$/;"	f
+item	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub item: T,$/;"	m	struct:Node
+item_to_event	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_event<'a>(item: Item, text: &'a str, allocs: &Allocations<'a>) -> Event<'a> {$/;"	f
+item_to_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_tag<'a>(item: &Item, allocs: &Allocations<'a>) -> Tag<'a> {$/;"	f
+iter	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    iter: I,$/;"	m	struct:HtmlWriter
+iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn iterate_special_bytes<F, T>($/;"	f
+iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn iterate_special_bytes<F, T>($/;"	f
+ix	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    ix: usize,$/;"	m	struct:LineStart
+last_line_blank	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    last_line_blank: bool,$/;"	m	struct:FirstPass
+lib	/home/sammi/rust/md_puppy/src/main.rs	/^mod lib;$/;"	n
+link_def_at_eof	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn link_def_at_eof() {$/;"	f	module:test
+link_stack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    link_stack: LinkStack,$/;"	m	struct:Parser
+link_type	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub link_type: LinkType,$/;"	m	struct:BrokenLink
+linklabel	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod linklabel;$/;"	n
+links	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    links: Vec<(LinkType, CowStr<'a>, CowStr<'a>)>,$/;"	m	struct:Allocations
+list_nesting	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    list_nesting: usize,$/;"	m	struct:FirstPass
+lone_hashtag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn lone_hashtag() {$/;"	f	module:test
+long_match	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn long_match() {$/;"	f	module:simd_test
+lookup_table	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    lookup_table: &'b LookupTable,$/;"	m	struct:FirstPass
+lots_of_backslashes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn lots_of_backslashes() {$/;"	f	module:test
+lower_bounds	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    lower_bounds: [usize; 7],$/;"	m	struct:InlineStack
+main	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^pub fn main() -> std::io::Result<()> {$/;"	f
+main	/home/sammi/rust/md_puppy/src/main.rs	/^fn main() {$/;"	f
+make_code_span	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn make_code_span(&mut self, open: TreeIndex, close: TreeIndex, preceding_backslash: bool) {$/;"	P	implementation:Parser
+markdown_parse_test	/home/sammi/rust/md_puppy/src/lib.rs	/^    fn markdown_parse_test() {$/;"	f	module:tests
+markdown_to_html_test	/home/sammi/rust/md_puppy/src/lib.rs	/^    fn markdown_to_html_test() {$/;"	f	module:tests
+max_inline_str_len_atleast_five	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn max_inline_str_len_atleast_five() {$/;"	f	module:test_special_string
+min_hrule_offset	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    min_hrule_offset: usize,$/;"	m	struct:LineStart
+multichunk	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^        fn multichunk() {$/;"	f	module:simd::html_scan_tests
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn new(iter: I, writer: W) -> Self {$/;"	f
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new() -> Self {$/;"	P	implementation:Allocations
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new() -> Self {$/;"	P	implementation:CodeDelims
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn new(text: &'a str, options: Options, lookup_table: &'b LookupTable) -> FirstPass<'a, 'b> /;"	P	implementation:FirstPass
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new(text: &'a str) -> Parser<'a> {$/;"	P	implementation:Parser
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn new(bytes: &[u8]) -> LineStart {$/;"	P	implementation:LineStart
+new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn new(i: usize) -> Self {$/;"	P	implementation:TreeIndex
+new	/home/sammi/rust/md_puppy/src/lib.rs	/^    pub fn new(args: &[String]) -> Result<Config, &str> {$/;"	P	implementation:Config
+new_ext	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_ext(text: &'a str, options: Options) -> Parser<'a> {$/;"	P	implementation:Parser
+new_with_broken_link_callback	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_with_broken_link_callback($/;"	P	implementation:Parser
+next	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn next(&mut self) -> Option<Event<'a>> {$/;"	P	implementation:Parser
+next	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn next(&mut self) -> Option<Self::Item> {$/;"	P	implementation:OffsetIter
+next	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub next: Option<TreeIndex>,$/;"	m	struct:Node
+next_sibling	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn next_sibling(&mut self, cur_ix: TreeIndex) -> Option<TreeIndex> {$/;"	P	implementation:Tree
+no_dest_refdef	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn no_dest_refdef() {$/;"	f	module:test
+no_footnote_refs_without_option	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn no_footnote_refs_without_option() {$/;"	f	module:test
+node	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    node: TreeIndex,$/;"	m	struct:LinkStackEl
+node_size	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn node_size() {$/;"	f	module:test
+nodes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    nodes: Vec<Node<T>>,$/;"	m	struct:Tree
+numbers	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    numbers: HashMap<CowStr<'a>, usize>,$/;"	m	struct:HtmlWriter
+offset_iter_issue_378	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn offset_iter_issue_378() {$/;"	f	module:test
+offset_iter_issue_404	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn offset_iter_issue_404() {$/;"	f	module:test
+only_right_bytes_matched	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^        fn only_right_bytes_matched() {$/;"	f	module:simd::html_scan_tests
+options	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    options: Options,$/;"	m	struct:FirstPass
+options	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    options: Options,$/;"	m	struct:Parser
+overflow_by_addition	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_by_addition() {$/;"	f	module:test
+overflow_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_list() {$/;"	f	module:test
+parse	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod parse;$/;"	n
+parse_atx_heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_atx_heading(&mut self, mut ix: usize, atx_size: usize) -> usize {$/;"	P	implementation:FirstPass
+parse_block	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_block(&mut self, mut start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
+parse_decimal	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn parse_decimal(bytes: &[u8]) -> (usize, usize) {$/;"	f
+parse_fenced_code_block	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_fenced_code_block($/;"	P	implementation:FirstPass
+parse_footnote	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_footnote(&mut self, start: usize) -> Option<usize> {$/;"	P	implementation:FirstPass
+parse_hex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn parse_hex(bytes: &[u8]) -> (usize, usize) {$/;"	f
+parse_hrule	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_hrule(&mut self, hrule_size: usize, ix: usize) -> usize {$/;"	P	implementation:FirstPass
+parse_html_block_type_1_to_5	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_1_to_5($/;"	P	implementation:FirstPass
+parse_html_block_type_6_or_7	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_6_or_7($/;"	P	implementation:FirstPass
+parse_indented_code_block	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_indented_code_block(&mut self, start_ix: usize, mut remaining_space: usize) -> usiz/;"	P	implementation:FirstPass
+parse_line	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_line(&mut self, start: usize, mode: TableParseMode) -> (usize, Option<Item>) {$/;"	P	implementation:FirstPass
+parse_markdown_file	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {$/;"	f
+parse_paragraph	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_paragraph(&mut self, start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
+parse_refdef_label	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_label(&self, start: usize) -> Option<(usize, CowStr<'a>)> {$/;"	P	implementation:FirstPass
+parse_refdef_total	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_total(&mut self, start: usize) -> Option<(usize, LinkLabel<'a>, LinkDef<'a>)/;"	P	implementation:FirstPass
+parse_setext_heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_setext_heading(&mut self, ix: usize, node_ix: TreeIndex) -> Option<usize> {$/;"	P	implementation:FirstPass
+parse_table	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table(&mut self, table_cols: usize, head_start: usize, body_start: usize) -> usize /;"	P	implementation:FirstPass
+parse_table_row	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table_row(&mut self, mut ix: usize, row_cells: usize) -> Option<(usize, TreeIndex)>/;"	P	implementation:FirstPass
+parse_table_row_inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_table_row_inner(&mut self, mut ix: usize, row_cells: usize) -> (usize, TreeIndex) {$/;"	P	implementation:FirstPass
+parser_with_extensions	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parser_with_extensions(text: &str) -> Parser<'_> {$/;"	f	module:test
+peek_grandparent	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn peek_grandparent(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
+peek_up	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn peek_up(&self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
+pop	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop(&mut self) -> Option<LinkStackEl> {$/;"	P	implementation:LinkStack
+pop	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop(&mut self, ix: usize) {$/;"	P	implementation:FirstPass
+pop	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn pop(&mut self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
+pop_all	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop_all(&mut self, tree: &mut Tree<Item>) {$/;"	P	implementation:InlineStack
+print_events	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn print_events(text: &str, opts: Options) {$/;"	f
+print_long_banner	/home/sammi/rust/md_puppy/src/lib.rs	/^fn print_long_banner() {$/;"	f
+print_short_banner	/home/sammi/rust/md_puppy/src/lib.rs	/^fn print_short_banner() {$/;"	f
+process_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn process_mask<F, T>($/;"	f
+processing	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub processing: usize,$/;"	m	struct:HtmlScanGuard
+puncttable	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod puncttable;$/;"	n
+push	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn push(&mut self, el: InlineEl) {$/;"	P	implementation:InlineStack
+push	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn push(&mut self, el: LinkStackEl) {$/;"	P	implementation:LinkStack
+push	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn push(&mut self) -> TreeIndex {$/;"	P	implementation:Tree
+push_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^pub fn push_html<'a, I>(s: &mut String, iter: I)$/;"	f
+raw_text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn raw_text(&mut self) -> io::Result<()> {$/;"	f
+ref_def_at_eof	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn ref_def_at_eof() {$/;"	f	module:test
+refdefs	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    refdefs: HashMap<LinkLabel<'a>, LinkDef<'a>>,$/;"	m	struct:Allocations
+reference	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub reference: &'a str,$/;"	m	struct:BrokenLink
+remaining_space	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn remaining_space(&self) -> usize {$/;"	P	implementation:LineStart
+reset	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn reset(&mut self) {$/;"	P	implementation:Tree
+return_carriage_linefeed_ok	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn return_carriage_linefeed_ok() {$/;"	f	module:test
+run	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    pub fn run(mut self) -> io::Result<()> {$/;"	f
+run	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn run(mut self) -> (Tree<Item>, Allocations<'a>) {$/;"	P	implementation:FirstPass
+run	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn run(config: Config) -> Result<(), Box<dyn Error>> {$/;"	f
+scalar	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub scalar: [bool; 256],$/;"	m	struct:LookupTable
+scalar_iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) fn scalar_iterate_special_bytes<F, T>($/;"	f
+scan_all_space	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_all_space(&mut self) {$/;"	P	implementation:LineStart
+scan_attr_value_chars	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attr_value_chars(data: &[u8]) -> usize {$/;"	f
+scan_attribute	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute($/;"	f
+scan_attribute_name	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute_name(data: &[u8]) -> Option<usize> {$/;"	f
+scan_attribute_value	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_attribute_value($/;"	f
+scan_atx_heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_atx_heading(data: &[u8]) -> Option<usize> {$/;"	f
+scan_autolink	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_autolink(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>, LinkType)/;"	f
+scan_blank_line	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_blank_line(bytes: &[u8]) -> Option<usize> {$/;"	f
+scan_blockquote_marker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_blockquote_marker(&mut self) -> bool {$/;"	P	implementation:LineStart
+scan_blockquote_start	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_blockquote_start(data: &[u8]) -> Option<usize> {$/;"	f
+scan_ch	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn scan_ch(&mut self, c: u8) -> bool {$/;"	P	implementation:LineStart
+scan_ch	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_ch(data: &[u8], c: u8) -> usize {$/;"	f
+scan_ch_repeat	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_ch_repeat(data: &[u8], c: u8) -> usize {$/;"	f
+scan_closing_code_fence	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_closing_code_fence($/;"	f
+scan_code_fence	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_code_fence(data: &[u8]) -> Option<(usize, u8)> {$/;"	f
+scan_containers	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_containers(tree: &Tree<Item>, line_start: &mut LineStart) -> usize {$/;"	f
+scan_email	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_email(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>)> {$/;"	f
+scan_empty_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_empty_list(data: &[u8]) -> bool {$/;"	f
+scan_entity	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_entity(bytes: &[u8]) -> (usize, Option<CowStr<'static>>) {$/;"	f
+scan_eol	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_eol(bytes: &[u8]) -> Option<usize> {$/;"	f
+scan_hrule	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_hrule(bytes: &[u8]) -> Result<usize, usize> {$/;"	f
+scan_html_block_inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_block_inner($/;"	f
+scan_html_block_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_block_tag(data: &[u8]) -> (usize, &[u8]) {$/;"	f
+scan_html_type_7	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_html_type_7(data: &[u8]) -> Option<usize> {$/;"	f
+scan_inline_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_inline_html(&mut self, bytes: &[u8], ix: usize) -> Option<(Vec<u8>, usize)> {$/;"	P	implementation:Parser
+scan_inline_html_comment	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_inline_html_comment($/;"	f
+scan_inline_html_processing	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_inline_html_processing($/;"	f
+scan_inline_link	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_inline_link($/;"	P	implementation:Parser
+scan_link_dest	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_link_dest($/;"	f
+scan_link_label	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_link_label<'text, 'tree>($/;"	f
+scan_link_label_rest	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^pub(crate) fn scan_link_label_rest<'t>($/;"	f
+scan_link_title	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_link_title($/;"	P	implementation:Parser
+scan_list_marker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_list_marker(&mut self) -> Option<(u8, u64, usize)> {$/;"	P	implementation:LineStart
+scan_listitem	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_listitem(bytes: &[u8]) -> Option<(usize, u8, usize, usize)> {$/;"	f
+scan_nextline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_nextline(bytes: &[u8]) -> usize {$/;"	f
+scan_nodes_to_ix	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_nodes_to_ix($/;"	f
+scan_paragraph_interrupt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_paragraph_interrupt(bytes: &[u8]) -> bool {$/;"	f
+scan_refdef	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_refdef(&self, start: usize) -> Option<(usize, LinkDef<'a>)> {$/;"	P	implementation:FirstPass
+scan_refdef_space	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn scan_refdef_space(&self, bytes: &[u8], mut i: usize) -> Option<(usize, usize)> {$/;"	P	implementation:FirstPass
+scan_refdef_title	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_refdef_title(text: &str) -> Option<(usize, &str)> {$/;"	f
+scan_reference	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn scan_reference<'a, 'b>($/;"	f
+scan_rev_while	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_rev_while<F>(data: &[u8], mut f: F) -> usize$/;"	f
+scan_setext_heading	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_setext_heading(data: &[u8]) -> Option<(usize, u32)> {$/;"	f
+scan_space	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_space(&mut self, n_space: usize) -> bool {$/;"	P	implementation:LineStart
+scan_space_inner	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn scan_space_inner(&mut self, mut n_space: usize) -> usize {$/;"	P	implementation:LineStart
+scan_space_upto	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_space_upto(&mut self, n_space: usize) -> usize {$/;"	P	implementation:LineStart
+scan_table_head	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_table_head(data: &[u8]) -> (usize, Vec<Alignment>) {$/;"	f
+scan_task_list_marker	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_task_list_marker(&mut self) -> Option<bool> {$/;"	P	implementation:LineStart
+scan_uri	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_uri(text: &str, start_ix: usize) -> Option<(usize, CowStr<'_>)> {$/;"	f
+scan_while	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_while<F>(data: &[u8], mut f: F) -> usize$/;"	f
+scan_whitespace_no_nl	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn scan_whitespace_no_nl(data: &[u8]) -> usize {$/;"	f
+scan_whitespace_with_newline_handler	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn scan_whitespace_with_newline_handler($/;"	f
+scanners	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod scanners;$/;"	n
+seen_first	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    seen_first: bool,$/;"	m	struct:CodeDelims
+set_lowerbound	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn set_lowerbound(&mut self, c: u8, count: usize, both: bool, new_bound: usize) {$/;"	P	implementation:InlineStack
+simd	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^mod simd {$/;"	n
+simd	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod simd;$/;"	n
+simd	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub simd: [u8; 16],$/;"	m	struct:LookupTable
+simd_iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn simd_iterate_special_bytes<F, T>($/;"	f
+simd_test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^mod simd_test {$/;"	n
+simple_broken_link_callback	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn simple_broken_link_callback() {$/;"	f	module:test
+simple_match	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn simple_match() {$/;"	f	module:simd_test
+simple_no_match	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn simple_no_match() {$/;"	f	module:simd_test
+single_open_fish	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn single_open_fish() {$/;"	f	module:simd_test
+single_open_fish_bracket	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn single_open_fish_bracket() {$/;"	f	module:test
+small_boxed_str_clones_to_stack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn small_boxed_str_clones_to_stack() {$/;"	f	module:test_special_string
+spaces_remaining	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    spaces_remaining: usize,$/;"	m	struct:LineStart
+span	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub span: std::ops::Range<usize>,$/;"	m	struct:BrokenLink
+special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn special_bytes(options: &Options) -> [bool; 256] {$/;"	f
+spine	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    spine: Vec<TreeIndex>, \/\/ indices of nodes on path to current node$/;"	m	struct:Tree
+spine_len	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn spine_len(&self) -> usize {$/;"	P	implementation:Tree
+stack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    stack: Vec<InlineEl>,$/;"	m	struct:InlineStack
+start	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    start: TreeIndex, \/\/ offset of tree node$/;"	m	struct:InlineEl
+start	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    start: usize,$/;"	m	struct:Item
+start_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn start_tag(&mut self, tag: Tag<'a>) -> io::Result<()> {$/;"	f
+str	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static HTML_ESCAPES: [&'static str; 5] = ["", "&quot;", "&amp;", "&lt;", "&gt;"];$/;"	v
+strings	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod strings;$/;"	n
+sub	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn sub(self, rhs: usize) -> Self {$/;"	P	implementation:TreeIndex
+surgerize_tight_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn surgerize_tight_list(tree: &mut Tree<Item>, list_ix: TreeIndex) {$/;"	f
+tab_start	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    tab_start: usize,$/;"	m	struct:LineStart
+table_alignments	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_alignments: Vec<Alignment>,$/;"	m	struct:HtmlWriter
+table_cell_index	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_cell_index: usize,$/;"	m	struct:HtmlWriter
+table_offset	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn table_offset() {$/;"	f	module:test
+table_state	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    table_state: TableState,$/;"	m	struct:HtmlWriter
+test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^mod test {$/;"	n
+test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^mod test {$/;"	n
+test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^mod test {$/;"	n
+test_ascii	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_ascii() {$/;"	f	module:tests
+test_special_string	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^mod test_special_string {$/;"	n
+test_unicode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_unicode() {$/;"	f	module:tests
+tests	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^mod tests {$/;"	n
+tests	/home/sammi/rust/md_puppy/src/lib.rs	/^mod tests {$/;"	n
+text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:FirstPass
+text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:Parser
+title	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    title: Option<CowStr<'a>>,$/;"	m	struct:LinkDef
+to_unknown	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn to_unknown(self) -> Self {$/;"	P	implementation:LinkType
+tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod tree;$/;"	n
+tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:FirstPass
+tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:Parser
+try_from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn try_from(s: &str) -> Result<InlineStr, StringTooLongError> {$/;"	P	implementation:InlineStr
+ty	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ty: LinkStackTy,$/;"	m	struct:LinkStackEl
+unescape	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn unescape(input: &str) -> CowStr<'_> {$/;"	f
+usage	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn usage() {$/;"	f
+walk_spine	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn walk_spine(&self) -> impl std::iter::DoubleEndedIterator<Item = &TreeIndex> {$/;"	P	implementation:Tree
+whitespace_normalization	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn whitespace_normalization() {$/;"	f	module:test
+with_capacity	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn with_capacity(cap: usize) -> Tree<T> {$/;"	P	implementation:Tree
+write	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn write(&mut self, s: &str) -> io::Result<()> {$/;"	f
+write_fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()> {$/;"	P	implementation:String
+write_fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()> {$/;"	f
+write_fmt	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_fmt(&mut self, args: Arguments) -> io::Result<()>;$/;"	P	interface:StrWrite
+write_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^pub fn write_html<'a, I, W>(writer: W, iter: I) -> io::Result<()>$/;"	f
+write_newline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn write_newline(&mut self) -> io::Result<()> {$/;"	f
+write_str	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()> {$/;"	P	implementation:String
+write_str	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()> {$/;"	f
+write_str	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    fn write_str(&mut self, s: &str) -> io::Result<()>;$/;"	P	interface:StrWrite
+writer	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    writer: W,$/;"	m	struct:HtmlWriter
