@@ -30,8 +30,8 @@ CodeDelims	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-
 Collapsed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed(Option<TreeIndex>),$/;"	e	enum:RefScan
 Collapsed	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Collapsed,$/;"	e	enum:LinkType
 CollapsedUnknown	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    CollapsedUnknown,$/;"	e	enum:LinkType
-Config	/home/sammi/rust/md_puppy/src/lib.rs	/^impl Config {$/;"	c
-Config	/home/sammi/rust/md_puppy/src/lib.rs	/^pub struct Config {$/;"	s
+Config	/home/sammi/rust/md_puppy/src/command_line.rs	/^impl Config {$/;"	c
+Config	/home/sammi/rust/md_puppy/src/command_line.rs	/^pub struct Config {$/;"	s
 ContinueAndSkip	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ContinueAndSkip(usize),$/;"	e	enum:LoopInstruction
 CowIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct CowIndex(usize);$/;"	s
 CowStr	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^impl<'a> AsRef<str> for CowStr<'a> {$/;"	c
@@ -203,7 +203,6 @@ TreeIndex	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-c
 W	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for &'_ mut W$/;"	c
 WriteWrapper	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<W> StrWrite for WriteWrapper<W>$/;"	c
 WriteWrapper	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub struct WriteWrapper<W>(pub W);$/;"	s
-_markdown_to_html	/home/sammi/rust/md_puppy/src/lib.rs	/^fn _markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 add	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn add(self, rhs: usize) -> Self {$/;"	P	implementation:TreeIndex
 add_lookup_byte	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^fn add_lookup_byte(lookup: &mut [u8; 16], byte: u8) {$/;"	f
 alignments	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    alignments: Vec<Vec<Alignment>>,$/;"	m	struct:Allocations
@@ -240,6 +239,7 @@ clear	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark
 clone	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn clone(&self) -> Self {$/;"	P	implementation:CowStr
 code_block_kind_check_fenced	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_fenced() {$/;"	f	module:test
 code_block_kind_check_indented	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn code_block_kind_check_indented() {$/;"	f	module:test
+command_line	/home/sammi/rust/md_puppy/src/main.rs	/^mod command_line;$/;"	n
 compute_lookup	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn compute_lookup(options: &Options) -> [u8; 16] {$/;"	f
 compute_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn compute_mask(bytes: &[u8], offset: usize) -> i32 {$/;"	f	module:simd
 compute_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn compute_mask(lut: &[u8; 16], bytes: &[u8], ix: usize) -> i32 {$/;"	f
@@ -278,7 +278,8 @@ escape_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown
 escape_html	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^pub fn escape_html<W: StrWrite>(w: W, s: &str) -> io::Result<()> {$/;"	f
 escape_html_scalar	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^fn escape_html_scalar<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f
 exhaustive_search	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn exhaustive_search() {$/;"	f	module:simd_test
-filename	/home/sammi/rust/md_puppy/src/lib.rs	/^    pub filename: String,$/;"	m	struct:Config
+file_checker	/home/sammi/rust/md_puppy/src/command_line.rs	/^pub fn file_checker(config: Config) -> Result<(), Box<dyn Error>> {$/;"	f
+filename	/home/sammi/rust/md_puppy/src/command_line.rs	/^    pub filename: String,$/;"	m	struct:Config
 find	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find(&mut self, open_ix: TreeIndex, count: usize) -> Option<TreeIndex> {$/;"	P	implementation:CodeDelims
 find_match	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find_match($/;"	P	implementation:InlineStack
 finish_list	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn finish_list(&mut self, ix: usize) {$/;"	P	implementation:FirstPass
@@ -293,12 +294,10 @@ from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-
 from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: &'a str) -> Self {$/;"	P	implementation:CowStr
 from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn from(s: String) -> Self {$/;"	P	implementation:CowStr
 get	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn get(self) -> usize {$/;"	P	implementation:TreeIndex
-get_description	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_description() -> String {$/;"	f
 get_entity	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/entities.rs	/^pub(crate) fn get_entity(bytes: &[u8]) -> Option<&'static str> {$/;"	f
 get_html_end_tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn get_html_end_tag(text_bytes: &[u8]) -> Option<&'static str> {$/;"	f
 get_lowerbound	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn get_lowerbound(&self, c: u8, count: usize, both: bool) -> usize {$/;"	P	implementation:InlineStack
-get_title	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_title() -> String {$/;"	f
-get_version	/home/sammi/rust/md_puppy/src/lib.rs	/^fn get_version() -> String {$/;"	f
+get_title	/home/sammi/rust/md_puppy/src/command_line.rs	/^fn get_title() -> String {$/;"	f
 handle_emphasis	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_emphasis(&mut self) {$/;"	P	implementation:Parser
 handle_inline	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline(&mut self) {$/;"	P	implementation:Parser
 handle_inline_pass1	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn handle_inline_pass1(&mut self) {$/;"	P	implementation:Parser
@@ -349,7 +348,6 @@ iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec82
 iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn iterate_special_bytes<F, T>($/;"	f
 ix	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    ix: usize,$/;"	m	struct:LineStart
 last_line_blank	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    last_line_blank: bool,$/;"	m	struct:FirstPass
-lib	/home/sammi/rust/md_puppy/src/main.rs	/^mod lib;$/;"	n
 link_def_at_eof	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn link_def_at_eof() {$/;"	f	module:test
 link_stack	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    link_stack: LinkStack,$/;"	m	struct:Parser
 link_type	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub link_type: LinkType,$/;"	m	struct:BrokenLink
@@ -364,8 +362,10 @@ lower_bounds	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldow
 main	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^pub fn main() -> std::io::Result<()> {$/;"	f
 main	/home/sammi/rust/md_puppy/src/main.rs	/^fn main() {$/;"	f
 make_code_span	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn make_code_span(&mut self, open: TreeIndex, close: TreeIndex, preceding_backslash: bool) {$/;"	P	implementation:Parser
-markdown_parse_test	/home/sammi/rust/md_puppy/src/lib.rs	/^    fn markdown_parse_test() {$/;"	f	module:tests
-markdown_to_html_test	/home/sammi/rust/md_puppy/src/lib.rs	/^    fn markdown_to_html_test() {$/;"	f	module:tests
+markdown_compiling	/home/sammi/rust/md_puppy/src/main.rs	/^mod markdown_compiling;$/;"	n
+markdown_parse_test	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^    fn markdown_parse_test() {$/;"	f	module:tests
+markdown_to_html	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^pub fn markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {$/;"	f
+markdown_to_html_test	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^    fn markdown_to_html_test() {$/;"	f	module:tests
 max_inline_str_len_atleast_five	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn max_inline_str_len_atleast_five() {$/;"	f	module:test_special_string
 min_hrule_offset	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    min_hrule_offset: usize,$/;"	m	struct:LineStart
 multichunk	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^        fn multichunk() {$/;"	f	module:simd::html_scan_tests
@@ -376,7 +376,7 @@ new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0
 new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new(text: &'a str) -> Parser<'a> {$/;"	P	implementation:Parser
 new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn new(bytes: &[u8]) -> LineStart {$/;"	P	implementation:LineStart
 new	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn new(i: usize) -> Self {$/;"	P	implementation:TreeIndex
-new	/home/sammi/rust/md_puppy/src/lib.rs	/^    pub fn new(args: &[String]) -> Result<Config, &str> {$/;"	P	implementation:Config
+new	/home/sammi/rust/md_puppy/src/command_line.rs	/^    pub fn new(args: &[String]) -> Result<Config, &str> {$/;"	P	implementation:Config
 new_ext	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_ext(text: &'a str, options: Options) -> Parser<'a> {$/;"	P	implementation:Parser
 new_with_broken_link_callback	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub fn new_with_broken_link_callback($/;"	P	implementation:Parser
 next	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn next(&mut self) -> Option<Event<'a>> {$/;"	P	implementation:Parser
@@ -408,7 +408,7 @@ parse_html_block_type_1_to_5	/home/sammi/.cargo/registry/src/github.com-1ecc6299
 parse_html_block_type_6_or_7	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_6_or_7($/;"	P	implementation:FirstPass
 parse_indented_code_block	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_indented_code_block(&mut self, start_ix: usize, mut remaining_space: usize) -> usiz/;"	P	implementation:FirstPass
 parse_line	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_line(&mut self, start: usize, mode: TableParseMode) -> (usize, Option<Item>) {$/;"	P	implementation:FirstPass
-parse_markdown_file	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {$/;"	f
+parse_markdown_file	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {$/;"	f
 parse_paragraph	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_paragraph(&mut self, start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
 parse_refdef_label	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_label(&self, start: usize) -> Option<(usize, CowStr<'a>)> {$/;"	P	implementation:FirstPass
 parse_refdef_total	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_refdef_total(&mut self, start: usize) -> Option<(usize, LinkLabel<'a>, LinkDef<'a>)/;"	P	implementation:FirstPass
@@ -424,8 +424,8 @@ pop	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0
 pop	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn pop(&mut self) -> Option<TreeIndex> {$/;"	P	implementation:Tree
 pop_all	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn pop_all(&mut self, tree: &mut Tree<Item>) {$/;"	P	implementation:InlineStack
 print_events	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/main.rs	/^fn print_events(text: &str, opts: Options) {$/;"	f
-print_long_banner	/home/sammi/rust/md_puppy/src/lib.rs	/^fn print_long_banner() {$/;"	f
-print_short_banner	/home/sammi/rust/md_puppy/src/lib.rs	/^fn print_short_banner() {$/;"	f
+print_long_banner	/home/sammi/rust/md_puppy/src/command_line.rs	/^fn print_long_banner() {$/;"	f
+print_short_banner	/home/sammi/rust/md_puppy/src/command_line.rs	/^pub fn print_short_banner() {$/;"	f
 process_mask	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^unsafe fn process_mask<F, T>($/;"	f
 processing	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub processing: usize,$/;"	m	struct:HtmlScanGuard
 puncttable	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod puncttable;$/;"	n
@@ -442,7 +442,6 @@ reset	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark
 return_carriage_linefeed_ok	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn return_carriage_linefeed_ok() {$/;"	f	module:test
 run	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    pub fn run(mut self) -> io::Result<()> {$/;"	f
 run	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn run(mut self) -> (Tree<Item>, Allocations<'a>) {$/;"	P	implementation:FirstPass
-run	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn run(config: Config) -> Result<(), Box<dyn Error>> {$/;"	f
 scalar	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    pub scalar: [bool; 256],$/;"	m	struct:LookupTable
 scalar_iterate_special_bytes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) fn scalar_iterate_special_bytes<F, T>($/;"	f
 scan_all_space	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn scan_all_space(&mut self) {$/;"	P	implementation:LineStart
@@ -536,7 +535,7 @@ test_ascii	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-
 test_special_string	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^mod test_special_string {$/;"	n
 test_unicode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_unicode() {$/;"	f	module:tests
 tests	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^mod tests {$/;"	n
-tests	/home/sammi/rust/md_puppy/src/lib.rs	/^mod tests {$/;"	n
+tests	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^mod tests {$/;"	n
 text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:FirstPass
 text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:Parser
 title	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    title: Option<CowStr<'a>>,$/;"	m	struct:LinkDef
@@ -547,7 +546,7 @@ tree	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-
 try_from	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn try_from(s: &str) -> Result<InlineStr, StringTooLongError> {$/;"	P	implementation:InlineStr
 ty	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ty: LinkStackTy,$/;"	m	struct:LinkStackEl
 unescape	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^pub(crate) fn unescape(input: &str) -> CowStr<'_> {$/;"	f
-usage	/home/sammi/rust/md_puppy/src/lib.rs	/^pub fn usage() {$/;"	f
+usage	/home/sammi/rust/md_puppy/src/command_line.rs	/^pub fn usage() {$/;"	f
 walk_spine	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn walk_spine(&self) -> impl std::iter::DoubleEndedIterator<Item = &TreeIndex> {$/;"	P	implementation:Tree
 whitespace_normalization	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^    fn whitespace_normalization() {$/;"	f	module:test
 with_capacity	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub fn with_capacity(cap: usize) -> Tree<T> {$/;"	P	implementation:Tree

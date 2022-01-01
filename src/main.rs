@@ -1,8 +1,10 @@
 use std::env;
 use std::process;
 
-mod lib;
-use lib::{parse_markdown_file, run, usage, Config};
+mod command_line;
+mod markdown_compiling;
+use command_line::{file_checker, usage, Config};
+use markdown_compiling::markdown_to_html;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -12,15 +14,14 @@ fn main() {
         process::exit(1);
     });
 
-    if let Err(e) = run(config) {
+    if let Err(e) = file_checker(config) {
         eprintln!("Application error: {}", e);
-
         process::exit(1);
     };
 
     match args.len() {
         2 => {
-            parse_markdown_file(&args[1]).expect("Error: Could not parse file");
+            markdown_to_html(&args[1]).expect("Error: Could not parse file");
         }
         _ => {
             eprintln!("Error: Invalid Invocation");
