@@ -216,6 +216,7 @@ append_html_line	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/p
 append_text	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn append_text(&mut self, start: usize, end: usize) {$/;"	P	implementation:Tree
 as_ref	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:CowStr
 as_ref	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn as_ref(&self) -> &str {$/;"	P	implementation:InlineStr
+banner_tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn banner_tests() {$/;"	f	module:tests
 begin_list_item	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    begin_list_item: bool,$/;"	m	struct:FirstPass
 body	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    body: ItemBody,$/;"	m	struct:Item
 body_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn body_size() {$/;"	f	module:test
@@ -241,6 +242,8 @@ code_block_kind_check_indented	/home/annalee/.cargo/registry/src/github.com-1ecc
 command_line	/mnt/c/Users/SamanthaC/rust/md_puppy/src/main.rs	/^mod command_line;$/;"	n
 compute_lookup	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^pub(crate) fn compute_lookup(options: &Options) -> [u8; 16] {$/;"	f
 compute_mask	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    unsafe fn compute_mask(bytes: &[u8], offset: usize) -> i32 {$/;"	f	module:simd
+config_fail_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn config_fail_test() {$/;"	f	module:tests
+config_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn config_test() {$/;"	f	module:tests
 continue_list	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn continue_list(&mut self, start: usize, ch: u8, index: u64) {$/;"	P	implementation:FirstPass
 count	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    count: usize,$/;"	m	struct:InlineEl
 count_header_cols	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn count_header_cols($/;"	f
@@ -277,6 +280,7 @@ escape_html	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldo
 escape_html_scalar	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^fn escape_html_scalar<W: StrWrite>(mut w: W, s: &str) -> io::Result<()> {$/;"	f
 exhaustive_search	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn exhaustive_search() {$/;"	f	module:simd_test
 file_checker	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^pub fn file_checker(config: Config) -> Result<(), Box<dyn Error>> {$/;"	f
+file_checker_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn file_checker_test() {$/;"	f	module:tests
 filename	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    pub filename: String,$/;"	m	struct:Config
 find	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find(&mut self, open_ix: TreeIndex, count: usize) -> Option<TreeIndex> {$/;"	P	implementation:CodeDelims
 find_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn find_match($/;"	P	implementation:InlineStack
@@ -533,6 +537,7 @@ test_ascii	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldow
 test_special_string	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^mod test_special_string {$/;"	n
 test_unicode	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_unicode() {$/;"	f	module:tests
 tests	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^mod tests {$/;"	n
+tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^mod tests {$/;"	n
 tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^mod tests {$/;"	n
 text	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:FirstPass
 text	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:Parser

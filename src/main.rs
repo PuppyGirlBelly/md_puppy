@@ -20,7 +20,7 @@ fn main() {
     };
 
     match args.len() {
-        2 => {
+        1 => {
             markdown_to_html(&args[1]).expect("Error: Could not parse file");
         }
         _ => {

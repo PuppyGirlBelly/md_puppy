@@ -36,12 +36,9 @@ pub fn markdown_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
     let mut outfile =
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
 
-    for line in input.lines() {
-        let line_with_ending = line.to_owned() + "\n";
-        outfile
-            .write_all(line_with_ending.as_bytes())
-            .expect("[ ERROR ] Could not write to output file!");
-    }
+    outfile
+        .write_all(input.as_bytes())
+        .expect("[ ERROR ] Could not write to output file!");
 
     println!("[ INFO ] Parsing complete!");
     Ok(())
@@ -71,7 +68,7 @@ look like:</p>
 
     #[test]
     fn markdown_to_html_test() {
-        assert!(_markdown_to_html("src/example_short.md").is_ok());
+        assert!(markdown_to_html("src/example_short.md").is_ok());
         let output: String = fs::read_to_string("src/example_short.html").unwrap();
         let answer = "\
 <h1>An h1 header</h1>
