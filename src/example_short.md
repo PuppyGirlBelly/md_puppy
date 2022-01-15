@@ -1,3 +1,10 @@
+--- 
+title: String,
+description: String,
+categories: Vec<String>,
+date: String,
+---
+
 # An h1 header
 ============
 
