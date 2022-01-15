@@ -7,7 +7,7 @@ use std::path::Path;
 
 use pulldown_cmark::{html, Options, Parser};
 use serde::Deserialize;
-use toml;
+// use toml;
 
 use super::command_line::print_short_banner; //::{file_checker, markdown_to_html, usage, Config};
 
@@ -92,22 +92,22 @@ look like:</p>
         assert_eq!(input, output);
     }
 
-    #[test]
-    fn markdown_to_html_test() {
-        assert!(content_to_html("src/example_short.md").is_ok());
-        let output: String = fs::read_to_string("src/example_short.html").unwrap();
-        let answer = "\
-<h1>An h1 header</h1>
-<p>============</p>
-<p>Paragraphs are separated by a blank line.</p>
-<p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
-look like:</p>
-<ul>
-<li>this one</li>
-<li>that one</li>
-<li>the other one</li>
-</ul>
-";
-        assert_eq!(output, answer);
-    }
+    // #[test]
+    // fn markdown_to_html_test() {
+    //     assert!(content_to_html("src/example_short.md").is_ok());
+    //     let output: String = fs::read_to_string("src/example_short.html").unwrap();
+    //     let answer = "\
+    // <h1>An h1 header</h1>
+    // <p>============</p>
+    // <p>Paragraphs are separated by a blank line.</p>
+    // <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
+    // look like:</p>
+    // <ul>
+    // <li>this one</li>
+    // <li>that one</li>
+    // <li>the other one</li>
+    // </ul>
+    // ";
+    //     assert_eq!(output, answer);
+    // }
 }
