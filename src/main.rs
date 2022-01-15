@@ -5,7 +5,7 @@ mod command_line;
 mod markdown_compiling;
 
 use command_line::{file_checker, usage, Input};
-use markdown_compiling::content_to_html;
+use markdown_compiling::file_to_html;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -22,7 +22,7 @@ fn main() {
 
     match args.len() {
         1 => {
-            content_to_html(&args[1]).expect("Error: Could not parse file");
+            file_to_html(&args[1]).expect("Error: Could not parse file");
         }
         _ => {
             eprintln!("Error: Invalid Invocation");

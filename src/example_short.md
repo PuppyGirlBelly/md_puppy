@@ -1,8 +1,9 @@
---- 
-title: String,
-description: String,
-categories: Vec<String>,
-date: String,
+---
+title: example_title
+description: example_description
+categories: 
+- example_category
+date: example_date
 ---
 
 # An h1 header

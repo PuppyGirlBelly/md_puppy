@@ -10,5 +10,5 @@ homepage = "https://softannalee.github.io"
 
 [dependencies]
 pulldown-cmark = "0.8.0"
-toml = "0.5.8"
+yaml-rust = "0.4.5"
 serde = {version = "1.0.133", features = ["derive"] }

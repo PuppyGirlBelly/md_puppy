@@ -7,7 +7,7 @@ use std::path::Path;
 
 use pulldown_cmark::{html, Options, Parser};
 use serde::Deserialize;
-// use toml;
+use yaml_rust::YamlLoader;
 
 use super::command_line::print_short_banner; //::{file_checker, markdown_to_html, usage, Config};
 
@@ -21,41 +21,72 @@ pub struct Page {
 }
 
 impl Page {
-    pub fn new(filename: String) -> Result<Page, Box<dyn Error>> {
-        let result = Page {
-            title: String::from("test_title"),
-            description: String::from("test_description"),
-            categories: vec![String::from("test_cat")],
-            date: String::from("test_date"),
-            content: parse_markdown_file(&filename).unwrap(),
-        };
-
-        Ok(result)
+    pub fn new() -> Page {
+        Page {
+            title: String::from("default_title"),
+            description: String::from("default_description"),
+            categories: vec![String::from("default_cat")],
+            date: String::from("default_date"),
+            content: String::from("<h1>default_content</h1>"),
+        }
     }
 }
 
-fn parse_markdown_file(filename: &str) -> Result<String, Box<dyn Error>> {
+fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
     print_short_banner();
     println!("[ INFO ] Trying to parse {}...", filename);
 
     let path: &Path = Path::new(filename);
     let input: String = fs::read_to_string(path).expect("[ ERROR ] Failed to open file!");
 
+    let mut page: Page = Page::new();
+
+    let output: Vec<&str> = input.split("---").filter(|&x| !x.is_empty()).collect();
+    parse_frontmatter(output[0], &mut page)?;
+    page.content = content_to_html(output[1])?;
+    println!("[ INFO ] Parsing {:?} complete!", path);
+    println!("output: {:?}", output);
+
+    Ok(page)
+}
+
+fn parse_frontmatter<'a>(
+    frontmatter: &'a str,
+    page: &'a mut Page,
+) -> Result<&'a Page, Box<dyn Error>> {
+    let yaml = YamlLoader::load_from_str(frontmatter).unwrap();
+    let fm = &yaml[0];
+
+    page.title = fm["title"].as_str().unwrap().to_string();
+    page.description = fm["description"].as_str().unwrap().to_string();
+    page.date = fm["date"].as_str().unwrap().to_string();
+
+    let fm_cat = fm["categories"].as_vec().unwrap();
+    let mut categories: Vec<String> = Vec::new();
+    for cat in fm_cat {
+        categories.push(cat.as_str().unwrap().to_string());
+    }
+    page.categories = categories;
+
+    Ok(page)
+}
+
+pub fn content_to_html(input: &str) -> Result<String, Box<dyn Error>> {
     // Setup options and commonmark parser
     let mut parser_options = pulldown_cmark::Options::empty();
     parser_options.insert(Options::ENABLE_STRIKETHROUGH);
-    let parser = Parser::new_ext(&input, parser_options);
+    let parser = Parser::new_ext(input, parser_options);
 
     // Write to String buffer
     let mut html_output = String::new();
     html::push_html(&mut html_output, parser);
 
-    println!("[ INFO ] Parsing {:?} complete!", path);
     Ok(html_output)
 }
 
-pub fn content_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
-    let input: String = parse_markdown_file(filename)?;
+pub fn file_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
+    let page: Page = parse_markdown_file(filename)?;
+    let content: String = page.content;
     let mut output_filename = String::from(&filename[..filename.len() - 3]);
     output_filename.push_str(".html");
 
@@ -63,7 +94,7 @@ pub fn content_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
 
     outfile
-        .write_all(input.as_bytes())
+        .write_all(content.as_bytes())
         .expect("[ ERROR ] Could not write to output file!");
 
     println!("[ INFO ] Parsing complete!");
@@ -76,8 +107,8 @@ mod tests {
 
     #[test]
     fn markdown_parse_test() {
-        let input: String = parse_markdown_file("src/example_short.md").unwrap();
-        let output = "\
+        let output: Page = parse_markdown_file("src/example_short.md").unwrap();
+        let answer = "\
 <h1>An h1 header</h1>
 <p>============</p>
 <p>Paragraphs are separated by a blank line.</p>
@@ -89,25 +120,29 @@ look like:</p>
 <li>the other one</li>
 </ul>
 ";
-        assert_eq!(input, output);
+        assert_eq!(output.content, answer);
     }
 
-    // #[test]
-    // fn markdown_to_html_test() {
-    //     assert!(content_to_html("src/example_short.md").is_ok());
-    //     let output: String = fs::read_to_string("src/example_short.html").unwrap();
-    //     let answer = "\
-    // <h1>An h1 header</h1>
-    // <p>============</p>
-    // <p>Paragraphs are separated by a blank line.</p>
-    // <p>2nd paragraph. <em>Italic</em>, <strong>bold</strong>, and <code>monospace</code>. Itemized lists
-    // look like:</p>
-    // <ul>
-    // <li>this one</li>
-    // <li>that one</li>
-    // <li>the other one</li>
-    // </ul>
-    // ";
-    //     assert_eq!(output, answer);
-    // }
+    #[test]
+    fn frontmatter_parsing_test() {
+        let mut page: Page = Page::new();
+        let frontmatter: &str = "---
+title: example_title
+description: example_description
+categories: 
+- example_category
+- testo
+- pineapple
+date: example_date
+";
+
+        parse_frontmatter(frontmatter, &mut page).expect("[ ERROR ] Failed to parse frontatter!");
+
+        assert_eq!(page.title, String::from("example_title"));
+        assert_eq!(page.description, String::from("example_description"));
+        assert_eq!(page.categories[0], String::from("example_category"));
+        assert_eq!(page.categories[1], String::from("testo"));
+        assert_eq!(page.categories[2], String::from("pineapple"));
+        assert_eq!(page.date, String::from("example_date"));
+    }
 }
