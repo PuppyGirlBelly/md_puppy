@@ -3,6 +3,7 @@ use std::process;
 
 mod command_line;
 mod markdown_compiling;
+mod template_processing;
 
 use command_line::{file_checker, usage, Input};
 use markdown_compiling::file_to_html;

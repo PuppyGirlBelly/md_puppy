@@ -1187,7 +1187,6 @@ bytes_scanned	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldo
 c	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    c: u8,      \/\/ b'*' or b'_'$/;"	m	struct:InlineEl
 calc_indent	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn calc_indent(text: &[u8], max: usize) -> (usize, usize) {$/;"	f
 case	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.133/src/internals/mod.rs	/^mod case;$/;"	n
-categories	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^    pub categories: Vec<String>,$/;"	m	struct:Page
 cause	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    fn cause(&self) -> Option<&dyn Error> {$/;"	P	implementation:EmitError
 cause	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn cause(&self) -> Option<&dyn Error> {$/;"	P	implementation:ScanError
 cautious	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/size_hint.rs	/^pub fn cautious(hint: Option<usize>) -> usize {$/;"	f
@@ -2564,6 +2563,8 @@ tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/sr
 tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.133/src/internals/attr.rs	/^    pub fn tag(&self) -> &TagType {$/;"	P	implementation:Container
 tag	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.133/src/internals/attr.rs	/^    tag: TagType,$/;"	m	struct:Container
 tag_name	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/de.rs	/^        tag_name: &'static str,$/;"	m	struct:content::TaggedContentVisitor
+tags	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^    pub tags: Vec<String>,$/;"	m	struct:Page
+template_processing	/home/sammi/rust/md_puppy/src/main.rs	/^mod template_processing;$/;"	n
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/linklabel.rs	/^mod test {$/;"	n
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^mod test {$/;"	n
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^mod test {$/;"	n
@@ -2571,6 +2572,7 @@ test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^mod test {$/;"	n
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^mod test {$/;"	n
 test	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^mod test {$/;"	n
+test	/home/sammi/rust/md_puppy/src/template_processing.rs	/^    fn test() {$/;"	f	module:tests
 test_a_flow_mapping	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn test_a_flow_mapping() {$/;"	f	module:test
 test_a_flow_sequence	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn test_a_flow_sequence() {$/;"	f	module:test
 test_anchor	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    fn test_anchor() {$/;"	f	module:test
@@ -2623,10 +2625,12 @@ test_two_space_indentations	/home/sammi/.cargo/registry/src/github.com-1ecc6299d
 test_unicode	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^    fn test_unicode() {$/;"	f	module:tests
 test_uri	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn test_uri() {$/;"	f	module:test
 test_uri_escapes	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn test_uri_escapes() {$/;"	f	module:test
+testo	/home/sammi/rust/md_puppy/src/template_processing.rs	/^pub fn testo() -> Result<(), Box<dyn Error>> {$/;"	f
 tests	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/puncttable.rs	/^mod tests {$/;"	n
 tests	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/lib.rs	/^mod tests {$/;"	n
 tests	/home/sammi/rust/md_puppy/src/command_line.rs	/^mod tests {$/;"	n
 tests	/home/sammi/rust/md_puppy/src/markdown_compiling.rs	/^mod tests {$/;"	n
+tests	/home/sammi/rust/md_puppy/src/template_processing.rs	/^mod tests {$/;"	n
 text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:FirstPass
 text	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    text: &'a str,$/;"	m	struct:Parser
 this	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.133/src/de.rs	/^    this: syn::Path,$/;"	m	struct:Parameters

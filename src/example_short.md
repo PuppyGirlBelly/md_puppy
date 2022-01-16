@@ -1,7 +1,7 @@
 ---
 title: example_title
 description: example_description
-categories: 
+tags: 
 - example_category
 date: example_date
 ---

@@ -15,7 +15,7 @@ use super::command_line::print_short_banner; //::{file_checker, markdown_to_html
 pub struct Page {
     pub title: String,
     pub description: String,
-    pub categories: Vec<String>,
+    pub tags: Vec<String>,
     pub date: String,
     pub content: String,
 }
@@ -25,7 +25,7 @@ impl Page {
         Page {
             title: String::from("default_title"),
             description: String::from("default_description"),
-            categories: vec![String::from("default_cat")],
+            tags: vec![String::from("default_cat")],
             date: String::from("default_date"),
             content: String::from("<h1>default_content</h1>"),
         }
@@ -61,12 +61,12 @@ fn parse_frontmatter<'a>(
     page.description = fm["description"].as_str().unwrap().to_string();
     page.date = fm["date"].as_str().unwrap().to_string();
 
-    let fm_cat = fm["categories"].as_vec().unwrap();
-    let mut categories: Vec<String> = Vec::new();
-    for cat in fm_cat {
-        categories.push(cat.as_str().unwrap().to_string());
+    let fm_tags = fm["tags"].as_vec().unwrap();
+    let mut tags: Vec<String> = Vec::new();
+    for tag in fm_tags {
+        tags.push(tag.as_str().unwrap().to_string());
     }
-    page.categories = categories;
+    page.tags = tags;
 
     Ok(page)
 }
@@ -129,20 +129,19 @@ look like:</p>
         let frontmatter: &str = "---
 title: example_title
 description: example_description
-categories: 
-- example_category
+tags: 
+- example_tag
 - testo
 - pineapple
 date: example_date
 ";
-
         parse_frontmatter(frontmatter, &mut page).expect("[ ERROR ] Failed to parse frontatter!");
 
         assert_eq!(page.title, String::from("example_title"));
         assert_eq!(page.description, String::from("example_description"));
-        assert_eq!(page.categories[0], String::from("example_category"));
-        assert_eq!(page.categories[1], String::from("testo"));
-        assert_eq!(page.categories[2], String::from("pineapple"));
+        assert_eq!(page.tags[0], String::from("example_tag"));
+        assert_eq!(page.tags[1], String::from("testo"));
+        assert_eq!(page.tags[2], String::from("pineapple"));
         assert_eq!(page.date, String::from("example_date"));
     }
 }
