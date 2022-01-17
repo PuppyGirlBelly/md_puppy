@@ -15,6 +15,8 @@ use super::command_line::print_short_banner; //::{file_checker, markdown_to_html
 pub struct Page {
     pub title: String,
     pub description: String,
+    // TODO: Swap tags to single category, there will only be one category
+    // pub category: String,
     pub tags: Vec<String>,
     pub date: String,
     pub content: String,
@@ -32,7 +34,7 @@ impl Page {
     }
 }
 
-fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
+pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
     print_short_banner();
     println!("[ INFO ] Trying to parse {}...", filename);
 
