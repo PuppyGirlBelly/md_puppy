@@ -6,7 +6,7 @@ mod markdown_compiling;
 mod template_processing;
 
 use command_line::{file_checker, usage, Input};
-use markdown_compiling::file_to_html;
+use template_processing::file_to_html;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -23,7 +23,7 @@ fn main() {
 
     match args.len() {
         1 => {
-            file_to_html(&args[1]).expect("Error: Could not parse file");
+            file_to_html(&args[1], "src/boilerplate.html").expect("Error: Could not parse file");
         }
         _ => {
             eprintln!("Error: Invalid Invocation");

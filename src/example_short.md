@@ -1,9 +1,8 @@
 ---
-title: example_title
-description: example_description
-tags: 
-- example_category
-date: example_date
+title: A Short Example
+description: this is a short example of a markdown file
+category: examples
+date: 2022-01-17T12:34:11-0700
 ---
 
 # An h1 header

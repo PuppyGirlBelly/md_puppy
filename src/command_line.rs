@@ -9,8 +9,8 @@ pub struct Input {
 impl Input {
     pub fn new(args: &[String]) -> Result<Input, &str> {
         match args.len() {
-            arg if arg < 1 => Err("Not enough arguments"),
-            arg if arg > 1 => Err("Too many arguments"),
+            arg if arg < 2 => Err("Not enough arguments"),
+            arg if arg > 2 => Err("Too many arguments"),
             _ => {
                 let filename = args[0].clone();
                 let site_name = String::from("md_puppy");
@@ -86,17 +86,4 @@ mod tests {
         let test_config: Input = Input::new(&input).unwrap();
         assert!(file_checker(test_config).is_err());
     }
-
-    // #[test]
-    // fn banner_tests() {
-    //     assert_eq!(get_version(), String::from("0.1.0"));
-    //     assert_eq!(
-    //         get_description(),
-    //         String::from("A personal static site generator writeen by AnnaLee")
-    //     );
-    //     assert_eq!(
-    //         get_title(),
-    //         String::from("md_puppy (v: 0.1.0) A personal static site generator writeen by AnnaLee")
-    //     );
-    // }
 }

@@ -15,10 +15,9 @@ use super::command_line::print_short_banner; //::{file_checker, markdown_to_html
 pub struct Page {
     pub title: String,
     pub description: String,
-    // TODO: Swap tags to single category, there will only be one category
-    // pub category: String,
-    pub tags: Vec<String>,
+    pub category: String,
     pub date: String,
+    pub site_name: String,
     pub content: String,
 }
 
@@ -27,8 +26,9 @@ impl Page {
         Page {
             title: String::from("default_title"),
             description: String::from("default_description"),
-            tags: vec![String::from("default_cat")],
+            category: String::from("default_cat"),
             date: String::from("default_date"),
+            site_name: String::from("default_site_name"),
             content: String::from("<h1>default_content</h1>"),
         }
     }
@@ -45,9 +45,8 @@ pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
 
     let output: Vec<&str> = input.split("---").filter(|&x| !x.is_empty()).collect();
     parse_frontmatter(output[0], &mut page)?;
-    page.content = content_to_html(output[1])?;
+    page.content = content_to_html(output[1]);
     println!("[ INFO ] Parsing {:?} complete!", path);
-    println!("output: {:?}", output);
 
     Ok(page)
 }
@@ -56,24 +55,18 @@ fn parse_frontmatter<'a>(
     frontmatter: &'a str,
     page: &'a mut Page,
 ) -> Result<&'a Page, Box<dyn Error>> {
-    let yaml = YamlLoader::load_from_str(frontmatter).unwrap();
+    let yaml = YamlLoader::load_from_str(frontmatter)?;
     let fm = &yaml[0];
 
     page.title = fm["title"].as_str().unwrap().to_string();
     page.description = fm["description"].as_str().unwrap().to_string();
     page.date = fm["date"].as_str().unwrap().to_string();
-
-    let fm_tags = fm["tags"].as_vec().unwrap();
-    let mut tags: Vec<String> = Vec::new();
-    for tag in fm_tags {
-        tags.push(tag.as_str().unwrap().to_string());
-    }
-    page.tags = tags;
+    page.category = fm["category"].as_str().unwrap().to_string();
 
     Ok(page)
 }
 
-pub fn content_to_html(input: &str) -> Result<String, Box<dyn Error>> {
+pub fn content_to_html(input: &str) -> String {
     // Setup options and commonmark parser
     let mut parser_options = pulldown_cmark::Options::empty();
     parser_options.insert(Options::ENABLE_STRIKETHROUGH);
@@ -83,24 +76,7 @@ pub fn content_to_html(input: &str) -> Result<String, Box<dyn Error>> {
     let mut html_output = String::new();
     html::push_html(&mut html_output, parser);
 
-    Ok(html_output)
-}
-
-pub fn file_to_html(filename: &str) -> Result<(), Box<dyn Error>> {
-    let page: Page = parse_markdown_file(filename)?;
-    let content: String = page.content;
-    let mut output_filename = String::from(&filename[..filename.len() - 3]);
-    output_filename.push_str(".html");
-
-    let mut outfile =
-        File::create(output_filename).expect("[ ERROR ] Could not create output file!");
-
-    outfile
-        .write_all(content.as_bytes())
-        .expect("[ ERROR ] Could not write to output file!");
-
-    println!("[ INFO ] Parsing complete!");
-    Ok(())
+    html_output
 }
 
 #[cfg(test)]
@@ -131,19 +107,14 @@ look like:</p>
         let frontmatter: &str = "---
 title: example_title
 description: example_description
-tags: 
-- example_tag
-- testo
-- pineapple
+category: example_category
 date: example_date
 ";
         parse_frontmatter(frontmatter, &mut page).expect("[ ERROR ] Failed to parse frontatter!");
 
         assert_eq!(page.title, String::from("example_title"));
         assert_eq!(page.description, String::from("example_description"));
-        assert_eq!(page.tags[0], String::from("example_tag"));
-        assert_eq!(page.tags[1], String::from("testo"));
-        assert_eq!(page.tags[2], String::from("pineapple"));
+        assert_eq!(page.category, String::from("example_category"));
         assert_eq!(page.date, String::from("example_date"));
     }
 }
