@@ -61,7 +61,7 @@ mod tests {
 
     #[test]
     fn config_test() {
-        let input = [String::from("test")];
+        let input = [String::from("test"), String::from("src/boilerplate.html")];
         let test_config: Input = Input::new(&input).unwrap();
 
         assert_eq!(test_config.filename, "test");
@@ -72,17 +72,27 @@ mod tests {
     fn config_fail_test() {
         let input = [];
         assert!(Input::new(&input).is_err());
-        let input = [String::from("test"), String::from("test")];
+        let input = [
+            String::from("test"),
+            String::from("test"),
+            String::from("src/boilerplate.html"),
+        ];
         assert!(Input::new(&input).is_err());
     }
 
     #[test]
     fn file_checker_test() {
-        let input = [String::from("src/example_short.md")];
+        let input = [
+            String::from("src/example_short.md"),
+            String::from("src/boilerplate.html"),
+        ];
         let test_config: Input = Input::new(&input).unwrap();
         assert!(file_checker(test_config).is_ok());
 
-        let input = [String::from("src/not_an_example.md")];
+        let input = [
+            String::from("src/not_an_example.md"),
+            String::from("src/boilerplate.html"),
+        ];
         let test_config: Input = Input::new(&input).unwrap();
         assert!(file_checker(test_config).is_err());
     }
