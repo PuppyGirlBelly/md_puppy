@@ -17,7 +17,7 @@ tmux new-session -d -s $session -n nvim
 
 # Select pane 1, set dir to api, run vim
 tmux selectp -t 0
-tmux send-keys "nvim src/main.rs src/*.rs" C-m 
+tmux send-keys "nvim -c 'SessionManager load_current_dir_session'" C-m 
 
 # Split pane 1 horizontal by 65%
 tmux splitw -h -p 10
