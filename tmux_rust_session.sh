@@ -24,20 +24,8 @@ tmux splitw -h -p 10
 tmux resize-pane -R 30
 tmux send-keys "cargo watch -c -i '*.html' -x test" C-m 
 
-# # Select pane 2 
-# tmux selectp -t 2
-# # Split pane 2 vertiacally by 25%
-# tmux splitw -v -p 75
-
-# # select pane 3, set to api root
-# tmux selectp -t 3
-# tmux send-keys "api" C-m 
-
-# # Select pane 1
-# tmux selectp -t 1
-
-# # create a new window called scratch
-# tmux new-window -t $session:1 -n scratch
+# Select pane 0
+tmux selectp -t 0
 
 # return to main vim window
 tmux select-window -t $session:0
