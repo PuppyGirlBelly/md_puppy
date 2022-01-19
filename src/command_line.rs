@@ -1,5 +1,6 @@
 use std::error::Error;
-use std::fs;
+use std::fs::File;
+use std::io::prelude::*;
 
 pub struct Input {
     pub filename: String,
@@ -24,7 +25,10 @@ impl Input {
 }
 
 pub fn file_checker(config: Input) -> Result<(), Box<dyn Error>> {
-    let _contents = fs::read_to_string(config.filename)?;
+    let mut file = File::open(config.filename)?;
+    let mut buf: Vec<u8> = Vec::new();
+    file.read_to_end(&mut buf)?;
+    let _contents = String::from_utf8_lossy(&buf);
 
     Ok(())
 }

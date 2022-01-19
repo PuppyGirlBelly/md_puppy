@@ -2,6 +2,7 @@ use std::env;
 use std::process;
 
 mod command_line;
+mod directory_handling;
 mod markdown_compiling;
 mod template_processing;
 
@@ -22,7 +23,7 @@ fn main() {
     };
 
     match args.len() {
-        1 => {
+        2 => {
             file_to_html(&args[1], "src/boilerplate.html").expect("Error: Could not parse file");
         }
         _ => {

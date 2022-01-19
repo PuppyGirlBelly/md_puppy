@@ -35,15 +35,15 @@ pub fn _process_template(page: Page, template_path: &str) -> Result<String, Box<
     Ok(output)
 }
 
-fn _replace_placeholder(template: &str, page: &Page) -> Result<String, String> {
-    if let Some(key) = _get_placeholder(template) {
+fn _replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
+    if let Some(key) = _get_placeholder(input_text) {
         if let Some(v) = _get_value(key, page) {
-            Ok(template.replace(key, &v))
+            _replace_placeholder(&input_text.replace(key, &v), page)
         } else {
-            Err(("Invalid key, ".to_owned() + key + " in template").to_string())
+            Err("Invalid key, ".to_owned() + key + " in template")
         }
     } else {
-        Ok(template.to_string())
+        Ok(input_text.to_string())
     }
 }
 
@@ -90,8 +90,8 @@ mod tests {
   <meta property='og:site_name' content='default_site_name'>
   <meta property='og:title' content='A Short Example'>
   <meta property='og:type' content='website'>
-  <meta property='og:url' content='https://softannalee.github.io/examples/{{title}}'>
-  <meta property='og:image' content='https://softannalee.github.io/examples/{{title}}/image.jpg'>
+  <meta property='og:url' content='https://softannalee.github.io/examples/A Short Example'>
+  <meta property='og:image' content='https://softannalee.github.io/examples/A Short Example/image.jpg'>
   <link rel='stylesheet' href='css/normalize.css'>
   <link rel='stylesheet' href='css/main.css'>
 </head>
@@ -121,6 +121,10 @@ look like:</p>
         let input: &str = "This is {{title}}";
         let output = _replace_placeholder(input, &page);
         assert_eq!(output.unwrap(), "This is A Short Example");
+
+        let input: &str = "{{category}}: This is {{title}}";
+        let output = _replace_placeholder(input, &page);
+        assert_eq!(output.unwrap(), "examples: This is A Short Example");
 
         let input: &str = "This is title";
         let output = _replace_placeholder(input, &page);
