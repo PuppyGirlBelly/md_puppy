@@ -24,7 +24,7 @@ fn main() {
 
     match args.len() {
         2 => {
-            file_to_html(&args[1], "src/boilerplate.html").expect("Error: Could not parse file");
+            file_to_html(&args[1], "template/template.html").expect("Error: Could not parse file");
         }
         _ => {
             eprintln!("Error: Invalid Invocation");

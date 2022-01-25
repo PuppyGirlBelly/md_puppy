@@ -8,8 +8,8 @@ use crate::markdown_compiling::{parse_markdown_file, Page};
 pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {
     let page: Page = parse_markdown_file(file_path).unwrap();
     let html_page = _process_template(page, template_path)?;
-    let mut output_filename = String::from(&file_path[..file_path.len() - 3]);
-    output_filename.push_str(".html");
+    let filename = String::from(&file_path[file_path.rfind('/').unwrap()..file_path.len() - 3]);
+    let output_filename = format!("site/{}.html", filename);
 
     let mut outfile =
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
