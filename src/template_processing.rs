@@ -76,9 +76,9 @@ mod tests {
 
     #[test]
     fn template_processing_test() {
-        let page: Page = parse_markdown_file("src/example_short.md").unwrap();
-        let _template_path: &str = "src/boilerplate.html";
-        let output = _process_template(page, _template_path);
+        let page: Page = parse_markdown_file("content/example_short.md").unwrap();
+        let template_path: &str = "template/template.html";
+        let output = _process_template(page, template_path);
         let answer = "\
 <!doctype html>
 <html class='no-js' lang='en'>
@@ -116,7 +116,7 @@ look like:</p>
 
     #[test]
     fn template_replacement_test() {
-        let page: Page = parse_markdown_file("src/example_short.md").unwrap();
+        let page: Page = parse_markdown_file("content/example_short.md").unwrap();
 
         let input: &str = "This is {{title}}";
         let output = _replace_placeholder(input, &page);
@@ -136,7 +136,7 @@ look like:</p>
 
     #[test]
     fn get_value_test() {
-        let page: Page = parse_markdown_file("src/example_short.md").unwrap();
+        let page: Page = parse_markdown_file("content/example_short.md").unwrap();
 
         assert_eq!(_get_value("{{title}}", &page).unwrap(), "A Short Example");
         assert_eq!(

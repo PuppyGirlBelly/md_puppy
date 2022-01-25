@@ -83,7 +83,7 @@ mod tests {
 
     #[test]
     fn markdown_parse_test() {
-        let output: Page = parse_markdown_file("src/example_short.md").unwrap();
+        let output: Page = parse_markdown_file("content/example_short.md").unwrap();
         let answer = "\
 <h1>An h1 header</h1>
 <p>============</p>
