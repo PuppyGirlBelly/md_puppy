@@ -979,6 +979,7 @@ __private_visit_untagged_option	/home/annalee/.cargo/registry/src/github.com-1ec
 __serialize_unimplemented	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/doc.rs	/^macro_rules! __serialize_unimplemented {$/;"	M
 __serialize_unimplemented_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_helper {$/;"	M
 __serialize_unimplemented_method	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_method {$/;"	M
+_check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 _explicit_document_start	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    fn _explicit_document_start(&mut self) -> ParseResult {$/;"	P	implementation:Parser
 _get_placeholder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn _get_placeholder(template: &str) -> Option<&str> {$/;"	f
 _get_value	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn _get_value(key: &str, page: &Page) -> Option<String> {$/;"	f
@@ -1095,6 +1096,7 @@ count_header_cols	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/
 cows	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    cows: Vec<CowStr<'a>>,$/;"	m	struct:Allocations
 cowstr_char_to_string	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_char_to_string() {$/;"	f	module:test_special_string
 cowstr_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn cowstr_size() {$/;"	f	module:test_special_string
+create_directory_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn create_directory_test() {$/;"	f	module:tests
 create_html_escape_table	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^const fn create_html_escape_table() -> [u8; 256] {$/;"	f
 create_lookup	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    const fn create_lookup() -> [u8; 16] {$/;"	f	module:simd
 create_lut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) fn create_lut(options: &Options) -> LookupTable {$/;"	f
@@ -1636,7 +1638,6 @@ name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133
 name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/ser.rs	/^        name: &'static str,$/;"	m	struct:content::SerializeTupleVariant
 name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/ser.rs	/^        name: &'static str,$/;"	m	struct:content::SerializeTupleVariantAsMapValue
 name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/private/ser.rs	/^    name: &'static str,$/;"	m	struct:FlatMapSerializeStructVariantAsMapValue
-name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn name() {$/;"	f	module:tests
 names	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.133/src/de/mod.rs	/^    names: &'static [&'static str],$/;"	m	struct:OneOf
 need_quotes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^fn need_quotes(string: &str) -> bool {$/;"	f	function:escape_str
 need_quotes_spaces	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    fn need_quotes_spaces(string: &str) -> bool {$/;"	f	function:escape_str::need_quotes
