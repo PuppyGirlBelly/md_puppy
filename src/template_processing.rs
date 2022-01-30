@@ -7,9 +7,18 @@ use crate::markdown_compiling::{parse_markdown_file, Page};
 
 pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {
     let page: Page = parse_markdown_file(file_path).unwrap();
-    let html_page = _process_template(page, template_path)?;
+    let html_page = process_template(&page, template_path)?;
     let filename = String::from(&file_path[file_path.rfind('/').unwrap()..file_path.len() - 3]);
-    let output_filename = format!("site/{}.html", filename);
+    let mut output_filename: String;
+
+    match page.category.as_str() {
+        "home" => {
+            output_filename = format!("site/{}.html", filename);
+        }
+        cat => {
+            output_filename = format!("site/{}/{}.html", cat, filename);
+        }
+    }
 
     let mut outfile =
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
@@ -22,23 +31,23 @@ pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn 
     Ok(())
 }
 
-pub fn _process_template(page: Page, template_path: &str) -> Result<String, Box<dyn Error>> {
+pub fn process_template(page: &Page, template_path: &str) -> Result<String, Box<dyn Error>> {
     let template: String =
         fs::read_to_string(template_path).expect("[ ERROR ] Failed to open html template!");
     let mut output: String = String::new();
 
     for line in template.lines() {
-        output.push_str(&_replace_placeholder(line, &page)?);
+        output.push_str(&replace_placeholder(line, page)?);
         output.push('\n');
     }
 
     Ok(output)
 }
 
-fn _replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
-    if let Some(key) = _get_placeholder(input_text) {
-        if let Some(v) = _get_value(key, page) {
-            _replace_placeholder(&input_text.replace(key, &v), page)
+fn replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
+    if let Some(key) = get_placeholder(input_text) {
+        if let Some(v) = get_value(key, page) {
+            replace_placeholder(&input_text.replace(key, &v), page)
         } else {
             Err("Invalid key, ".to_owned() + key + " in template")
         }
@@ -47,7 +56,7 @@ fn _replace_placeholder(input_text: &str, page: &Page) -> Result<String, String>
     }
 }
 
-fn _get_placeholder(template: &str) -> Option<&str> {
+fn get_placeholder(template: &str) -> Option<&str> {
     let start_byte = template.find("{{").unwrap_or(0);
     let end_byte = template.find("}}").unwrap_or(0);
 
@@ -58,7 +67,7 @@ fn _get_placeholder(template: &str) -> Option<&str> {
     }
 }
 
-fn _get_value(key: &str, page: &Page) -> Option<String> {
+fn get_value(key: &str, page: &Page) -> Option<String> {
     match key {
         "{{title}}" => Some(page.title.to_string()),
         "{{description}}" => Some(page.description.to_string()),
@@ -75,10 +84,17 @@ mod tests {
     use super::*;
 
     #[test]
+    fn file_to_html_test() {
+        crate::directory_handling::_check_and_create_directory("site/examples");
+        file_to_html("content/example_short.md", "template/template.html");
+        assert!(true);
+    }
+
+    #[test]
     fn template_processing_test() {
         let page: Page = parse_markdown_file("content/example_short.md").unwrap();
         let template_path: &str = "template/template.html";
-        let output = _process_template(page, template_path);
+        let output = process_template(&page, template_path);
         let answer = "\
 <!doctype html>
 <html class='no-js' lang='en'>
@@ -119,47 +135,47 @@ look like:</p>
         let page: Page = parse_markdown_file("content/example_short.md").unwrap();
 
         let input: &str = "This is {{title}}";
-        let output = _replace_placeholder(input, &page);
+        let output = replace_placeholder(input, &page);
         assert_eq!(output.unwrap(), "This is A Short Example");
 
         let input: &str = "{{category}}: This is {{title}}";
-        let output = _replace_placeholder(input, &page);
+        let output = replace_placeholder(input, &page);
         assert_eq!(output.unwrap(), "examples: This is A Short Example");
 
         let input: &str = "This is title";
-        let output = _replace_placeholder(input, &page);
+        let output = replace_placeholder(input, &page);
         assert_eq!(output.unwrap(), "This is title");
 
         let input: &str = "This is {{tags}}";
-        assert!(_replace_placeholder(input, &page).is_err());
+        assert!(replace_placeholder(input, &page).is_err());
     }
 
     #[test]
     fn get_value_test() {
         let page: Page = parse_markdown_file("content/example_short.md").unwrap();
 
-        assert_eq!(_get_value("{{title}}", &page).unwrap(), "A Short Example");
+        assert_eq!(get_value("{{title}}", &page).unwrap(), "A Short Example");
         assert_eq!(
-            _get_value("{{description}}", &page).unwrap(),
+            get_value("{{description}}", &page).unwrap(),
             "this is a short example of a markdown file"
         );
-        assert_eq!(_get_value("{{category}}", &page).unwrap(), "examples");
+        assert_eq!(get_value("{{category}}", &page).unwrap(), "examples");
         assert_eq!(
-            _get_value("{{date}}", &page),
+            get_value("{{date}}", &page),
             Some("2022-01-17T12:34:11-0700".to_string())
         );
-        assert_eq!(_get_value("{{tags}}", &page), None);
+        assert_eq!(get_value("{{tags}}", &page), None);
     }
 
     #[test]
     fn get_placeholder_test() {
         let example_text: &str = "{{title}}";
-        let output: Option<&str> = _get_placeholder(example_text);
+        let output: Option<&str> = get_placeholder(example_text);
 
         assert_eq!(output.unwrap(), "{{title}}".to_string());
 
         let example_text: &str = "this is a title";
-        let output: Option<&str> = _get_placeholder(example_text);
+        let output: Option<&str> = get_placeholder(example_text);
 
         assert_eq!(output, None);
     }
