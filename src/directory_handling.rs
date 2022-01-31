@@ -1,9 +1,52 @@
+use reqwest;
 use std::error::Error;
-use std::fs::{create_dir_all, read_dir};
+use std::fs::{create_dir_all, read_dir, File};
+use tempfile;
+use zip;
 
-pub fn _check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
+use std::io::Write;
+
+pub fn create_folders() -> Result<(), Box<dyn Error>> {
+    check_and_create_directory("content/")?;
+    check_and_create_directory("site/")?;
+    check_for_static_folder()?;
+    check_for_boilerplate()?;
+    Ok(())
+}
+
+pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
     if read_dir(dir).is_err() {
         create_dir_all(dir)?;
+        Ok(())
+    } else {
+        Ok(())
+    }
+}
+
+/* The code that was used to figure out how to download and unzip a file was taken from this stack
+* overflow answer;
+* https://stackoverflow.com/a/50471953 */
+fn check_for_static_folder() -> Result<(), Box<dyn Error>> {
+    if read_dir("static/").is_err() {
+        let url = "https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip";
+        let mut tmpfile = tempfile::tempfile()?;
+        reqwest::blocking::get(url).unwrap().copy_to(&mut tmpfile)?;
+        let mut zip = zip::ZipArchive::new(tmpfile)?;
+        zip.extract("static/")?;
+        Ok(())
+    } else {
+        Ok(())
+    }
+}
+
+fn check_for_boilerplate() -> Result<(), Box<dyn Error>> {
+    if File::open("template/boilerplate.html").is_err() {
+        check_and_create_directory("template/")?;
+        let url =
+            "https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html";
+        let download = reqwest::blocking::get(url).unwrap().bytes()?;
+        let mut file = File::create("template/boilerplate.html")?;
+        file.write_all(&download)?;
         Ok(())
     } else {
         Ok(())
@@ -17,17 +60,21 @@ pub fn get_output_dir(filename: String, category: &str) -> String {
     }
 }
 
-fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {
-    if read_dir("static/").is_err() {
-        Ok(())
-    } else {
-        Ok(())
-    }
-}
-
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn _check_for_boilerplate_test() {
+        check_for_boilerplate().unwrap();
+        assert!(File::open("template/boilerplate.html").is_ok());
+    }
+
+    #[test]
+    fn _check_for_static_folder_test() {
+        check_for_static_folder().unwrap();
+        assert!(read_dir("static").is_ok());
+    }
 
     #[test]
     fn get_output_dir_test() {
@@ -43,7 +90,7 @@ mod tests {
 
     #[test]
     fn create_directory_test() {
-        assert!(_check_and_create_directory("site/").is_ok());
-        assert!(_check_and_create_directory("site/example").is_ok());
+        assert!(check_and_create_directory("site/").is_ok());
+        assert!(check_and_create_directory("site/example").is_ok());
     }
 }

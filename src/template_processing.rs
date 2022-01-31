@@ -78,7 +78,7 @@ mod tests {
 
     #[test]
     fn file_to_html_test() {
-        crate::directory_handling::_check_and_create_directory("site/examples")
+        crate::directory_handling::check_and_create_directory("site/examples")
             .expect("[ TEST ERR ] This directory could not be created.");
         file_to_html("content/example_short.md", "template/boilerplate.html")
             .expect("[ TEST ERR ] This file could not be processed.");
