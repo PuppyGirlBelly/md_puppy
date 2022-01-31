@@ -3,22 +3,15 @@ use std::fs;
 use std::fs::File;
 use std::io::Write;
 
+use crate::directory_handling::get_output_dir;
 use crate::markdown_compiling::{parse_markdown_file, Page};
 
 pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {
     let page: Page = parse_markdown_file(file_path).unwrap();
-    let html_page = process_template(&page, template_path)?;
-    let filename = String::from(&file_path[file_path.rfind('/').unwrap()..file_path.len() - 3]);
-    let mut output_filename: String;
-
-    match page.category.as_str() {
-        "home" => {
-            output_filename = format!("site/{}.html", filename);
-        }
-        cat => {
-            output_filename = format!("site/{}/{}.html", cat, filename);
-        }
-    }
+    let html_page: String = process_template(&page, template_path)?;
+    let filename: String =
+        String::from(&file_path[file_path.rfind('/').unwrap()..file_path.len() - 3]);
+    let output_filename: String = get_output_dir(filename, &page.category);
 
     let mut outfile =
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
@@ -85,15 +78,17 @@ mod tests {
 
     #[test]
     fn file_to_html_test() {
-        crate::directory_handling::_check_and_create_directory("site/examples");
-        file_to_html("content/example_short.md", "template/template.html");
-        assert!(true);
+        crate::directory_handling::_check_and_create_directory("site/examples")
+            .expect("[ TEST ERR ] This directory could not be created.");
+        file_to_html("content/example_short.md", "template/boilerplate.html")
+            .expect("[ TEST ERR ] This file could not be processed.");
+        assert!(File::open("site/examples/example_short.html").is_ok());
     }
 
     #[test]
     fn template_processing_test() {
         let page: Page = parse_markdown_file("content/example_short.md").unwrap();
-        let template_path: &str = "template/template.html";
+        let template_path: &str = "template/boilerplate.html";
         let output = process_template(&page, template_path);
         let answer = "\
 <!doctype html>
