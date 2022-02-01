@@ -164,6 +164,12 @@ dependencies = [
 ]
 
 [[package]]
+name = "fs_extra"
+version = "1.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2022715d62ab30faffd124d40b76f4134a550a87792276512b18d63272333394"
+
+[[package]]
 name = "futures-channel"
 version = "0.3.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -419,6 +425,7 @@ checksum = "a3e378b66a060d48947b590737b30a1be76706c8dd7b8ba0f2fe3989c68a853f"
 name = "md_puppy"
 version = "0.1.0"
 dependencies = [
+ "fs_extra",
  "openssl",
  "pulldown-cmark",
  "reqwest",

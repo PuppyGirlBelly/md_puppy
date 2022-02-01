@@ -77,6 +77,13 @@ mod tests {
     use super::*;
 
     #[test]
+    fn index_test() {
+        file_to_html("content/index.md", "template/boilerplate.html")
+            .expect("[ TEST ] Could not make index");
+        assert!(File::open("site/index.html").is_ok());
+    }
+
+    #[test]
     fn file_to_html_test() {
         crate::directory_handling::check_and_create_directory("site/examples")
             .expect("[ TEST ERR ] This directory could not be created.");

@@ -1,12 +1,26 @@
+use fs_extra::copy_items;
 use reqwest;
 use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
+use std::io::Write;
 use tempfile;
 use zip;
 
-use std::io::Write;
+pub fn _copy_static() -> Result<(), Box<dyn Error>> {
+    let options = fs_extra::dir::CopyOptions {
+        overwrite: false,
+        skip_exist: false,
+        buffer_size: 64000, //64kb
+        copy_inside: true,
+        content_only: true,
+        depth: 0,
+    };
 
-pub fn create_folders() -> Result<(), Box<dyn Error>> {
+    copy_items(&["static/"], "site/", &options)?;
+    Ok(())
+}
+
+pub fn _create_folders() -> Result<(), Box<dyn Error>> {
     check_and_create_directory("content/")?;
     check_and_create_directory("site/")?;
     check_for_static_folder()?;
@@ -63,6 +77,12 @@ pub fn get_output_dir(filename: String, category: &str) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn copy_static_test() {
+        _copy_static().expect("[ TEST ] Could not copy items from static");
+        assert!(File::open("site/css/main.css").is_ok());
+    }
 
     #[test]
     fn _check_for_boilerplate_test() {

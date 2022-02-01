@@ -3,11 +3,13 @@
 A	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^impl<'de, 'a, A: ?Sized> MapAccess<'de> for &'a mut A$/;"	c
 A	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^impl<'de, 'a, A: ?Sized> SeqAccess<'de> for &'a mut A$/;"	c
 AMP_ESCAPE	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^static AMP_ESCAPE: &str = "&amp;";$/;"	v
+Abort	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Abort,$/;"	e	enum:TransitProcessResult
 Accepts	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/decoder.rs	/^impl Accepts {$/;"	c
 Accepts	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/decoder.rs	/^impl Default for Accepts {$/;"	c
 Accepts	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/decoder.rs	/^pub(super) struct Accepts {$/;"	s
 AccessDescription	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/mod.rs	/^impl Stackable for AccessDescription {$/;"	c
 AccessDescriptionRef	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/mod.rs	/^impl AccessDescriptionRef {$/;"	c
+Accessed	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Accessed,$/;"	e	enum:DirEntryAttr
 Action	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^pub struct Action {$/;"	s
 ActionKind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^pub(crate) enum ActionKind {$/;"	g
 Active	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Active,$/;"	e	enum:TableParseMode
@@ -28,6 +30,7 @@ Allocations	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldo
 Allocations	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^struct Allocations<'a> {$/;"	s
 AlpnError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^impl AlpnError {$/;"	c
 AlpnError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^pub struct AlpnError(c_int);$/;"	s
+AlreadyExists	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    AlreadyExists,$/;"	e	enum:ErrorKind
 Anchor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    Anchor(String),$/;"	e	enum:TokenType
 Any	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    Any,$/;"	e	enum:TScalarStyle
 ArcWeak	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de, T: ?Sized> Deserialize<'de> for ArcWeak<T>$/;"	c
@@ -84,6 +87,7 @@ BTreeMap	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0
 BTreeSet	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<'de, T, E> IntoDeserializer<'de, E> for BTreeSet<T>$/;"	c
 BadHashmapKey	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    BadHashmapKey,$/;"	e	enum:EmitError
 BadValue	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    BadValue,$/;"	e	enum:Yaml
+BaseInfo	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    BaseInfo,$/;"	e	enum:DirEntryAttr
 BasicConstraints	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^impl BasicConstraints {$/;"	c
 BasicConstraints	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^impl Default for BasicConstraints {$/;"	c
 BasicConstraints	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^pub struct BasicConstraints {$/;"	s
@@ -168,6 +172,7 @@ Bool	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136
 Bool	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        Bool(bool),$/;"	e	enum:content::Content
 BoolVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Visitor<'de> for BoolVisitor {$/;"	c
 BoolVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^struct BoolVisitor;$/;"	s
+Boolean	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Boolean(bool),$/;"	e	enum:DirEntryValue
 Boolean	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    Boolean,$/;"	e	enum:Unsupported
 Boolean	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    Boolean(bool),$/;"	e	enum:Yaml
 Borrowed	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    Borrowed(&'a str),$/;"	e	enum:CowStr
@@ -373,6 +378,7 @@ ContentVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/ser
 ContentVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    impl<'de> Visitor<'de> for ContentVisitor<'de> {$/;"	c	module:content
 ContentVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    struct ContentVisitor<'de> {$/;"	s	module:content
 ContinueAndSkip	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    ContinueAndSkip(usize),$/;"	e	enum:LoopInstruction
+ContinueOrAbort	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    ContinueOrAbort,$/;"	e	enum:TransitProcessResult
 Cookie	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^impl<'a> Cookie<'a> {$/;"	c
 Cookie	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^impl<'a> fmt::Debug for Cookie<'a> {$/;"	c
 Cookie	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^pub struct Cookie<'a>(cookie_crate::Cookie<'a>);$/;"	s
@@ -381,6 +387,12 @@ CookieParseError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/r
 CookieParseError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^impl<'a> fmt::Display for CookieParseError {$/;"	c
 CookieParseError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^pub(crate) struct CookieParseError(cookie_crate::ParseError);$/;"	s
 CookieStore	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^pub trait CookieStore: Send + Sync {$/;"	i
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^impl CopyOptions {$/;"	c
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^impl Default for CopyOptions {$/;"	c
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub struct CopyOptions {$/;"	s
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^impl CopyOptions {$/;"	c
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^impl Default for CopyOptions {$/;"	c
+CopyOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub struct CopyOptions {$/;"	s
 Cow	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de, 'a, T: ?Sized> Deserialize<'de> for Cow<'a, T>$/;"	c
 Cow	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<'de, 'a, E> IntoDeserializer<'de, E> for Cow<'a, str>$/;"	c
 CowBytesVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    impl<'a> Visitor<'a> for CowBytesVisitor {$/;"	c	function:borrow_cow_bytes
@@ -408,6 +420,7 @@ CowStrVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serd
 Crc32Reader	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/crc32.rs	/^impl<R: Read> Read for Crc32Reader<R> {$/;"	c
 Crc32Reader	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/crc32.rs	/^impl<R> Crc32Reader<R> {$/;"	c
 Crc32Reader	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/crc32.rs	/^pub struct Crc32Reader<R> {$/;"	s
+Created	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Created,$/;"	e	enum:DirEntryAttr
 Crypter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^impl Crypter {$/;"	c
 Crypter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^impl Drop for Crypter {$/;"	c
 Crypter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^pub struct Crypter {$/;"	s
@@ -490,6 +503,11 @@ DigestBytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openss
 DigestBytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^impl DerefMut for DigestBytes {$/;"	c
 DigestBytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^impl fmt::Debug for DigestBytes {$/;"	c
 DigestBytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^pub struct DigestBytes {$/;"	s
+DirContent	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub struct DirContent {$/;"	s
+DirEntryAttr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub enum DirEntryAttr {$/;"	g
+DirEntryValue	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub enum DirEntryValue {$/;"	g
+DirOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^impl DirOptions {$/;"	c
+DirOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub struct DirOptions {$/;"	s
 Disabled	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:LinkStackTy
 Disabled	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Disabled,$/;"	e	enum:TableParseMode
 DnsResolve	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    pub(super) enum DnsResolve {$/;"	g	module:socks
@@ -506,6 +524,7 @@ DocumentStart	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml
 DomainMatcher	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^impl DomainMatcher {$/;"	c
 DomainMatcher	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^struct DomainMatcher(Vec<String>);$/;"	s
 Dos	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    Dos = 0,$/;"	e	enum:System
+DosPath	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    DosPath,$/;"	e	enum:DirEntryAttr
 DoubleQuoted	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    DoubleQuoted,$/;"	e	enum:TScalarStyle
 Dsa	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^impl Dsa<Private> {$/;"	c
 Dsa	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^impl Dsa<Public> {$/;"	c
@@ -568,6 +587,13 @@ EnumRefDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec82
 EnvGuard	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^    impl Drop for EnvGuard {$/;"	c	module:tests
 EnvGuard	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^    struct EnvGuard {$/;"	s	module:tests
 Err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^            Err,$/;"	e	enum:deserialize::Field
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl From<IoError> for Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl From<OsString> for Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl From<StripPrefixError> for Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl StdError for Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl fmt::Display for Error {$/;"	c
+Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^pub struct Error {$/;"	s
 Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl Error {$/;"	c
 Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl From<ErrorStack> for fmt::Error {$/;"	c
 Error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl From<ErrorStack> for io::Error {$/;"	c
@@ -655,6 +681,8 @@ ErrorCode	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-
 ErrorCode	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/error.rs	/^pub struct ErrorCode(c_int);$/;"	s
 ErrorImpl	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^type ErrorImpl = ();$/;"	t
 ErrorImpl	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^type ErrorImpl = Box<str>;$/;"	t
+ErrorKind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^impl ErrorKind {$/;"	c
+ErrorKind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^pub enum ErrorKind {$/;"	g
 ErrorStack	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl ErrorStack {$/;"	c
 ErrorStack	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl error::Error for ErrorStack {}$/;"	c
 ErrorStack	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^impl fmt::Display for ErrorStack {$/;"	c
@@ -666,6 +694,7 @@ Event	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.
 Event	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^pub enum Event {$/;"	g
 EventReceiver	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^pub trait EventReceiver {$/;"	i
 Excluded	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^            Excluded,$/;"	e	enum:deserialize::Field
+Exists	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Exists,$/;"	e	enum:TransitState
 Expected	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^pub trait Expected {$/;"	i
 ExpectedInMap	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl Expected for ExpectedInMap {$/;"	c
 ExpectedInMap	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^struct ExpectedInMap(usize);$/;"	s
@@ -680,6 +709,7 @@ ExplodingStream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/op
 ExplodingStream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^    struct ExplodingStream(TcpStream);$/;"	s	function:flush_panic
 ExplodingStream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^    struct ExplodingStream(TcpStream);$/;"	s	function:read_panic
 ExplodingStream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^    struct ExplodingStream(TcpStream);$/;"	s	function:write_panic
+Ext	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Ext,$/;"	e	enum:DirEntryAttr
 ExtendedKeyUsage	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^impl Default for ExtendedKeyUsage {$/;"	c
 ExtendedKeyUsage	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^impl ExtendedKeyUsage {$/;"	c
 ExtendedKeyUsage	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^pub struct ExtendedKeyUsage {$/;"	s
@@ -714,6 +744,7 @@ FileNotFound	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0
 FileOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^impl Default for FileOptions {$/;"	c
 FileOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^impl FileOptions {$/;"	c
 FileOptions	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^pub struct FileOptions {$/;"	s
+FileSize	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    FileSize,$/;"	e	enum:DirEntryAttr
 Finalized	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    Finalized,$/;"	e	enum:State
 First	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^        type First = A;$/;"	t	implementation:private::B
 First	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^        type First;$/;"	t	interface:private::Pair
@@ -792,6 +823,7 @@ FromCp437	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.
 FromStrVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de, T> Visitor<'de> for FromStrVisitor<T>$/;"	c
 FromStrVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<T> FromStrVisitor<T> {$/;"	c
 FromStrVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^struct FromStrVisitor<T> {$/;"	s
+FullName	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    FullName,$/;"	e	enum:DirEntryAttr
 Future	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    type Future = Connecting;$/;"	t	implementation:Connector
 Future	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    type Future = Either<$/;"	t
 Future	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    type Future =$/;"	t	implementation:HttpConnector
@@ -930,6 +962,7 @@ Intercept	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-
 InternallyTaggedUnitVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    impl<'a> InternallyTaggedUnitVisitor<'a> {$/;"	c	module:content
 InternallyTaggedUnitVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    impl<'de, 'a> Visitor<'de> for InternallyTaggedUnitVisitor<'a> {$/;"	c	module:content
 InternallyTaggedUnitVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    pub struct InternallyTaggedUnitVisitor<'a> {$/;"	s	module:content
+Interrupted	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    Interrupted,$/;"	e	enum:ErrorKind
 IntoDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^pub trait IntoDeserializer<'de, E: Error = value::Error> {$/;"	i
 IntoDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<'de, E> IntoDeserializer<'de, E> for !$/;"	c
 IntoDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<'de, E> IntoDeserializer<'de, E> for ()$/;"	c
@@ -948,7 +981,12 @@ IntoProxyScheme	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/re
 IntoUrl	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^pub trait IntoUrl: IntoUrlSealed {}$/;"	i
 IntoUrlSealed	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^pub trait IntoUrlSealed {$/;"	i
 InvalidArchive	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/result.rs	/^    InvalidArchive(&'static str),$/;"	e	enum:ZipError
+InvalidFile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    InvalidFile,$/;"	e	enum:ErrorKind
+InvalidFileName	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    InvalidFileName,$/;"	e	enum:ErrorKind
+InvalidFolder	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    InvalidFolder,$/;"	e	enum:ErrorKind
 InvalidPassword	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/result.rs	/^pub struct InvalidPassword;$/;"	s
+InvalidPath	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    InvalidPath,$/;"	e	enum:ErrorKind
+Io	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    Io(IoError),$/;"	e	enum:ErrorKind
 Io	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/error.rs	/^    Io(io::Error),$/;"	e	enum:InnerError
 Io	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/result.rs	/^    Io(#[from] io::Error),$/;"	e	enum:ZipError
 IoResultExt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs	/^pub(crate) trait IoResultExt<T> {$/;"	i
@@ -961,6 +999,8 @@ IpMatcher	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-
 IpMatcher	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^struct IpMatcher(Vec<Ip>);$/;"	s
 Ipv4Addr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for net::Ipv4Addr {$/;"	c
 Ipv6Addr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for net::Ipv6Addr {$/;"	c
+IsDir	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    IsDir,$/;"	e	enum:DirEntryAttr
+IsFile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    IsFile,$/;"	e	enum:DirEntryAttr
 Item	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    type Item = &'a T::Ref;$/;"	t	implementation:Iter
 Item	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    type Item = &'a T::Ref;$/;"	t	implementation:Stack
 Item	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    type Item = &'a T::Ref;$/;"	t	implementation:StackRef
@@ -1037,6 +1077,7 @@ Local	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11
 LookupTable	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) struct LookupTable {$/;"	s
 LookupTable	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^type LookupTable = [bool; 256];$/;"	t
 LoopInstruction	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^pub(crate) enum LoopInstruction<T> {$/;"	g
+LsResult	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub struct LsResult {$/;"	s
 Map	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^    Map,$/;"	e	enum:Unexpected
 Map	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        Map(Vec<(Content<'de>, Content<'de>)>),$/;"	e	enum:content::Content
 Map	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        Map(Vec<(Content, Content)>),$/;"	e	enum:content::Content
@@ -1094,6 +1135,7 @@ MidHandshakeSslStream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec
 MissingFieldDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    impl<'de, E> Deserializer<'de> for MissingFieldDeserializer<E>$/;"	c	function:missing_field
 MissingFieldDeserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    struct MissingFieldDeserializer<E>(&'static str, PhantomData<E>);$/;"	s	function:missing_field
 Mode	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^pub enum Mode {$/;"	g
+Modified	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Modified,$/;"	e	enum:DirEntryAttr
 MsbOption	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^impl MsbOption {$/;"	c
 MsbOption	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^pub struct MsbOption(c_int);$/;"	s
 MultipartForm	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/body.rs	/^    MultipartForm(Form),$/;"	e	enum:Inner
@@ -1104,6 +1146,7 @@ MyStruct	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0
 MyStruct	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/request.rs	/^        struct MyStruct;$/;"	s	function:tests::add_json_fail
 NANOS_PER_SEC	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^            static NANOS_PER_SEC: u32 = 1_000_000_000;$/;"	v	function:Duration::deserialize::check_overflow
 NANOS_PER_SEC	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^            static NANOS_PER_SEC: u32 = 1_000_000_000;$/;"	v	function:SystemTime::deserialize::check_overflow
+Name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Name,$/;"	e	enum:DirEntryAttr
 NameType	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^impl NameType {$/;"	c
 NameType	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^pub struct NameType(c_int);$/;"	s
 NamedTempFile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^impl AsRef<Path> for NamedTempFile {$/;"	c
@@ -1134,6 +1177,7 @@ NewtypeVariant	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/ser
 NewtypeVariant	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        NewtypeVariant(&'static str, u32, &'static str, Box<Content>),$/;"	e	enum:content::Content
 Nid	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/nid.rs	/^impl Nid {$/;"	c
 Nid	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/nid.rs	/^pub struct Nid(c_int);$/;"	s
+NoAccess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    NoAccess,$/;"	e	enum:TransitState
 NoOp	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    NoOp,$/;"	e	enum:PercentEncoding
 NoProxy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^impl NoProxy {$/;"	c
 NoProxy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^struct NoProxy {$/;"	s
@@ -1146,6 +1190,8 @@ None	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmar
 None	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^    None,$/;"	e	enum:PolicyKind
 None	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        None,$/;"	e	enum:content::Content
 None	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        None,$/;"	e	enum:content::Content
+Normal	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Normal,$/;"	e	enum:TransitState
+NotFound	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    NotFound,$/;"	e	enum:ErrorKind
 Nothing	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    Nothing,$/;"	e	enum:Event
 Null	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    Null,$/;"	e	enum:Yaml
 OcspBasicResponseRef	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ocsp.rs	/^impl OcspBasicResponseRef {$/;"	c
@@ -1203,10 +1249,12 @@ OptionVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serd
 OptionVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^struct OptionVisitor<T> {$/;"	s
 Optional	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    Optional,$/;"	e	enum:Unsupported
 OsStr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for OsStr {$/;"	c
+OsString	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    OsString(OsString),$/;"	e	enum:ErrorKind
 OsString	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Deserialize<'de> for OsString {$/;"	c
 OsString	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for OsString {$/;"	c
 OsStringVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Visitor<'de> for OsStringVisitor {$/;"	c
 OsStringVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^struct OsStringVisitor;$/;"	s
+Other	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    Other,$/;"	e	enum:ErrorKind
 Other	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^    Other(&'a str),$/;"	e	enum:Unexpected
 Other	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        Other,$/;"	e	enum:content::TagContentOtherField
 Outgoing	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^    impl<'a> ::std::ops::Deref for Outgoing<'a> {$/;"	c	function:stateless
@@ -1226,6 +1274,8 @@ Output	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.1
 Output	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/decoder.rs	/^    type Output = Result<Inner, std::io::Error>;$/;"	t	implementation:Pending
 Output	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    type Output = Result<itertools::Either<FutOutput, std::iter::Once<SocketAddr>>, FutError>;$/;"	t
 Output	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    type Output = Yaml;$/;"	t	implementation:Yaml
+Overwrite	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Overwrite,$/;"	e	enum:TransitProcessResult
+OverwriteAll	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    OverwriteAll,$/;"	e	enum:TransitProcessResult
 Owned	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    type Owned = Dsa<T>;$/;"	t	implementation:DsaRef
 Owned	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ec.rs	/^    type Owned = EcKey<T>;$/;"	t	implementation:EcKeyRef
 Owned	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkey.rs	/^    type Owned = PKey<T>;$/;"	t	implementation:PKeyRef
@@ -1286,6 +1336,7 @@ PartMetadata	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwe
 PartMetadata	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/multipart.rs	/^pub(crate) struct PartMetadata {$/;"	s
 PartProps	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^pub(crate) trait PartProps {$/;"	i
 PartProps	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/multipart.rs	/^pub(crate) trait PartProps {$/;"	i
+Path	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Path,$/;"	e	enum:DirEntryAttr
 Path	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de: 'a, 'a> Deserialize<'de> for &'a Path {$/;"	c
 Path	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for Path {$/;"	c
 PathBuf	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Deserialize<'de> for PathBuf {$/;"	c
@@ -1314,6 +1365,7 @@ PendingRequest	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/req
 PendingRequest	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/client.rs	/^impl PendingRequest {$/;"	c
 PercentEncoding	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^impl PercentEncoding {$/;"	c
 PercentEncoding	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^pub(crate) enum PercentEncoding {$/;"	g
+PermissionDenied	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    PermissionDenied,$/;"	e	enum:ErrorKind
 PersistError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^impl error::Error for PersistError {$/;"	c
 PersistError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^impl fmt::Display for PersistError {$/;"	c
 PersistError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^pub struct PersistError {$/;"	s
@@ -1425,12 +1477,14 @@ Response	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0
 Response	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/response.rs	/^pub struct Response {$/;"	s
 ResponseBuilderExt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/response.rs	/^pub trait ResponseBuilderExt {$/;"	i
 ResponseUrl	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/response.rs	/^pub(crate) struct ResponseUrl(pub Url);$/;"	s
+Result	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^pub type Result<T> = ::std::result::Result<T, Error>;$/;"	t
 Result	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/error.rs	/^pub type Result<T> = std::result::Result<T, Error>;$/;"	t
 Result	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de, T, E> Deserialize<'de> for Result<T, E>$/;"	c
 Result	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl<T, E> Serialize for Result<T, E>$/;"	c
 Result	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs	/^impl<T> IoResultExt<T> for Result<T, io::Error> {$/;"	c
 ResultVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^        impl<'de, T, E> Visitor<'de> for ResultVisitor<T, E>$/;"	c	function:deserialize
 ResultVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^        struct ResultVisitor<T, E>(PhantomData<Result<T, E>>);$/;"	s	function:deserialize
+Retry	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Retry,$/;"	e	enum:TransitProcessResult
 Reusable	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/body.rs	/^    Reusable(Bytes),$/;"	e	enum:Inner
 Reverse	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl<T> Serialize for Reverse<T>$/;"	c
 Right	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Right,$/;"	e	enum:Alignment
@@ -1597,6 +1651,9 @@ Signer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.1
 SimpleKey	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^impl SimpleKey {$/;"	c
 SimpleKey	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^struct SimpleKey {$/;"	s
 SingleQuoted	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    SingleQuoted,$/;"	e	enum:TScalarStyle
+Size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Size,$/;"	e	enum:DirEntryAttr
+Skip	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Skip,$/;"	e	enum:TransitProcessResult
+SkipAll	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    SkipAll,$/;"	e	enum:TransitProcessResult
 SniError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^impl SniError {$/;"	c
 SniError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^pub struct SniError(c_int);$/;"	s
 SocketAddr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Deserialize<'de> for net::SocketAddr {$/;"	c
@@ -1740,6 +1797,7 @@ StreamState	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openss
 Streaming	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/body.rs	/^    Streaming {$/;"	e	enum:Inner
 Strikethrough	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:ItemBody
 Strikethrough	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strikethrough,$/;"	e	enum:Tag
+String	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    String(String),$/;"	e	enum:DirEntryValue
 String	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^impl<'w> StrWrite for String {$/;"	c
 String	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^impl IntoUrl for String {}$/;"	c
 String	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^impl<'a> IntoUrl for &'a String {}$/;"	c
@@ -1762,6 +1820,7 @@ StringInPlaceVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec8
 StringTooLongError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^pub struct StringTooLongError;$/;"	s
 StringVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Visitor<'de> for StringVisitor {$/;"	c
 StringVisitor	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^struct StringVisitor;$/;"	s
+StripPrefix	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    StripPrefix(StripPrefixError),$/;"	e	enum:ErrorKind
 Strong	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:ItemBody
 Strong	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    Strong,$/;"	e	enum:Tag
 Struct	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        Struct(&'static str, Vec<(&'static str, Content)>),$/;"	e	enum:content::Content
@@ -1779,6 +1838,7 @@ System	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.1
 System	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^impl System {$/;"	c
 System	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^pub enum System {$/;"	g
 SystemProxyMap	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^type SystemProxyMap = HashMap<String, ProxyScheme>;$/;"	t
+SystemTime	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    SystemTime(SystemTime),$/;"	e	enum:DirEntryValue
 SystemTime	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/impls.rs	/^impl<'de> Deserialize<'de> for SystemTime {$/;"	c
 SystemTime	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/impls.rs	/^impl Serialize for SystemTime {$/;"	c
 T	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkey.rs	/^unsafe impl<T> HasParams for T where T: HasPublic {}$/;"	c
@@ -1884,6 +1944,13 @@ TokenType	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rus
 TooManyRedirects	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^impl StdError for TooManyRedirects {}$/;"	c
 TooManyRedirects	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^impl fmt::Display for TooManyRedirects {$/;"	c
 TooManyRedirects	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^struct TooManyRedirects;$/;"	s
+TransitProcess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^impl Clone for TransitProcess {$/;"	c
+TransitProcess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub struct TransitProcess {$/;"	s
+TransitProcess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub struct TransitProcess {$/;"	s
+TransitProcess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^impl Clone for TransitProcess {$/;"	c
+TransitProcess	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub struct TransitProcess {$/;"	s
+TransitProcessResult	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub enum TransitProcessResult {$/;"	g
+TransitState	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub enum TransitState {$/;"	g
 Tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^impl<'a> Tree<Item> {$/;"	c
 Tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T: Default> Tree<T> {$/;"	c
 Tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^impl<T> std::fmt::Debug for Tree<T>$/;"	c
@@ -1913,6 +1980,7 @@ U32Deserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/se
 U32Deserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<'de, E> de::EnumAccess<'de> for U32Deserializer<E>$/;"	c
 U32Deserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^impl<E> Debug for U32Deserializer<E> {$/;"	c
 U32Deserializer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^pub struct U32Deserializer<E> {$/;"	s
+U64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    U64(u64),$/;"	e	enum:DirEntryValue
 U64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        U64(u64),$/;"	e	enum:content::Content
 U64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        U64(u64),$/;"	e	enum:content::Content
 U8	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        U8(u8),$/;"	e	enum:content::Content
@@ -2142,8 +2210,11 @@ _assert_impls	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqw
 _check_for_boilerplate_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_boilerplate_test() {$/;"	f	module:tests
 _check_for_static_folder_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_static_folder_test() {$/;"	f	module:tests
 _check_kinds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn _check_kinds() {$/;"	f
+_copy_static	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _copy_static() -> Result<(), Box<dyn Error>> {$/;"	f
+_create_folders	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _create_folders() -> Result<(), Box<dyn Error>> {$/;"	f
 _explicit_document_start	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    fn _explicit_document_start(&mut self) -> ParseResult {$/;"	P	implementation:Parser
 _get	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    unsafe fn _get(&self, idx: usize) -> *mut T::CType {$/;"	P	implementation:StackRef
+_get_dir_content	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^fn _get_dir_content<P>(path: P, mut depth: u64) -> Result<DirContent>$/;"	f
 _implied_bounds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^fn _implied_bounds() {$/;"	f
 _marker	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    _marker: PhantomData<E>,$/;"	m	struct:FlatInternallyTaggedAccess
 _marker	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    _marker: PhantomData<E>,$/;"	m	struct:FlatMapAccess
@@ -2324,6 +2395,7 @@ as_slice	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0
 as_slice	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    pub fn as_slice(&self) -> &[u8] {$/;"	P	implementation:Asn1Object
 as_slice	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    pub fn as_slice(&self) -> &[u8] {$/;"	P	implementation:Asn1StringRef
 as_stack	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    fn as_stack(&self) -> *mut OPENSSL_STACK {$/;"	P	implementation:StackRef
+as_str	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn as_str(&self) -> &str {$/;"	P	implementation:ErrorKind
 as_str	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/decoder.rs	/^    pub(super) fn as_str(&self) -> Option<&'static str> {$/;"	P	implementation:Accepts
 as_str	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^    fn as_str(&self) -> &str {$/;"	P	implementation:String
 as_str	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/into_url.rs	/^    fn as_str(&self) -> &str {$/;"	P	implementation:Url
@@ -2347,6 +2419,7 @@ authority_info	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/ope
 auto_sys_proxy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/client.rs	/^    auto_sys_proxy: bool,$/;"	m	struct:Config
 bad_type	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    fn bad_type(self, what: Unsupported) -> S::Error {$/;"	f
 bad_type	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    fn bad_type(what: Unsupported) -> M::Error {$/;"	f
+base	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub base: HashMap<DirEntryAttr, DirEntryValue>,$/;"	m	struct:LsResult
 base64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/lib.rs	/^pub mod base64;$/;"	n
 basic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ocsp.rs	/^    pub fn basic(&self) -> Result<OcspBasicResponse, ErrorStack> {$/;"	P	implementation:OcspResponseRef
 basic_auth	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/request.rs	/^    pub fn basic_auth<U, P>(self, username: U, password: Option<P>) -> RequestBuilder$/;"	P	implementation:RequestBuilder
@@ -2428,6 +2501,8 @@ brotli	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.1
 buf	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/utf8.rs	/^    buf: [u8; 4],$/;"	m	struct:Encode
 buffer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/body.rs	/^    pub fn buffer(&mut self) -> Result<&[u8], crate::Error> {$/;"	P	implementation:Body
 buffer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    buffer: VecDeque<char>,$/;"	m	struct:Scanner
+buffer_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub buffer_size: usize,$/;"	m	struct:CopyOptions
+buffer_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub buffer_size: usize,$/;"	m	struct:CopyOptions
 build	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkcs12.rs	/^    pub fn build<T>($/;"	P	implementation:Pkcs12Builder
 build	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/rsa.rs	/^    pub fn build(self) -> Rsa<Private> {$/;"	P	implementation:RsaPrivateKeyBuilder
 build	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn build(self) -> SslAcceptor {$/;"	P	implementation:SslAcceptorBuilder
@@ -2586,6 +2661,8 @@ client_hello_legacy_version	/home/annalee/.cargo/registry/src/github.com-1ecc629
 client_hello_random	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn client_hello_random(&self) -> Option<&[u8]> {$/;"	P	implementation:SslRef
 client_hello_session_id	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn client_hello_session_id(&self) -> Option<&[u8]> {$/;"	P	implementation:SslRef
 client_random	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn client_random(&self, buf: &mut [u8]) -> usize {$/;"	P	implementation:SslRef
+clone	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    fn clone(&self) -> TransitProcess {$/;"	P	implementation:TransitProcess
+clone	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    fn clone(&self) -> TransitProcess {$/;"	P	implementation:TransitProcess
 clone	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    fn clone(&self) -> Dsa<T> {$/;"	P	implementation:Dsa
 clone	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    fn clone() {$/;"	f	module:test
 clone	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ec.rs	/^    fn clone(&self) -> EcKey<T> {$/;"	P	implementation:EcKey
@@ -2709,6 +2786,7 @@ content_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/req
 content_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/response.rs	/^    pub fn content_length(&self) -> Option<u64> {$/;"	P	implementation:Response
 content_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/response.rs	/^    pub fn content_length(&self) -> Option<u64> {$/;"	P	implementation:Response
 content_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/response.rs	/^    pub fn content_length(&self) -> Option<u64> {$/;"	P	implementation:Response
+content_only	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub content_only: bool,$/;"	m	struct:CopyOptions
 content_to_html	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^pub fn content_to_html(input: &str) -> String {$/;"	f
 context	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn context(&self) -> &SslContextRef {$/;"	P	implementation:SslAcceptor
 context	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn context(&self) -> &SslContextRef {$/;"	P	implementation:SslConnector
@@ -2727,7 +2805,17 @@ cookies	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.
 cookies	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/response.rs	/^    pub fn cookies<'a>(&'a self) -> impl Iterator<Item = cookie::Cookie<'a>> + 'a {$/;"	P	implementation:Response
 cookies	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^    fn cookies(&self, url: &url::Url) -> Option<HeaderValue> {$/;"	P	implementation:Jar
 cookies	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/cookie.rs	/^    fn cookies(&self, url: &url::Url) -> Option<HeaderValue>;$/;"	P	interface:CookieStore
+copied_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub copied_bytes: u64,$/;"	m	struct:TransitProcess
+copied_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub copied_bytes: u64,$/;"	m	struct:TransitProcess
+copied_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub copied_bytes: u64,$/;"	m	struct:TransitProcess
+copy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn copy<P, Q>(from: P, to: Q, options: &CopyOptions) -> Result<u64>$/;"	f
+copy_inside	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub copy_inside: bool,$/;"	m	struct:CopyOptions
+copy_items	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn copy_items<P, Q>(from: &[P], to: Q, options: &dir::CopyOptions) -> Result<u64>$/;"	f
+copy_items_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn copy_items_with_progress<P, Q, F>($/;"	f
+copy_static_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn copy_static_test() {$/;"	f	module:tests
 copy_to	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/response.rs	/^    pub fn copy_to<W: ?Sized>(&mut self, w: &mut W) -> crate::Result<u64>$/;"	P	implementation:Response
+copy_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn copy_with_progress<P, Q, F>($/;"	f
+copy_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn copy_with_progress<P, Q, F>($/;"	f
 core	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/lib.rs	/^    mod core {$/;"	n	module:lib
 correct_content_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    fn correct_content_length() {$/;"	f	module:tests
 count	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    count: usize,$/;"	m	struct:InlineEl
@@ -2751,7 +2839,6 @@ create	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.
 create	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^pub fn create(dir: &Path) -> io::Result<File> {$/;"	f
 create	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/windows.rs	/^pub fn create(dir: &Path) -> io::Result<File> {$/;"	f
 create_directory_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn create_directory_test() {$/;"	f	module:tests
-create_folders	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn create_folders() -> Result<(), Box<dyn Error>> {$/;"	f
 create_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/util.rs	/^pub fn create_helper<F, R>($/;"	f
 create_html_escape_table	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^const fn create_html_escape_table() -> [u8; 256] {$/;"	f
 create_lookup	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/escape.rs	/^    const fn create_lookup() -> [u8; 16] {$/;"	f	module:simd
@@ -2854,6 +2941,8 @@ decrypt_aead	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/opens
 decrypt_byte	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    fn decrypt_byte(&mut self, cipher_byte: u8) -> u8 {$/;"	P	implementation:ZipCryptoKeys
 decrypt_len	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/encrypt.rs	/^    pub fn decrypt_len(&self, from: &[u8]) -> Result<usize, ErrorStack> {$/;"	P	implementation:Decrypter
 decrypt_without_cert_check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/cms.rs	/^    pub fn decrypt_without_cert_check<T>(&self, pkey: &PKeyRef<T>) -> Result<Vec<u8>, ErrorStack/;"	P	implementation:CmsContentInfoRef
+default	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    fn default() -> Self {$/;"	P	implementation:CopyOptions
+default	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    fn default() -> Self {$/;"	P	implementation:CopyOptions
 default	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/conf.rs	/^    pub fn default() -> ConfMethod {$/;"	P	implementation:ConfMethod
 default	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    fn default() -> AuthorityKeyIdentifier {$/;"	P	implementation:AuthorityKeyIdentifier
 default	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    fn default() -> BasicConstraints {$/;"	P	implementation:BasicConstraints
@@ -2900,6 +2989,8 @@ delete	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.1
 delete	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/client.rs	/^    pub fn delete<U: IntoUrl>(&self, url: U) -> RequestBuilder {$/;"	P	implementation:Client
 delim_run_can_close	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_close(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
 delim_run_can_open	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn delim_run_can_open(s: &str, suffix: &str, run_len: usize, ix: usize) -> bool {$/;"	f
+depth	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub depth: u64,$/;"	m	struct:CopyOptions
+depth	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub depth: u64,$/;"	m	struct:DirOptions
 deref	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    fn deref(&self) -> &[u8] {$/;"	P	implementation:DigestBytes
 deref	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    fn deref(&self) -> &SslContextBuilder {$/;"	P	implementation:SslAcceptorBuilder
 deref	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    fn deref(&self) -> &SslContextBuilder {$/;"	P	implementation:SslConnectorBuilder
@@ -2927,6 +3018,7 @@ des_ecb	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.
 des_ede3	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn des_ede3() -> Cipher {$/;"	P	implementation:Cipher
 des_ede3_cbc	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn des_ede3_cbc() -> Cipher {$/;"	P	implementation:Cipher
 des_ede3_cfb64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn des_ede3_cfb64() -> Cipher {$/;"	P	implementation:Cipher
+description	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn description(&self) -> &str {$/;"	P	implementation:Error
 description	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn description(&self) -> String {$/;"	P	implementation:SslCipherRef
 description	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^    fn description(&self) -> &str {$/;"	P	implementation:Error
 description	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^    fn description(&self) -> &str {$/;"	P	implementation:Error
@@ -3062,9 +3154,13 @@ digest	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.1
 digest	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/mod.rs	/^    pub fn digest(&self, hash_type: MessageDigest) -> Result<DigestBytes, ErrorStack> {$/;"	P	implementation:X509Ref
 digital_signature	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    digital_signature: bool,$/;"	m	struct:KeyUsage
 digital_signature	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn digital_signature(&mut self) -> &mut KeyUsage {$/;"	P	implementation:KeyUsage
+dir	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub mod dir;$/;"	n
 dir	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/version.rs	/^pub fn dir() -> &'static str {$/;"	f
 dir	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^mod dir;$/;"	n
+dir_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub dir_name: String,$/;"	m	struct:TransitProcess
 dir_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn dir_name(&mut self, dir_name: &str) -> &mut SubjectAlternativeName {$/;"	P	implementation:SubjectAlternativeName
+dir_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub dir_size: u64,$/;"	m	struct:DirContent
+directories	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub directories: Vec<String>,$/;"	m	struct:DirContent
 directory_handling	/mnt/c/Users/SamanthaC/rust/md_puppy/src/main.rs	/^mod directory_handling;$/;"	n
 disable_all_links	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn disable_all_links(&mut self) {$/;"	P	implementation:LinkStack
 disabled_ix	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    disabled_ix: usize,$/;"	m	struct:LinkStack
@@ -3209,6 +3305,7 @@ eq	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38
 eq	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/memcmp.rs	/^pub fn eq(a: &[u8], b: &[u8]) -> bool {$/;"	f
 eq	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &CowStr) -> bool {$/;"	P	implementation:CowStr
 eq	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/strings.rs	/^    fn eq(&self, other: &InlineStr) -> bool {$/;"	P	implementation:InlineStr
+err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^macro_rules! err {$/;"	M
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^    err: ErrorImpl,$/;"	m	struct:Error
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        err: PhantomData<E>,$/;"	m	struct:content::ContentDeserializer
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        err: PhantomData<E>,$/;"	m	struct:content::ContentRefDeserializer
@@ -3221,6 +3318,7 @@ err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        err: PhantomData<E>,$/;"	m	struct:content::VariantDeserializer
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^        err: PhantomData<E>,$/;"	m	struct:content::VariantRefDeserializer
 err	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/error.rs	/^    err: io::Error,$/;"	m	struct:PathError
+error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub mod error;$/;"	n
 error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/lib.rs	/^pub mod error;$/;"	n
 error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/bio.rs	/^    pub error: Option<io::Error>,$/;"	m	struct:StreamState
 error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    error: Error,$/;"	m	struct:MidHandshakeSslStream
@@ -3365,6 +3463,7 @@ fields	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.1
 fields	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        fields: Vec<Content>,$/;"	m	struct:content::SerializeTupleVariant
 fields	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^        fields: Vec<Content>,$/;"	m	struct:content::SerializeTupleVariantAsMapValue
 fields	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    fields: Vec<(&'static str, Content)>,$/;"	m	struct:FlatMapSerializeStructVariantAsMapValue
+file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub mod file;$/;"	n
 file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^    file: *const c_char,$/;"	m	struct:Error
 file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^    pub fn file(&self) -> &'static str {$/;"	P	implementation:Error
 file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    pub fn file<T, U>(self, name: T, path: U) -> io::Result<Form>$/;"	P	implementation:Form
@@ -3374,9 +3473,13 @@ file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.
 file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^mod file;$/;"	n
 file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    file: R,$/;"	m	struct:ZipCryptoReader
 file_and_dir_predicates	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    fn file_and_dir_predicates() {$/;"	f	module:test
+file_bytes_copied	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_bytes_copied: u64,$/;"	m	struct:TransitProcess
+file_bytes_copied	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_bytes_copied: u64,$/;"	m	struct:TransitProcess
 file_checker	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^pub fn file_checker(config: Input) -> Result<(), Box<dyn Error>> {$/;"	f
 file_checker_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn file_checker_test() {$/;"	f	module:tests
 file_comment	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    pub file_comment: String,$/;"	m	struct:ZipFileData
+file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_name: String,$/;"	m	struct:TransitProcess
+file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_name: String,$/;"	m	struct:TransitProcess
 file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    file_name: Option<Cow<'static, str>>,$/;"	m	struct:PartMetadata
 file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    pub fn file_name<T>(self, filename: T) -> Part$/;"	P	implementation:Part
 file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    pub(crate) fn file_name<T>(mut self, filename: T) -> Self$/;"	P	implementation:PartMetadata
@@ -3390,7 +3493,10 @@ file_name_sanitized	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec82
 file_names	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    pub fn file_names(&self) -> impl Iterator<Item = &str> {$/;"	P	implementation:ZipArchive
 file_to_html	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 file_to_html_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn file_to_html_test() {$/;"	f	module:tests
+file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
+file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
 filename	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    pub filename: String,$/;"	m	struct:Input
+files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub files: Vec<String>,$/;"	m	struct:DirContent
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    files: Vec<ZipFileData>,$/;"	m	struct:ZipArchive
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    files: Vec<ZipFileData>,$/;"	m	struct:ZipWriter
 finalize	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/envelope.rs	/^    pub fn finalize(&mut self, output: &mut [u8]) -> Result<usize, ErrorStack> {$/;"	P	implementation:Open
@@ -3432,6 +3538,7 @@ flush	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3
 flush	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/spooled.rs	/^    fn flush(&mut self) -> io::Result<()> {$/;"	P	implementation:SpooledTempFile
 flush	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    fn flush(&mut self) -> io::Result<()> {$/;"	P	implementation:ZipWriter
 flush_panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn flush_panic() {$/;"	f
+fmt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {$/;"	P	implementation:Error
 fmt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	P	implementation:Asn1GeneralizedTimeRef
 fmt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	P	implementation:Asn1TimeRef
 fmt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    fn fmt(&self, fmt: &mut fmt::Formatter<'_>) -> fmt::Result {$/;"	P	implementation:Asn1ObjectRef
@@ -3570,6 +3677,9 @@ forwarded_impl	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/ser
 free	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/srtp.rs	/^unsafe fn free(_profile: *mut ffi::SRTP_PROTECTION_PROFILE) {}$/;"	f
 free	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/string.rs	/^unsafe fn free(buf: *mut c_char) {$/;"	f
 free_data_box	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^unsafe extern "C" fn free_data_box<T>($/;"	f
+from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn from(err: IoError) -> Error {$/;"	P	implementation:Error
+from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn from(err: OsString) -> Error {$/;"	P	implementation:Error
+from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    fn from(err: StripPrefixError) -> Error {$/;"	P	implementation:Error
 from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^    fn from(_: ErrorStack) -> fmt::Error {$/;"	P	implementation:Error
 from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/error.rs	/^    fn from(e: ErrorStack) -> io::Error {$/;"	P	implementation:Error
 from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/error.rs	/^    fn from(e: ErrorStack) -> Error {$/;"	P	implementation:Error
@@ -3738,6 +3848,10 @@ get_affine_coordinates_gfp	/home/annalee/.cargo/registry/src/github.com-1ecc6299
 get_bio_error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    fn get_bio_error(&mut self) -> Option<io::Error> {$/;"	P	implementation:SslStream
 get_buf	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bio.rs	/^    pub fn get_buf(&self) -> &[u8] {$/;"	P	implementation:MemBio
 get_ctx_options	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn get_ctx_options() {$/;"	f
+get_details_entry	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn get_details_entry<P>($/;"	f
+get_details_entry_with_meta	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^fn get_details_entry_with_meta<P>($/;"	f
+get_dir_content	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn get_dir_content<P>(path: P) -> Result<DirContent>$/;"	f
+get_dir_content2	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn get_dir_content2<P>(path: P, options: &DirOptions) -> Result<DirContent>$/;"	f
 get_directory_counts	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    pub(crate) fn get_directory_counts($/;"	P	implementation:ZipArchive
 get_entity	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/entities.rs	/^pub(crate) fn get_entity(bytes: &[u8]) -> Option<&'static str> {$/;"	f
 get_error	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    fn get_error(&self, ret: c_int) -> ErrorCode {$/;"	P	implementation:SslRef
@@ -3774,6 +3888,7 @@ get_rfc3526_prime_4096	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9e
 get_rfc3526_prime_6144	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    pub fn get_rfc3526_prime_6144() -> Result<BigNum, ErrorStack> {$/;"	P	implementation:BigNum
 get_rfc3526_prime_8192	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    pub fn get_rfc3526_prime_8192() -> Result<BigNum, ErrorStack> {$/;"	P	implementation:BigNum
 get_shutdown	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn get_shutdown(&mut self) -> ShutdownState {$/;"	P	implementation:SslStream
+get_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn get_size<P>(path: P) -> Result<u64>$/;"	f
 get_sys_proxies	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^fn get_sys_proxies($/;"	f
 get_tag	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn get_tag(&self, tag: &mut [u8]) -> Result<(), ErrorStack> {$/;"	P	implementation:Crypter
 get_title	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^fn get_title() -> String {$/;"	f
@@ -3926,6 +4041,7 @@ index	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.
 index	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    fn index(&self, idx: usize) -> &Yaml {$/;"	P	implementation:Yaml
 index_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    fn index_mut(&mut self, index: usize) -> &mut T::Ref {$/;"	P	implementation:StackRef
 index_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    fn index_mut(&mut self, ix: TreeIndex) -> &mut Node<T> {$/;"	P	implementation:Tree
+index_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn index_test() {$/;"	f	module:tests
 info	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    info: String,$/;"	m	struct:ScanError
 init	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    fn init(&mut self) -> Result<(), ErrorStack> {$/;"	P	implementation:Hasher
 init	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/mod.rs	/^    pub fn init<F, T>($/;"	P	implementation:X509StoreContextRef
@@ -4125,6 +4241,7 @@ issuer_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openss
 item	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/tree.rs	/^    pub item: T,$/;"	m	struct:Node
 item_to_event	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_event<'a>(item: Item, text: &'a str, allocs: &Allocations<'a>) -> Event<'a> {$/;"	f
 item_to_tag	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^fn item_to_tag<'a>(item: &Item, allocs: &Allocations<'a>) -> Tag<'a> {$/;"	f
+items	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub items: Vec<HashMap<DirEntryAttr, DirEntryValue>>,$/;"	m	struct:LsResult
 iter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkcs12.rs	/^    iter: c_int,$/;"	m	struct:Pkcs12Builder
 iter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    pub fn iter(&self) -> Iter<'_, T> {$/;"	P	implementation:StackRef
 iter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    iter: I,$/;"	m	struct:HtmlWriter
@@ -4184,6 +4301,7 @@ keyid	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10
 keyid	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn keyid(&mut self, always: bool) -> &mut AuthorityKeyIdentifier {$/;"	P	implementation:AuthorityKeyIdentifier
 keying_export	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn keying_export() {$/;"	f
 keys	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    keys: ZipCryptoKeys,$/;"	m	struct:ZipCryptoReader
+kind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    pub kind: ErrorKind,$/;"	m	struct:Error
 kind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/body.rs	/^    kind: Kind,$/;"	m	struct:Body
 kind	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/error.rs	/^    kind: Kind,$/;"	m	struct:Inner
 large_file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    pub large_file: bool,$/;"	m	struct:ZipFileData
@@ -4306,6 +4424,7 @@ md_ctx	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.1
 mem_size_of	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/error.rs	/^    fn mem_size_of() {$/;"	f	module:tests
 memcmp	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/lib.rs	/^pub mod memcmp;$/;"	n
 merge_headers	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/client.rs	/^    fn merge_headers(&self, req: &mut Request) {$/;"	P	implementation:Client
+message	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    message: String,$/;"	m	struct:Error
 meta	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/multipart.rs	/^    meta: PartMetadata,$/;"	m	struct:Part
 meta	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    meta: PartMetadata,$/;"	m	struct:Part
 meta	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/multipart.rs	/^    meta: PartMetadata,$/;"	m	struct:Part
@@ -4353,6 +4472,12 @@ mod_sub	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.
 mod_word	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    pub fn mod_word(&self, w: u32) -> Result<u64, ErrorStack> {$/;"	P	implementation:BigNumRef
 month	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    month: u8,$/;"	m	struct:DateTime
 month	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    pub fn month(&self) -> u8 {$/;"	P	implementation:DateTime
+move_dir	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn move_dir<P, Q>(from: P, to: Q, options: &CopyOptions) -> Result<u64>$/;"	f
+move_dir_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn move_dir_with_progress<P, Q, F>($/;"	f
+move_file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn move_file<P, Q>(from: P, to: Q, options: &CopyOptions) -> Result<u64>$/;"	f
+move_file_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn move_file_with_progress<P, Q, F>($/;"	f
+move_items	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn move_items<P, Q>(from_items: &[P], to: Q, options: &dir::CopyOptions) -> Result<u64>$/;"	f
+move_items_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn move_items_with_progress<P, Q, F>($/;"	f
 mozilla_intermediate	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_intermediate(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> {$/;"	P	implementation:SslAcceptor
 mozilla_intermediate_v5	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_intermediate_v5(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> /;"	P	implementation:SslAcceptor
 mozilla_modern	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_modern(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> {$/;"	P	implementation:SslAcceptor
@@ -4407,6 +4532,10 @@ neg	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.3
 neg	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    fn neg(self) -> BigNum {$/;"	P	implementation:BigNum
 neg	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    fn neg(self) -> BigNum {$/;"	P	implementation:BigNumRef
 never	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/value.rs	/^    never: !,$/;"	m	struct:NeverDeserializer
+new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub fn new() -> CopyOptions {$/;"	P	implementation:CopyOptions
+new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub fn new() -> DirOptions {$/;"	P	implementation:DirOptions
+new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/error.rs	/^    pub fn new(kind: ErrorKind, message: &str) -> Error {$/;"	P	implementation:Error
+new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub fn new() -> CopyOptions {$/;"	P	implementation:CopyOptions
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/asn1.rs	/^    fn new() -> Result<Asn1Time, ErrorStack> {$/;"	P	implementation:Asn1Time
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bio.rs	/^    pub fn new() -> Result<MemBio, ErrorStack> {$/;"	P	implementation:MemBio
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bio.rs	/^    pub fn new(buf: &'a [u8]) -> Result<MemBioSlice<'a>, ErrorStack> {$/;"	P	implementation:MemBioSlice
@@ -4697,6 +4826,8 @@ outgoing	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0
 overflow_by_addition	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_by_addition() {$/;"	f	module:test
 overflow_list	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    fn overflow_list() {$/;"	f	module:test
 overrides	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    overrides: Arc<HashMap<String, SocketAddr>>,$/;"	m	struct:DnsResolverWithOverrides
+overwrite	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub overwrite: bool,$/;"	m	struct:CopyOptions
+overwrite	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub overwrite: bool,$/;"	m	struct:CopyOptions
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn p(&self) -> &BigNumRef {$/;"	f
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/rsa.rs	/^    pub fn p(&self) -> Option<&BigNumRef> {$/;"	f
 pad	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn pad(&mut self, padding: bool) {$/;"	P	implementation:Crypter
@@ -5017,6 +5148,7 @@ read_panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl
 read_to_end	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    fn read_to_end() {$/;"	f	module:tests
 read_to_end_with_header	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    fn read_to_end_with_header() {$/;"	f	module:tests
 read_to_end_with_length	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    fn read_to_end_with_length() {$/;"	f	module:tests
+read_to_string	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn read_to_string<P>(path: P) -> Result<String>$/;"	f
 read_to_string	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/body.rs	/^pub(crate) fn read_to_string(mut body: Body) -> io::Result<String> {$/;"	f
 read_zipfile_from_stream	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^pub fn read_zipfile_from_stream<'a, R: io::Read>($/;"	f
 reader	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/multipart.rs	/^    pub fn reader<T: Read + Send + 'static>(value: T) -> Part {$/;"	P	implementation:Part
@@ -5047,6 +5179,9 @@ rem	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.3
 remaining_space	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^    pub(crate) fn remaining_space(&self) -> usize {$/;"	P	implementation:LineStart
 remote_addr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/response.rs	/^    pub fn remote_addr(&self) -> Option<SocketAddr> {$/;"	P	implementation:Response
 remote_addr	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/response.rs	/^    pub fn remote_addr(&self) -> Option<SocketAddr> {$/;"	P	implementation:Response
+remove	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^pub fn remove<P: AsRef<Path>>(path: P) -> Result<()> {$/;"	f
+remove	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn remove<P>(path: P) -> Result<()>$/;"	f
+remove_items	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn remove_items<P>(from_items: &[P]) -> Result<()>$/;"	f
 remove_sensitive_headers	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^pub(crate) fn remove_sensitive_headers(headers: &mut HeaderMap, next: &Url, previous: &[Url]) {$/;"	f
 remove_session	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub unsafe fn remove_session(&self, session: &SslSessionRef) -> bool {$/;"	P	implementation:SslContextRef
 remove_simple_key	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn remove_simple_key(&mut self) -> ScanResult {$/;"	P	implementation:Scanner
@@ -5595,6 +5730,8 @@ size_hint	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.
 sized	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/body.rs	/^    pub fn sized<R: Read + Send + 'static>(reader: R, len: u64) -> Body {$/;"	P	implementation:Body
 skip	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    fn skip(&mut self) {$/;"	P	implementation:Parser
 skip	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn skip(&mut self) {$/;"	P	implementation:Scanner
+skip_exist	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub skip_exist: bool,$/;"	m	struct:CopyOptions
+skip_exist	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub skip_exist: bool,$/;"	m	struct:CopyOptions
 skip_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/mod.rs	/^    fn skip_field(&mut self, key: &'static str) -> Result<(), Self::Error> {$/;"	P	interface:SerializeStruct
 skip_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/ser/mod.rs	/^    fn skip_field(&mut self, key: &'static str) -> Result<(), Self::Error> {$/;"	P	interface:SerializeStructVariant
 skip_line	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    fn skip_line(&mut self) {$/;"	P	implementation:Scanner
@@ -5668,6 +5805,8 @@ start_file_aligned	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823
 start_file_from_path	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    pub fn start_file_from_path($/;"	P	implementation:ZipWriter
 start_file_with_extra_data	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    pub fn start_file_with_extra_data<S>($/;"	P	implementation:ZipWriter
 start_tag	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/html.rs	/^    fn start_tag(&mut self, tag: Tag<'a>) -> io::Result<()> {$/;"	f
+state	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub state: TransitState,$/;"	m	struct:TransitProcess
+state	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub state: dir::TransitState,$/;"	m	struct:TransitProcess
 state	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    state: State,$/;"	m	struct:Hasher
 state	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/bio.rs	/^unsafe fn state<'a, S: 'a>(bio: *mut BIO) -> &'a mut StreamState<S> {$/;"	f
 state	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn state() {$/;"	f
@@ -6177,6 +6316,9 @@ token_available	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/ya
 token_number	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    token_number: usize,$/;"	m	struct:SimpleKey
 tokens	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    tokens: VecDeque<Token>,$/;"	m	struct:Scanner
 tokens_parsed	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    tokens_parsed: usize,$/;"	m	struct:Scanner
+total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub total_bytes: u64,$/;"	m	struct:TransitProcess
+total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^    pub total_bytes: u64,$/;"	m	struct:TransitProcess
+total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub total_bytes: u64,$/;"	m	struct:TransitProcess
 tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/lib.rs	/^mod tree;$/;"	n
 tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:FirstPass
 tree	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    tree: Tree<Item>,$/;"	m	struct:Parser
@@ -6612,6 +6754,7 @@ write	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/s
 write	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub fn write<T: Write>(&self, writer: &mut T) -> ZipResult<()> {$/;"	P	implementation:Zip64CentralDirectoryEnd
 write	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub fn write<T: Write>(&self, writer: &mut T) -> ZipResult<()> {$/;"	P	implementation:Zip64CentralDirectoryEndLocator
 write	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    fn write(&mut self, buf: &[u8]) -> io::Result<usize> {$/;"	P	implementation:ZipWriter
+write_all	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn write_all<P>(path: P, content: &str) -> Result<()>$/;"	f
 write_central_directory_header	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^fn write_central_directory_header<T: Write>(writer: &mut T, file: &ZipFileData) -> ZipResult<()>/;"	f
 write_central_zip64_extra_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^fn write_central_zip64_extra_field<T: Write>(writer: &mut T, file: &ZipFileData) -> ZipResult<u1/;"	f
 write_early_data	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn write_early_data(&mut self, buf: &[u8]) -> Result<usize, Error> {$/;"	P	implementation:SslStream
