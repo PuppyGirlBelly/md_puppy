@@ -3,7 +3,6 @@ use std::fs;
 use std::fs::File;
 use std::io::Write;
 
-use crate::directory_handling::get_output_dir;
 use crate::markdown_compiling::{parse_markdown_file, Page};
 
 pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {
@@ -22,6 +21,13 @@ pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn 
 
     println!("[ INFO ] Parsing complete!");
     Ok(())
+}
+
+fn get_output_dir(filename: String, category: &str) -> String {
+    match category.to_lowercase().as_str() {
+        "home" | "index" | "" => format!("site/{}.html", filename),
+        cat => format!("site/{}/{}.html", cat, filename),
+    }
 }
 
 pub fn process_template(page: &Page, template_path: &str) -> Result<String, Box<dyn Error>> {
@@ -85,11 +91,23 @@ mod tests {
 
     #[test]
     fn file_to_html_test() {
-        crate::directory_handling::check_and_create_directory("site/examples")
+        crate::directory_handling::_check_and_create_directory("site/examples")
             .expect("[ TEST ERR ] This directory could not be created.");
         file_to_html("content/example_short.md", "template/boilerplate.html")
             .expect("[ TEST ERR ] This file could not be processed.");
         assert!(File::open("site/examples/example_short.html").is_ok());
+    }
+
+    #[test]
+    fn get_output_dir_test() {
+        let output: String = get_output_dir("test".to_string(), "home");
+        assert_eq!(output, String::from("site/test.html"));
+        let output: String = get_output_dir("test".to_string(), "index");
+        assert_eq!(output, String::from("site/test.html"));
+        let output: String = get_output_dir("test".to_string(), "");
+        assert_eq!(output, String::from("site/test.html"));
+        let output: String = get_output_dir("test".to_string(), "example");
+        assert_eq!(output, String::from("site/example/test.html"));
     }
 
     #[test]
@@ -110,8 +128,8 @@ mod tests {
   <meta property='og:type' content='website'>
   <meta property='og:url' content='https://softannalee.github.io/examples/A Short Example'>
   <meta property='og:image' content='https://softannalee.github.io/examples/A Short Example/image.jpg'>
-  <link rel='stylesheet' href='css/normalize.css'>
-  <link rel='stylesheet' href='css/main.css'>
+  <link rel='stylesheet' href='/css/normalize.css'>
+  <link rel='stylesheet' href='/css/main.css'>
 </head>
 <body>
   <h1>An h1 header</h1>

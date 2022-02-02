@@ -7,6 +7,7 @@ mod markdown_compiling;
 mod template_processing;
 
 use command_line::{file_checker, usage, Input};
+use directory_handling::_init_directories;
 use template_processing::file_to_html;
 
 fn main() {
@@ -23,7 +24,7 @@ fn main() {
     };
 
     match args.len() {
-        2 => {
+        3 => {
             file_to_html(&args[1], "template/template.html").expect("Error: Could not parse file");
         }
         _ => {

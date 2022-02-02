@@ -10,8 +10,8 @@ pub struct Input {
 impl Input {
     pub fn new(args: &[String]) -> Result<Input, &str> {
         match args.len() {
-            arg if arg < 2 => Err("Not enough arguments"),
-            arg if arg > 2 => Err("Too many arguments"),
+            arg if arg < 3 => Err("Not enough arguments"),
+            arg if arg > 3 => Err("Too many arguments"),
             _ => {
                 let filename = args[0].clone();
                 let site_name = String::from("md_puppy");

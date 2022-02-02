@@ -2207,15 +2207,18 @@ __serialize_unimplemented	/home/annalee/.cargo/registry/src/github.com-1ecc6299d
 __serialize_unimplemented_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_helper {$/;"	M
 __serialize_unimplemented_method	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_method {$/;"	M
 _assert_impls	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/lib.rs	/^fn _assert_impls() {$/;"	f
+_check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {$/;"	f
+_check_for_boilerplate	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_boilerplate() -> Result<(), Box<dyn Error>> {$/;"	f
 _check_for_boilerplate_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_boilerplate_test() {$/;"	f	module:tests
+_check_for_static_folder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {$/;"	f
 _check_for_static_folder_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_static_folder_test() {$/;"	f	module:tests
 _check_kinds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn _check_kinds() {$/;"	f
 _copy_static	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _copy_static() -> Result<(), Box<dyn Error>> {$/;"	f
-_create_folders	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _create_folders() -> Result<(), Box<dyn Error>> {$/;"	f
 _explicit_document_start	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    fn _explicit_document_start(&mut self) -> ParseResult {$/;"	P	implementation:Parser
 _get	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    unsafe fn _get(&self, idx: usize) -> *mut T::CType {$/;"	P	implementation:StackRef
 _get_dir_content	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^fn _get_dir_content<P>(path: P, mut depth: u64) -> Result<DirContent>$/;"	f
 _implied_bounds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^fn _implied_bounds() {$/;"	f
+_init_directories	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _init_directories() -> Result<(), Box<dyn Error>> {$/;"	f
 _marker	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    _marker: PhantomData<E>,$/;"	m	struct:FlatInternallyTaggedAccess
 _marker	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    _marker: PhantomData<E>,$/;"	m	struct:FlatMapAccess
 _marker	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/de.rs	/^    _marker: PhantomData<E>,$/;"	m	struct:FlatStructAccess
@@ -2609,10 +2612,7 @@ char	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136
 char_from_codepoint	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn char_from_codepoint(input: usize) -> Option<char> {$/;"	f
 check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/redirect.rs	/^    pub(crate) fn check(&self, status: StatusCode, next: &Url, previous: &[Url]) -> ActionKind {$/;"	P	implementation:Policy
 check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/crc32.rs	/^    check: u32,$/;"	m	struct:Crc32Reader
-check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 check_expected_indices	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn check_expected_indices(bytes: &[u8], expected: &[usize], skip: usize) {$/;"	f	module:simd_test
-check_for_boilerplate	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn check_for_boilerplate() -> Result<(), Box<dyn Error>> {$/;"	f
-check_for_static_folder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn check_for_static_folder() -> Result<(), Box<dyn Error>> {$/;"	f
 check_key	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ec.rs	/^    pub fn check_key(&self) -> Result<(), ErrorStack> {$/;"	f
 check_key	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/rsa.rs	/^    pub fn check_key(&self) -> Result<bool, ErrorStack> {$/;"	f
 check_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/compression.rs	/^        fn check_match(method: CompressionMethod) {$/;"	f	function:test::to_display_fmt
@@ -3866,8 +3866,8 @@ get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn get_mut(&mut self) -> &mut S {$/;"	P	implementation:SslStream
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn get_mut(&mut self) -> &mut S {$/;"	P	implementation:SslStreamBuilder
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    pub fn get_mut(&mut self, idx: usize) -> Option<&mut T::Ref> {$/;"	P	implementation:StackRef
-get_output_dir	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn get_output_dir(filename: String, category: &str) -> String {$/;"	f
-get_output_dir_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn get_output_dir_test() {$/;"	f	module:tests
+get_output_dir	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn get_output_dir(filename: String, category: &str) -> String {$/;"	f
+get_output_dir_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn get_output_dir_test() {$/;"	f	module:tests
 get_placeholder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn get_placeholder(template: &str) -> Option<&str> {$/;"	f
 get_placeholder_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn get_placeholder_test() {$/;"	f	module:tests
 get_plain	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    fn get_plain(&mut self) -> &mut W {$/;"	P	implementation:GenericZipWriter
