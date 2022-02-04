@@ -49,25 +49,35 @@ pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
     Ok(page)
 }
 
-fn parse_frontmatter<'a>(
-    frontmatter: &'a str,
-    page: &'a mut Page,
-) -> Result<&'a Page, Box<dyn Error>> {
-    let yaml = YamlLoader::load_from_str(frontmatter)?;
-    let fm = &yaml[0];
+fn parse_frontmatter<'a>(frontmatter: &'a str, page: &'a mut Page) -> Result<&'a Page, String> {
+    let yaml = YamlLoader::load_from_str(frontmatter);
 
-    page.title = fm["title"].as_str().unwrap().to_string();
-    page.description = fm["description"].as_str().unwrap().to_string();
-    page.date = fm["date"].as_str().unwrap().to_string();
-    page.category = fm["category"].as_str().unwrap().to_string();
+    match yaml {
+        Err(_) => Err("[ ERROR ] Frontmatter is missing".to_string()),
+        Ok(y) => {
+            let fm = &y[0];
 
-    Ok(page)
+            page.title = fm["title"].as_str().unwrap_or("Default Title").to_string();
+            page.description = fm["description"]
+                .as_str()
+                .unwrap_or("Site generated with puppy_md")
+                .to_string();
+            page.date = fm["date"]
+                .as_str()
+                .unwrap_or("1970-01-01T00:00:00-0000")
+                .to_string();
+            page.category = fm["category"].as_str().unwrap_or("").to_string();
+
+            Ok(page)
+        }
+    }
 }
 
 pub fn content_to_html(input: &str) -> String {
     // Setup options and commonmark parser
     let mut parser_options = pulldown_cmark::Options::empty();
     parser_options.insert(Options::ENABLE_STRIKETHROUGH);
+    parser_options.insert(Options::ENABLE_SMART_PUNCTUATION);
     let parser = Parser::new_ext(input, parser_options);
 
     // Write to String buffer

@@ -22,7 +22,7 @@ tmux send-keys "nvim -c 'SessionManager load_current_dir_session'" C-m
 # Split pane 1 horizontal by 65%
 tmux splitw -h -p 10
 tmux resize-pane -R 30
-tmux send-keys "cargo watch -c -i '*.html' -x test" C-m 
+tmux send-keys "cargo watch -c -w src -x test" C-m 
 
 # Select pane 0
 tmux selectp -t 0

@@ -3,6 +3,7 @@ use std::fs;
 use std::fs::File;
 use std::io::Write;
 
+use crate::directory_handling::_check_and_create_directory;
 use crate::markdown_compiling::{parse_markdown_file, Page};
 
 pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn Error>> {
@@ -10,7 +11,11 @@ pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn 
     let html_page: String = process_template(&page, template_path)?;
     let filename: String =
         String::from(&file_path[file_path.rfind('/').unwrap()..file_path.len() - 3]);
-    let output_filename: String = get_output_dir(filename, &page.category);
+    let output_directory: String = get_output_dir(&page.category);
+
+    _check_and_create_directory(&output_directory)?;
+
+    let output_filename: String = format!("{}/{}.html", output_directory, &filename);
 
     let mut outfile =
         File::create(output_filename).expect("[ ERROR ] Could not create output file!");
@@ -23,10 +28,10 @@ pub fn file_to_html(file_path: &str, template_path: &str) -> Result<(), Box<dyn 
     Ok(())
 }
 
-fn get_output_dir(filename: String, category: &str) -> String {
+fn get_output_dir(category: &str) -> String {
     match category.to_lowercase().as_str() {
-        "home" | "index" | "" => format!("site/{}.html", filename),
-        cat => format!("site/{}/{}.html", cat, filename),
+        "home" | "index" | "" => String::from("site/"),
+        cat => format!("site/{}/", cat),
     }
 }
 
@@ -100,14 +105,14 @@ mod tests {
 
     #[test]
     fn get_output_dir_test() {
-        let output: String = get_output_dir("test".to_string(), "home");
-        assert_eq!(output, String::from("site/test.html"));
-        let output: String = get_output_dir("test".to_string(), "index");
-        assert_eq!(output, String::from("site/test.html"));
-        let output: String = get_output_dir("test".to_string(), "");
-        assert_eq!(output, String::from("site/test.html"));
-        let output: String = get_output_dir("test".to_string(), "example");
-        assert_eq!(output, String::from("site/example/test.html"));
+        let output: String = get_output_dir("home");
+        assert_eq!(output, String::from("site/"));
+        let output: String = get_output_dir("index");
+        assert_eq!(output, String::from("site/"));
+        let output: String = get_output_dir("");
+        assert_eq!(output, String::from("site/"));
+        let output: String = get_output_dir("test");
+        assert_eq!(output, String::from("site/example/"));
     }
 
     #[test]

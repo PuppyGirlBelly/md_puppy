@@ -1,3 +1,10 @@
+---
+title: A Long Example
+description: this is a comprehensive example of a markdown file
+category: examples
+date: 1970-01-01T00:00:00-0000
+---
+
 An h1 header
 ============
 

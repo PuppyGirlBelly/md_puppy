@@ -953,8 +953,6 @@ InnerClientHandle	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/
 InnerClientHandle	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/client.rs	/^struct InnerClientHandle {$/;"	s
 InnerError	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/error.rs	/^pub(crate) enum InnerError {$/;"	g
 InnerVersion	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/tls.rs	/^enum InnerVersion {$/;"	g
-Input	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^impl Input {$/;"	c
-Input	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^pub struct Input {$/;"	s
 Integer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    Integer,$/;"	e	enum:Unsupported
 Integer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    Integer(i64),$/;"	e	enum:Yaml
 Intercept	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/proxy.rs	/^enum Intercept {$/;"	g
@@ -2226,6 +2224,7 @@ _p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38
 _p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/encrypt.rs	/^    _p: PhantomData<&'a ()>,$/;"	m	struct:Encrypter
 _p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/sign.rs	/^    _p: PhantomData<&'a ()>,$/;"	m	struct:Signer
 _p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    _p: PhantomData<S>,$/;"	m	struct:SslStream
+_process_content	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _process_content() -> Result<(), Box<dyn Error>> {$/;"	f
 _thread_handle	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/response.rs	/^    _thread_handle: KeepCoreThreadAlive,$/;"	m	struct:Response
 a	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/de/mod.rs	/^impl<'a> Display for Expected + 'a {$/;"	c
 aad_update	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn aad_update(&mut self, input: &[u8]) -> Result<(), ErrorStack> {$/;"	P	implementation:Crypter
@@ -2733,8 +2732,6 @@ conf	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.
 config	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/client.rs	/^    config: Config,$/;"	m	struct:ClientBuilder
 config	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/client.rs	/^    config: Arc<Config>,$/;"	m	struct:Client
 config	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/client.rs	/^    config: Config,$/;"	m	struct:ClientBuilder
-config_fail_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn config_fail_test() {$/;"	f	module:tests
-config_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn config_test() {$/;"	f	module:tests
 configure	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn configure(&self) -> Result<ConnectConfiguration, ErrorStack> {$/;"	P	implementation:SslConnector
 connect	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn connect<S>(&self, domain: &str, stream: S) -> Result<SslStream<S>, HandshakeError<S>>$/;"	P	implementation:SslConnector
 connect	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn connect<S>(self, domain: &str, stream: S) -> Result<SslStream<S>, HandshakeError<S>>$/;"	P	implementation:ConnectConfiguration
@@ -3475,8 +3472,6 @@ file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/sr
 file_and_dir_predicates	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    fn file_and_dir_predicates() {$/;"	f	module:test
 file_bytes_copied	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_bytes_copied: u64,$/;"	m	struct:TransitProcess
 file_bytes_copied	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_bytes_copied: u64,$/;"	m	struct:TransitProcess
-file_checker	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^pub fn file_checker(config: Input) -> Result<(), Box<dyn Error>> {$/;"	f
-file_checker_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    fn file_checker_test() {$/;"	f	module:tests
 file_comment	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/types.rs	/^    pub file_comment: String,$/;"	m	struct:ZipFileData
 file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_name: String,$/;"	m	struct:TransitProcess
 file_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_name: String,$/;"	m	struct:TransitProcess
@@ -3495,7 +3490,6 @@ file_to_html	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^p
 file_to_html_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn file_to_html_test() {$/;"	f	module:tests
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
-filename	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    pub filename: String,$/;"	m	struct:Input
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub files: Vec<String>,$/;"	m	struct:DirContent
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    files: Vec<ZipFileData>,$/;"	m	struct:ZipArchive
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    files: Vec<ZipFileData>,$/;"	m	struct:ZipWriter
@@ -3866,7 +3860,7 @@ get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn get_mut(&mut self) -> &mut S {$/;"	P	implementation:SslStream
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn get_mut(&mut self) -> &mut S {$/;"	P	implementation:SslStreamBuilder
 get_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    pub fn get_mut(&mut self, idx: usize) -> Option<&mut T::Ref> {$/;"	P	implementation:StackRef
-get_output_dir	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn get_output_dir(filename: String, category: &str) -> String {$/;"	f
+get_output_dir	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn get_output_dir(category: &str) -> String {$/;"	f
 get_output_dir_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn get_output_dir_test() {$/;"	f	module:tests
 get_placeholder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^fn get_placeholder(template: &str) -> Option<&str> {$/;"	f
 get_placeholder_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^    fn get_placeholder_test() {$/;"	f	module:tests
@@ -4658,7 +4652,6 @@ new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    pub fn new(inner: W) -> ZipWriter<W> {$/;"	P	implementation:ZipWriter
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    fn new() -> ZipCryptoKeys {$/;"	P	implementation:ZipCryptoKeys
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    pub fn new(file: R, password: &[u8]) -> ZipCryptoReader<R> {$/;"	P	implementation:ZipCryptoReader
-new	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    pub fn new(args: &[String]) -> Result<Input, &str> {$/;"	P	implementation:Input
 new	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn new() -> Page {$/;"	P	implementation:Page
 new_append	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    pub fn new_append(mut readwriter: A) -> ZipResult<ZipWriter<A>> {$/;"	P	implementation:ZipWriter
 new_decrypt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/aes.rs	/^    pub fn new_decrypt(key: &[u8]) -> Result<AesKey, KeyError> {$/;"	P	implementation:AesKey
@@ -4850,7 +4843,7 @@ parse_extra_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/
 parse_f64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^fn parse_f64(v: &str) -> Option<f64> {$/;"	f
 parse_fenced_code_block	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_fenced_code_block($/;"	P	implementation:FirstPass
 parse_footnote	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_footnote(&mut self, start: usize) -> Option<usize> {$/;"	P	implementation:FirstPass
-parse_frontmatter	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^fn parse_frontmatter<'a>($/;"	f
+parse_frontmatter	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^fn parse_frontmatter<'a>(frontmatter: &'a str, page: &'a mut Page) -> Result<&'a Page, String> {$/;"	f
 parse_hex	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/scanners.rs	/^fn parse_hex(bytes: &[u8]) -> (usize, usize) {$/;"	f
 parse_hrule	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_hrule(&mut self, hrule_size: usize, ix: usize) -> usize {$/;"	P	implementation:FirstPass
 parse_html_block_type_1_to_5	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn parse_html_block_type_1_to_5($/;"	P	implementation:FirstPass
@@ -5708,7 +5701,6 @@ simple_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulld
 simple_no_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn simple_no_match() {$/;"	f	module:simd_test
 single_open_fish	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/simd.rs	/^    fn single_open_fish() {$/;"	f	module:simd_test
 single_open_fish_bracket	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.8.0/src/parse.rs	/^    fn single_open_fish_bracket() {$/;"	f	module:test
-site_name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^    pub site_name: String,$/;"	m	struct:Input
 site_name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub site_name: String,$/;"	m	struct:Page
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn size(&self) -> u32 {$/;"	f
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    pub fn size(&self) -> usize {$/;"	P	implementation:MessageDigest
@@ -6220,7 +6212,6 @@ tests	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11
 tests	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/client.rs	/^mod tests {$/;"	n
 tests	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/multipart.rs	/^mod tests {$/;"	n
 tests	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/lib.rs	/^mod tests {$/;"	n
-tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^mod tests {$/;"	n
 tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^mod tests {$/;"	n
 tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^mod tests {$/;"	n
 tests	/mnt/c/Users/SamanthaC/rust/md_puppy/src/template_processing.rs	/^mod tests {$/;"	n

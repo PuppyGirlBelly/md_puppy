@@ -1,8 +1,30 @@
 use fs_extra::copy_items;
-use fs_extra::dir::{get_dir_content2, CopyOptions, DirOptions};
+use fs_extra::dir::{get_dir_content, get_dir_content2, CopyOptions, DirOptions};
 use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
+
+use crate::template_processing::file_to_html;
+
+// use std::io::prelude::*;
+// pub fn file_checker(filename: String) -> Result<(), Box<dyn Error>> {
+//     let mut file = File::open(filename)?;
+//     let mut buf: Vec<u8> = Vec::new();
+//     file.read_to_end(&mut buf)?;
+//     let _contents = String::from_utf8_lossy(&buf);
+
+//     Ok(())
+// }
+
+pub fn _process_content() -> Result<(), Box<dyn Error>> {
+    let content_dir = get_dir_content("content/")?;
+
+    for file in content_dir.files {
+        file_to_html(&file, "template/boilerplate.html")?;
+    }
+
+    Ok(())
+}
 
 pub fn _copy_static() -> Result<(), Box<dyn Error>> {
     let mut dir_options = DirOptions::new();

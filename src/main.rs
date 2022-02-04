@@ -1,32 +1,31 @@
 use std::env;
-use std::process;
 
 mod command_line;
 mod directory_handling;
 mod markdown_compiling;
 mod template_processing;
 
-use command_line::{file_checker, usage, Input};
-use directory_handling::_init_directories;
-use template_processing::file_to_html;
+use command_line::usage;
+use directory_handling::{_copy_static, _init_directories};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
 
-    let input = Input::new(&args).unwrap_or_else(|err| {
-        eprintln!("Problem parsing arguements: {}", err);
-        process::exit(1);
-    });
-
-    if let Err(e) = file_checker(input) {
-        eprintln!("Application error: {}", e);
-        process::exit(1);
-    };
-
     match args.len() {
-        3 => {
-            file_to_html(&args[1], "template/template.html").expect("Error: Could not parse file");
-        }
+        arg if arg == 2 => match String::as_str(&args[1].to_lowercase()) {
+            "init" => {
+                _init_directories().expect("Error: Could not initalize directories");
+            }
+            "build" => {
+                _copy_static().expect("Error: Could not copy static folder");
+                directory_handling::_process_content().expect("Error: Error processing content");
+            }
+            _ => {
+                eprintln!("Error: Invalid Invocation");
+            }
+        },
+        arg if arg < 2 => eprintln!("Error: Not enough arguments"),
+        arg if arg > 2 => eprintln!("Error: Too many arguments"),
         _ => {
             eprintln!("Error: Invalid Invocation");
             usage();
