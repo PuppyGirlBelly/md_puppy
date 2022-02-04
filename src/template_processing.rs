@@ -112,7 +112,7 @@ mod tests {
         let output: String = get_output_dir("");
         assert_eq!(output, String::from("site/"));
         let output: String = get_output_dir("test");
-        assert_eq!(output, String::from("site/example/"));
+        assert_eq!(output, String::from("site/test/"));
     }
 
     #[test]

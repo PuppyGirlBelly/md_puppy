@@ -41,7 +41,7 @@ pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
 
     let mut page: Page = Page::new();
 
-    let output: Vec<&str> = input.split("---").filter(|&x| !x.is_empty()).collect();
+    let output: Vec<&str> = input.splitn(3, "---").filter(|&x| !x.is_empty()).collect();
     parse_frontmatter(output[0], &mut page)?;
     page.content = content_to_html(output[1]);
     println!("[ INFO ] Parsing {:?} complete!", path);
@@ -76,7 +76,10 @@ fn parse_frontmatter<'a>(frontmatter: &'a str, page: &'a mut Page) -> Result<&'a
 pub fn content_to_html(input: &str) -> String {
     // Setup options and commonmark parser
     let mut parser_options = pulldown_cmark::Options::empty();
+    parser_options.insert(Options::ENABLE_TABLES);
+    parser_options.insert(Options::ENABLE_FOOTNOTES);
     parser_options.insert(Options::ENABLE_STRIKETHROUGH);
+    parser_options.insert(Options::ENABLE_TASKLISTS);
     parser_options.insert(Options::ENABLE_SMART_PUNCTUATION);
     let parser = Parser::new_ext(input, parser_options);
 

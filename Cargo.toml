@@ -9,7 +9,7 @@ homepage = "https://softannalee.github.io"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-pulldown-cmark = "0.8.0"
+pulldown-cmark = { version = "0.9.1", default-features = false, features = ["simd"] }
 yaml-rust = "0.4.5"
 serde = {version = "1.0.133", features = ["derive"] }
 openssl = "0.10.38"
