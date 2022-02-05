@@ -4,7 +4,7 @@ use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
 
-use crate::template_processing::file_to_html;
+use crate::template_processing::file_to_html; //::{file_checker, markdown_to_html, usage, Config};
 
 // use std::io::prelude::*;
 // pub fn file_checker(filename: String) -> Result<(), Box<dyn Error>> {
@@ -16,7 +16,7 @@ use crate::template_processing::file_to_html;
 //     Ok(())
 // }
 
-pub fn _process_content() -> Result<(), Box<dyn Error>> {
+pub fn process_content() -> Result<(), Box<dyn Error>> {
     let content_dir = get_dir_content("content/")?;
 
     for file in content_dir.files {
@@ -26,10 +26,17 @@ pub fn _process_content() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn _copy_static() -> Result<(), Box<dyn Error>> {
+pub fn copy_static() -> Result<(), Box<dyn Error>> {
     let mut dir_options = DirOptions::new();
     dir_options.depth = 1;
     let static_dir = get_dir_content2("static/", &dir_options)?;
+    let static_files: Vec<String> = static_dir.files;
+    let static_chilren: Vec<String> = static_dir
+        .directories
+        .iter()
+        .filter(|x| !x.ends_with("static/"))
+        .map(|x| x.to_owned())
+        .collect();
 
     let copy_options = CopyOptions {
         overwrite: true,
@@ -40,12 +47,12 @@ pub fn _copy_static() -> Result<(), Box<dyn Error>> {
         depth: 0,
     };
 
-    copy_items(&static_dir.files, "site/", &copy_options)?;
-    copy_items(&["static/css/"], "site/", &copy_options)?;
+    copy_items(&static_files, "site/", &copy_options)?;
+    copy_items(&static_chilren, "site/", &copy_options)?;
     Ok(())
 }
 
-pub fn _init_directories() -> Result<(), Box<dyn Error>> {
+pub fn init_directories() -> Result<(), Box<dyn Error>> {
     _check_and_create_directory("content/")?;
     _check_and_create_directory("site/")?;
     _check_for_static_folder()?;
@@ -98,7 +105,7 @@ mod tests {
 
     #[test]
     fn copy_static_test() {
-        _copy_static().expect("[ TEST ] Could not copy items from static");
+        copy_static().expect("[ TEST ] Could not copy items from static");
         assert!(File::open("site/css/main.css").is_ok());
     }
 

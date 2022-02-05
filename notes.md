@@ -15,10 +15,11 @@ ASSUMING IT'S A LIBRARY
     [x] 'md_puppy build' copy static folder over using
         directory_processing::_copy_static() and then add pages and categories by
         traversing all folders in 'content'
-[ ] Index pages for the categories?
 [ ] Nav header based on categories
     [ ] Category 'null', '', or 'draft' for not displaying a category
-[ ] Image embeds
+[ ] Index pages for the categories?
+    [ ] Index created as {{ Index: <category> }} and then produces a <li> of links
+[x] Image embeds
     - I think that the library already takes care of that.
 [ ] Config file?
     - Useful for determining project root
