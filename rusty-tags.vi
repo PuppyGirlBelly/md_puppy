@@ -2678,6 +2678,7 @@ Signer	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.1
 SimpleKey	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^impl SimpleKey {$/;"	c
 SimpleKey	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^struct SimpleKey {$/;"	s
 SingleQuoted	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    SingleQuoted,$/;"	e	enum:TScalarStyle
+Site	/home/annalee/rust/md_puppy/src/site_data.rs	/^pub struct Site {$/;"	s
 Size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Size,$/;"	e	enum:DirEntryAttr
 Skip	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    Skip,$/;"	e	enum:TransitProcessResult
 SkipAll	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    SkipAll,$/;"	e	enum:TransitProcessResult
@@ -6087,6 +6088,7 @@ overwrite	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn p(&self) -> &BigNumRef {$/;"	f
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/rsa.rs	/^    pub fn p(&self) -> Option<&BigNumRef> {$/;"	f
 pad	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn pad(&mut self, padding: bool) {$/;"	P	implementation:Crypter
+pages	/home/annalee/rust/md_puppy/src/site_data.rs	/^    pub pages: Vec<String>,$/;"	m	struct:Site
 panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/bio.rs	/^    pub panic: Option<Box<dyn Any + Send>>,$/;"	m	struct:StreamState
 panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/util.rs	/^    panic: Option<Box<dyn Any + Send + 'static>>,$/;"	m	struct:CallbackState
 param_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn param_mut(&mut self) -> &mut X509VerifyParamRef {$/;"	P	implementation:SslRef
@@ -6975,6 +6977,7 @@ simple_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulld
 simple_no_match	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^        fn simple_no_match() {$/;"	f	module:simd::simd_test
 single_open_fish	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^        fn single_open_fish() {$/;"	f	module:simd::simd_test
 single_open_fish_bracket	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/parse.rs	/^    fn single_open_fish_bracket() {$/;"	f	module:test
+site_data	/home/annalee/rust/md_puppy/src/main.rs	/^mod site_data;$/;"	n
 site_name	/home/annalee/rust/md_puppy/src/markdown_compiling.rs	/^    pub site_name: String,$/;"	m	struct:Page
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn size(&self) -> u32 {$/;"	f
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    pub fn size(&self) -> usize {$/;"	P	implementation:MessageDigest
@@ -7183,7 +7186,6 @@ tempfile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-
 tempfile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^    pub fn tempfile(&self) -> io::Result<NamedTempFile> {$/;"	P	implementation:Builder
 tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^pub fn tempfile_in<P: AsRef<Path>>(dir: P) -> io::Result<File> {$/;"	f
 tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^    pub fn tempfile_in<P: AsRef<Path>>(&self, dir: P) -> io::Result<NamedTempFile> {$/;"	P	implementation:Builder
-template_processing	/home/annalee/rust/md_puppy/src/main.rs	/^mod template_processing;$/;"	n
 template_processing_test	/home/annalee/rust/md_puppy/src/markdown_compiling.rs	/^    fn template_processing_test() {$/;"	f	module:tests
 template_replacement_test	/home/annalee/rust/md_puppy/src/markdown_compiling.rs	/^    fn template_replacement_test() {$/;"	f	module:tests
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/aes.rs	/^mod test {$/;"	n

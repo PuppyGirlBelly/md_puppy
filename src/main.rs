@@ -3,7 +3,7 @@ use std::env;
 mod command_line;
 mod directory_handling;
 mod markdown_compiling;
-mod template_processing;
+mod site_data;
 
 use crate::command_line::print_short_banner;
 use command_line::usage;

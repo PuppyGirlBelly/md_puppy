@@ -16,3 +16,7 @@ look like:
   * this one
   * that one
   * the other one
+
+[A bigger test](/examples/example.html)
+
+[Go home](/index.html)
