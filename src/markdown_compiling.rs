@@ -8,7 +8,7 @@ use pulldown_cmark::{html, Options, Parser};
 use serde::Deserialize;
 use yaml_rust::YamlLoader;
 
-use crate::directory_handling::_check_and_create_directory;
+use crate::directory_handling::check_and_create_directory;
 
 #[derive(Clone, Deserialize, Debug, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Page {
@@ -95,9 +95,9 @@ impl Page {
 
     pub fn write_to_file(&mut self) -> Result<(), Box<dyn Error>> {
         let filename: String = get_filename_from_path(&self.filepath);
-        let output_directory: String = get_output_dir(&self.category);
+        let output_directory: String = format!("site{}", get_output_dir(&self.category));
 
-        _check_and_create_directory(&output_directory)?;
+        check_and_create_directory(&output_directory)?;
 
         let output_filename: String = format!("{}/{}.html", output_directory, &filename);
 
@@ -157,8 +157,8 @@ pub fn file_to_html(file_path: &str) -> Result<(), Box<dyn Error>> {
 
 pub fn get_output_dir(category: &str) -> String {
     match category.to_lowercase().as_str() {
-        "home" | "index" | "" => String::from("site/"),
-        cat => format!("site/{}", cat),
+        "home" | "index" | "" => String::from("/"),
+        cat => format!("/{}", cat),
     }
 }
 
@@ -274,7 +274,7 @@ date: example_date
 
     #[test]
     fn file_to_html_test() {
-        crate::directory_handling::_check_and_create_directory("site/examples")
+        crate::directory_handling::check_and_create_directory("site/examples")
             .expect("[ TEST ERR ] This directory could not be created.");
         file_to_html("content/example/example_short.md")
             .expect("[ TEST ERR ] This file could not be processed.");
@@ -284,13 +284,13 @@ date: example_date
     #[test]
     fn get_output_dir_test() {
         let output: String = get_output_dir("home");
-        assert_eq!(output, String::from("site/"));
+        assert_eq!(output, String::from("/"));
         let output: String = get_output_dir("index");
-        assert_eq!(output, String::from("site/"));
+        assert_eq!(output, String::from("/"));
         let output: String = get_output_dir("");
-        assert_eq!(output, String::from("site/"));
+        assert_eq!(output, String::from("/"));
         let output: String = get_output_dir("test");
-        assert_eq!(output, String::from("site/test"));
+        assert_eq!(output, String::from("/test"));
     }
 
     #[test]

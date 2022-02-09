@@ -2892,7 +2892,6 @@ __serialize_unimplemented	/home/annalee/.cargo/registry/src/github.com-1ecc6299d
 __serialize_unimplemented_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_helper {$/;"	M
 __serialize_unimplemented_method	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_method {$/;"	M
 _assert_impls	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/lib.rs	/^fn _assert_impls() {$/;"	f
-_check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn _check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 _check_for_boilerplate	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_boilerplate() -> Result<(), Box<dyn Error>> {$/;"	f
 _check_for_boilerplate_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_boilerplate_test() {$/;"	f	module:tests
 _check_for_static_folder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {$/;"	f
@@ -3402,6 +3401,7 @@ check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive
 check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/mod.rs	/^mod check;$/;"	n
 check	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/crc32.rs	/^    check: u32,$/;"	m	struct:Crc32Reader
 check_adjacent_tag_conflict	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_adjacent_tag_conflict(cx: &Ctxt, cont: &Container) {$/;"	f
+check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 check_expected_indices	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^        fn check_expected_indices(bytes: &[u8], expected: &[usize], skip: usize) {$/;"	f	module:simd::simd_test
 check_flatten	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_flatten(cx: &Ctxt, cont: &Container) {$/;"	f
 check_flatten_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_flatten_field(cx: &Ctxt, style: Style, field: &Field) {$/;"	f
@@ -3672,6 +3672,7 @@ create_category_links	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^  
 create_directory_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn create_directory_test() {$/;"	f	module:tests
 create_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/util.rs	/^pub fn create_helper<F, R>($/;"	f
 create_html_escape_table	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/escape.rs	/^const fn create_html_escape_table() -> [u8; 256] {$/;"	f
+create_index_page	/mnt/c/Users/SamanthaC/rust/md_puppy/src/page_creation.rs	/^pub fn create_index_page(filename: &str, category: &str) -> Result<(), String> {$/;"	f
 create_lookup	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/escape.rs	/^    const fn create_lookup() -> [u8; 16] {$/;"	f	module:simd
 create_lut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^fn create_lut(options: &Options) -> LookupTable {$/;"	f
 create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/other.rs	/^pub fn create_named(_path: &Path, open_options: &mut OpenOptions) -> io::Result<File> {$/;"	f
@@ -3679,6 +3680,7 @@ create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempf
 create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/windows.rs	/^pub fn create_named(path: &Path, open_options: &mut OpenOptions) -> io::Result<File> {$/;"	f
 create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^pub(crate) fn create_named($/;"	f
 create_node	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/tree.rs	/^    pub(crate) fn create_node(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
+create_page	/mnt/c/Users/SamanthaC/rust/md_puppy/src/page_creation.rs	/^pub fn create_page(filename: &str) -> Result<(), String> {$/;"	f
 create_unix	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^fn create_unix(dir: &Path) -> io::Result<File> {$/;"	f
 create_unlinked	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^fn create_unlinked(path: &Path) -> io::Result<File> {$/;"	f
 critical	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    critical: bool,$/;"	m	struct:AuthorityKeyIdentifier
@@ -4127,6 +4129,7 @@ dir_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-
 dir_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn dir_name(&mut self, dir_name: &str) -> &mut SubjectAlternativeName {$/;"	P	implementation:SubjectAlternativeName
 dir_size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub dir_size: u64,$/;"	m	struct:DirContent
 directories	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub directories: Vec<String>,$/;"	m	struct:DirContent
+directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub directory: Vec<String>,$/;"	m	struct:Site
 directory_handling	/mnt/c/Users/SamanthaC/rust/md_puppy/src/main.rs	/^mod directory_handling;$/;"	n
 disable_all_links	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/parse.rs	/^    fn disable_all_links(&mut self) {$/;"	P	implementation:LinkStack
 disabled_ix	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/parse.rs	/^    disabled_ix: usize,$/;"	m	struct:LinkStack
@@ -6332,6 +6335,7 @@ overwrite	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn p(&self) -> &BigNumRef {$/;"	f
 p	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/rsa.rs	/^    pub fn p(&self) -> Option<&BigNumRef> {$/;"	f
 pad	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/symm.rs	/^    pub fn pad(&mut self, padding: bool) {$/;"	P	implementation:Crypter
+page_creation	/mnt/c/Users/SamanthaC/rust/md_puppy/src/main.rs	/^mod page_creation;$/;"	n
 pages	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub pages: Vec<Page>,$/;"	m	struct:Site
 panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/bio.rs	/^    pub panic: Option<Box<dyn Any + Send>>,$/;"	m	struct:StreamState
 panic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/util.rs	/^    panic: Option<Box<dyn Any + Send + 'static>>,$/;"	m	struct:CallbackState

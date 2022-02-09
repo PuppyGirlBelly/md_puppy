@@ -5,6 +5,7 @@ use crate::markdown_compiling::{get_filename_from_path, get_output_dir, Page};
 
 pub struct Site {
     pub pages: Vec<Page>,
+    pub directory: Vec<String>,
     pub categories: HashSet<String>,
     pub static_url: String,
     pub template_path: String,
@@ -14,6 +15,7 @@ impl Site {
     pub fn new() -> Site {
         Site {
             pages: Vec::new(),
+            directory: Vec::new(),
             categories: HashSet::new(),
             static_url: String::from(
                 "https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip",
@@ -24,14 +26,20 @@ impl Site {
 
     pub fn add_page(&mut self, filepath: &str) -> Result<(), Box<dyn Error>> {
         let page: Page = Page::from_file(filepath)?;
-        let cat: &str = &page.category;
+        let cat: &str = &page.category.to_lowercase();
         let ignored_categories = ["home", "index", "draft", ""];
+        let filename = get_filename_from_path(&page.filepath);
+        let output_directory = get_output_dir(&page.category);
+        let path = format!("{}{}.html", output_directory, &filename);
 
         if !ignored_categories.contains(&cat) {
             self.categories.insert(page.category.to_owned());
         }
 
-        self.pages.push(page);
+        if cat != "draft" {
+            self.pages.push(page);
+            self.directory.push(path);
+        }
 
         Ok(())
     }
@@ -56,12 +64,9 @@ impl Site {
         self.pages.sort_by(|a, b| b.cmp(a));
 
         for page in &self.pages {
-            if page.category == category {
+            if page.category == category && !page.filepath.ends_with("index.md") {
                 let filename = get_filename_from_path(&page.filepath);
-                let output_directory = get_output_dir(&page.category)
-                    .strip_prefix("site")
-                    .unwrap()
-                    .to_string();
+                let output_directory = get_output_dir(&page.category);
                 let path = format!("{}{}.html", output_directory, &filename);
                 let date = convert_datetime(&page.date);
                 let title = &page.title;
@@ -85,7 +90,7 @@ mod tests {
 
     #[test]
     fn convert_datetime_test() {
-        let input = "2022-02-08T15:16:19-07:00".to_string();
+        let input = "2022-02-08T15:16:19-07:00";
         let output = "February  8, 2022 |  3:16 pm".to_string();
         assert_eq!(convert_datetime(input), output);
     }

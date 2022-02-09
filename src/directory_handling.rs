@@ -4,6 +4,7 @@ use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
 
+use crate::page_creation::create_index_page;
 use crate::site_data::Site;
 
 pub fn process_content() -> Result<(), Box<dyn Error>> {
@@ -18,9 +19,22 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
     }
 
     let nav_links = site.create_category_links();
+    let categories = site.categories.to_owned();
+
+    for cat in categories {
+        let cat_index: String = format!("/{cat}/index.html");
+        if !site.directory.contains(&cat_index) {
+            println!("[ INFO ] Creating index for {cat}");
+            create_index_page("index", &cat)?;
+            let new_page = format!("content/{cat}/index.md");
+            site.add_page(&new_page)?;
+        }
+    }
+
     let pages = site.pages.to_vec();
 
     for mut page in pages {
+        println!("[ INFO ] Writing {}", &page.filepath);
         let category = &page.category.to_owned();
         let index = site.create_category_index(category);
         page.replace_index(category, &index);
@@ -52,23 +66,23 @@ pub fn copy_static() -> Result<(), Box<dyn Error>> {
         depth: 0,
     };
 
-    _check_and_create_directory("site/").expect("[ ERROR ] Could not create site directory");
+    check_and_create_directory("site/").expect("[ ERROR ] Could not create site directory");
     copy_items(&static_files, "site/", &copy_options)?;
     copy_items(&static_chilren, "site/", &copy_options)?;
     Ok(())
 }
 
 pub fn init_directories() -> Result<(), Box<dyn Error>> {
-    _check_and_create_directory("content/")?;
-    _check_and_create_directory("site/")?;
+    check_and_create_directory("content/")?;
+    check_and_create_directory("site/")?;
     _check_for_static_folder()?;
     _check_for_boilerplate()?;
     Ok(())
 }
 
-pub fn _check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
+pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
     if read_dir(dir).is_err() {
-        create_dir_all(dir)?;
+        create_dir_all(dir).expect("[ ERROR ] Could not create directory {dir}");
         Ok(())
     } else {
         Ok(())
@@ -93,7 +107,7 @@ fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {
 
 fn _check_for_boilerplate() -> Result<(), Box<dyn Error>> {
     if File::open("template/boilerplate.html").is_err() {
-        _check_and_create_directory("template/")?;
+        check_and_create_directory("template/")?;
         let url =
             "https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html";
         let download = reqwest::blocking::get(url).unwrap().bytes()?;
@@ -129,7 +143,7 @@ mod tests {
 
     #[test]
     fn create_directory_test() {
-        assert!(_check_and_create_directory("site/").is_ok());
-        assert!(_check_and_create_directory("site/examples").is_ok());
+        assert!(check_and_create_directory("site/").is_ok());
+        assert!(check_and_create_directory("site/examples").is_ok());
     }
 }

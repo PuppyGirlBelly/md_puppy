@@ -8,11 +8,13 @@
         traversing all folders in 'content'
 [x] Nav header based on categories
     [x] Category 'null', '', or 'draft' for not displaying a category
-    [ ] Automatically create a default index page if one does not exist.
+    [x] Automatically create a default index page if one does not exist.
 [x] Index pages for the categories?
     [x] Index created as {{ Index: <category> }} and then produces a <li> of links
-[x] Image embeds
-    - I think that the library already takes care of that.
+[x] Fix dates on all files
+[ ] Improve template processing; insert HTML-ified markdown in boilerplate first. Then scan for text to replace.
+[x] Generate Content pages
+    - Empty markdown file with frontmatter pre-filled
 [ ] Config file?
     - Useful for determining project root
     - Could set it to have a default location to pull static folder; instead

@@ -2,7 +2,7 @@
 title: Example index
 description: this is a short test of the home page
 category: home
-date: 2022-01-29T14:17:32-0500
+date: 2022-01-29T14:17:32-05:00
 ---
 
 # This is the home page
