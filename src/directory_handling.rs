@@ -4,23 +4,28 @@ use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
 
-use crate::template_processing::file_to_html; //::{file_checker, markdown_to_html, usage, Config};
-
-// use std::io::prelude::*;
-// pub fn file_checker(filename: String) -> Result<(), Box<dyn Error>> {
-//     let mut file = File::open(filename)?;
-//     let mut buf: Vec<u8> = Vec::new();
-//     file.read_to_end(&mut buf)?;
-//     let _contents = String::from_utf8_lossy(&buf);
-
-//     Ok(())
-// }
+use crate::site_data::Site;
 
 pub fn process_content() -> Result<(), Box<dyn Error>> {
     let content_dir = get_dir_content("content/")?;
+    let mut site: Site = Site::new();
+
+    // for file in content_dir.files {}
 
     for file in content_dir.files {
-        file_to_html(&file, "template/boilerplate.html")?;
+        println!("[ INFO ] Processing {file}");
+        site.add_page(&file)?;
+    }
+
+    let nav_links = site.create_category_links();
+    let pages = site.pages.to_vec();
+
+    for mut page in pages {
+        let category = &page.category.to_owned();
+        let index = site.create_category_index(category);
+        page.replace_index(category, &index);
+        page.replace_navbar(&nav_links);
+        page.write_to_file()?;
     }
 
     Ok(())
@@ -47,6 +52,7 @@ pub fn copy_static() -> Result<(), Box<dyn Error>> {
         depth: 0,
     };
 
+    _check_and_create_directory("site/").expect("[ ERROR ] Could not create site directory");
     copy_items(&static_files, "site/", &copy_options)?;
     copy_items(&static_chilren, "site/", &copy_options)?;
     Ok(())

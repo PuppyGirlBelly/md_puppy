@@ -20,9 +20,8 @@ fn main() {
                 println!("[ INFO ] directories initalized successfully!");
             }
             "build" => {
-                copy_static().expect(
-                    "Error: Could not copy static folder, try running 'md_puppy init' again.",
-                );
+                copy_static()
+                    .expect("Error: Could not copy static folder, try running 'md_puppy init'.");
                 process_content().expect("Error: Error processing content.");
                 println!("[ INFO ] Building completed successfully!");
             }
