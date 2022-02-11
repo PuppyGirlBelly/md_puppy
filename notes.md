@@ -13,7 +13,7 @@
     [x] Index created as {{ Index: <category> }} and then produces a <li> of links
 [x] Fix dates on all files
 [ ] Improve template processing; insert HTML-ified markdown in boilerplate first. Then scan for text to replace.
-[ ] Generate Content pages
+[x] Generate Content pages
     - Empty markdown file with frontmatter pre-filled
 [ ] Config file?
     - Useful for determining project root

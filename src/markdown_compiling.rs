@@ -16,9 +16,10 @@ pub struct Page {
     pub title: String,
     pub category: String,
     pub description: String,
-    pub site_name: String,
     pub content: String,
     pub filepath: String,
+    pub filename: String,
+    pub output_path: String,
 }
 
 impl Page {
@@ -28,9 +29,10 @@ impl Page {
             description: String::from("default_description"),
             category: String::from("default_cat"),
             date: String::from("default_date"),
-            site_name: String::from("default_site_name"),
             content: String::from("<h1>default_content</h1>"),
-            filepath: String::from("/index.html"),
+            filepath: String::from("content/index.md"),
+            filename: String::from("index"),
+            output_path: String::from("/"),
         }
     }
 
@@ -45,9 +47,11 @@ impl Page {
             .collect();
 
         page.filepath = filename.to_string();
+        page.filename = get_filename_from_path(filename);
         page.parse_frontmatter(&input[0])?;
         page.content = input[1].to_string();
         page.content_to_html("template/boilerplate.html")?;
+        page.output_path = get_output_dir(&page.category);
 
         Ok(page)
     }
@@ -94,12 +98,11 @@ impl Page {
     }
 
     pub fn write_to_file(&mut self) -> Result<(), Box<dyn Error>> {
-        let filename: String = get_filename_from_path(&self.filepath);
-        let output_directory: String = format!("site{}", get_output_dir(&self.category));
+        let output_directory: String = format!("site{}", self.output_path);
 
         check_and_create_directory(&output_directory)?;
 
-        let output_filename: String = format!("{}/{}.html", output_directory, &filename);
+        let output_filename: String = format!("{}/{}.html", output_directory, self.filename);
 
         let mut outfile =
             File::create(output_filename).expect("[ ERROR ] Could not create output file!");
@@ -119,16 +122,10 @@ impl Page {
         let placeholder = format!("<div id={category}>");
         self.content = self.content.replace(&placeholder, index);
     }
-}
 
-pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {
-    println!("[ INFO ] Trying to parse {}...", filename);
-
-    let page: Page = Page::from_file(filename)?;
-
-    println!("[ INFO ] Parsing {:?} complete!", filename);
-
-    Ok(page)
+    pub fn replace_site_name(&mut self, site_name: &str) {
+        self.content = self.content.replace("{{site_name}}", site_name);
+    }
 }
 
 pub fn markdown_to_html(input: &str) -> String {
@@ -148,13 +145,6 @@ pub fn markdown_to_html(input: &str) -> String {
     html_output
 }
 
-pub fn file_to_html(file_path: &str) -> Result<(), Box<dyn Error>> {
-    let mut page: Page = Page::from_file(file_path)?;
-    page.write_to_file()?;
-
-    Ok(())
-}
-
 pub fn get_output_dir(category: &str) -> String {
     match category.to_lowercase().as_str() {
         "home" | "index" | "" => String::from("/"),
@@ -164,19 +154,6 @@ pub fn get_output_dir(category: &str) -> String {
 
 pub fn get_filename_from_path(path: &str) -> String {
     path[path.rfind('/').unwrap()..path.len() - 3].to_string()
-}
-
-pub fn process_template(page: &Page, template_path: &str) -> Result<String, Box<dyn Error>> {
-    let template: String =
-        fs::read_to_string(template_path).expect("[ ERROR ] Failed to open html template!");
-    let mut output: String = String::new();
-
-    for line in template.lines() {
-        output.push_str(&replace_placeholder(line, page)?);
-        output.push('\n');
-    }
-
-    Ok(output)
 }
 
 fn replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
@@ -209,7 +186,6 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
         "{{description}}" => Some(page.description.to_string()),
         "{{category}}" => Some(page.category.to_string()),
         "{{date}}" => Some(page.date.to_string()),
-        "{{site_name}}" => Some(page.site_name.to_string()),
         "{{content}}" => Some(page.content.to_string()),
         "{{topnav}}" => Some(String::from("<div id=topnav>")),
         index if index.contains("Index") => {

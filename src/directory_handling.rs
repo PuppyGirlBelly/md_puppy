@@ -9,7 +9,7 @@ use crate::site_data::Site;
 
 pub fn process_content() -> Result<(), Box<dyn Error>> {
     let content_dir = get_dir_content("content/")?;
-    let mut site: Site = Site::new();
+    let mut site: Site = Site::new()?;
 
     // for file in content_dir.files {}
 
@@ -39,6 +39,7 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
         let index = site.create_category_index(category);
         page.replace_index(category, &index);
         page.replace_navbar(&nav_links);
+        page.replace_site_name(&site.site_name);
         page.write_to_file()?;
     }
 
@@ -73,10 +74,12 @@ pub fn copy_static() -> Result<(), Box<dyn Error>> {
 }
 
 pub fn init_directories() -> Result<(), Box<dyn Error>> {
+    check_for_config()?;
+    let site: Site = Site::new().expect("[ ERROR ] Could not parse config file!");
     check_and_create_directory("content/")?;
     check_and_create_directory("site/")?;
-    _check_for_static_folder()?;
-    _check_for_boilerplate()?;
+    check_for_static_folder(&site.static_url)?;
+    check_for_template(&site.template_url)?;
     Ok(())
 }
 
@@ -92,11 +95,12 @@ pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
 /* The code that was used to figure out how to download and unzip a file was taken from this stack
 * overflow answer;
 * https://stackoverflow.com/a/50471953 */
-fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {
+fn check_for_static_folder(static_url: &str) -> Result<(), Box<dyn Error>> {
     if read_dir("static/").is_err() {
-        let url = "https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip";
         let mut tmpfile = tempfile::tempfile()?;
-        reqwest::blocking::get(url).unwrap().copy_to(&mut tmpfile)?;
+        reqwest::blocking::get(static_url)
+            .unwrap()
+            .copy_to(&mut tmpfile)?;
         let mut zip = zip::ZipArchive::new(tmpfile)?;
         zip.extract("static/")?;
         Ok(())
@@ -105,14 +109,37 @@ fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {
     }
 }
 
-fn _check_for_boilerplate() -> Result<(), Box<dyn Error>> {
+fn check_for_template(template_url: &str) -> Result<(), Box<dyn Error>> {
     if File::open("template/boilerplate.html").is_err() {
         check_and_create_directory("template/")?;
-        let url =
-            "https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html";
-        let download = reqwest::blocking::get(url).unwrap().bytes()?;
+        let download = reqwest::blocking::get(template_url).unwrap().bytes()?;
         let mut file = File::create("template/boilerplate.html")?;
         file.write_all(&download)?;
+        Ok(())
+    } else {
+        Ok(())
+    }
+}
+
+fn check_for_config() -> Result<(), Box<dyn Error>> {
+    if File::open("config.yaml").is_err() {
+        let content: String = "\
+# Name for the website across all pages
+site_name: md_puppy site
+# Url to pull the static site content/theme
+static_url: https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip
+# Url to pull boilerplate
+boilerplate_url: https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html
+# Whether to use image dithering automatically
+image_dithering: false
+".to_string();
+
+        let mut outfile =
+            File::create("config.yaml").expect("[ ERROR ] Could not create output file!");
+
+        outfile
+            .write_all(content.as_bytes())
+            .expect("[ ERROR ] Could not write to output file!");
         Ok(())
     } else {
         Ok(())
@@ -129,17 +156,17 @@ mod tests {
         assert!(File::open("site/css/main.css").is_ok());
     }
 
-    #[test]
-    fn _check_for_boilerplate_test() {
-        _check_for_boilerplate().unwrap();
-        assert!(File::open("template/boilerplate.html").is_ok());
-    }
+    // #[test]
+    // fn _check_for_boilerplate_test() {
+    //     check_for_template().unwrap();
+    //     assert!(File::open("template/boilerplate.html").is_ok());
+    // }
 
-    #[test]
-    fn _check_for_static_folder_test() {
-        _check_for_static_folder().unwrap();
-        assert!(read_dir("static").is_ok());
-    }
+    // #[test]
+    // fn _check_for_static_folder_test() {
+    //     check_for_static_folder().unwrap();
+    //     assert!(read_dir("static").is_ok());
+    // }
 
     #[test]
     fn create_directory_test() {

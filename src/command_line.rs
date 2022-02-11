@@ -1,5 +1,3 @@
-// use std::error::Error;
-
 pub fn usage() {
     print_long_banner();
 }

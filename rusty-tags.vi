@@ -2892,10 +2892,6 @@ __serialize_unimplemented	/home/annalee/.cargo/registry/src/github.com-1ecc6299d
 __serialize_unimplemented_helper	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_helper {$/;"	M
 __serialize_unimplemented_method	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/doc.rs	/^macro_rules! __serialize_unimplemented_method {$/;"	M
 _assert_impls	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/lib.rs	/^fn _assert_impls() {$/;"	f
-_check_for_boilerplate	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_boilerplate() -> Result<(), Box<dyn Error>> {$/;"	f
-_check_for_boilerplate_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_boilerplate_test() {$/;"	f	module:tests
-_check_for_static_folder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn _check_for_static_folder() -> Result<(), Box<dyn Error>> {$/;"	f
-_check_for_static_folder_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^    fn _check_for_static_folder_test() {$/;"	f	module:tests
 _check_kinds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^fn _check_kinds() {$/;"	f
 _dummy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/format/mod.rs	/^    _dummy: Void,$/;"	m	struct:InternalNumeric
 _dummy	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/format/parsed.rs	/^    _dummy: (),$/;"	m	struct:Parsed
@@ -3405,6 +3401,9 @@ check_and_create_directory	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_ha
 check_expected_indices	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^        fn check_expected_indices(bytes: &[u8], expected: &[usize], skip: usize) {$/;"	f	module:simd::simd_test
 check_flatten	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_flatten(cx: &Ctxt, cont: &Container) {$/;"	f
 check_flatten_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_flatten_field(cx: &Ctxt, style: Style, field: &Field) {$/;"	f
+check_for_config	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn check_for_config() -> Result<(), Box<dyn Error>> {$/;"	f
+check_for_static_folder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn check_for_static_folder(static_url: &str) -> Result<(), Box<dyn Error>> {$/;"	f
+check_for_template	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^fn check_for_template(template_url: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 check_from_and_try_from	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_from_and_try_from(cx: &Ctxt, cont: &mut Container) {$/;"	f
 check_getter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_getter(cx: &Ctxt, cont: &Container) {$/;"	f
 check_identifier	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/check.rs	/^fn check_identifier(cx: &Ctxt, cont: &Container) {$/;"	f
@@ -4140,6 +4139,7 @@ disk_with_central_directory	/home/annalee/.cargo/registry/src/github.com-1ecc629
 disk_with_central_directory	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub disk_with_central_directory: u32,$/;"	m	struct:Zip64CentralDirectoryEnd
 disk_with_central_directory	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub disk_with_central_directory: u32,$/;"	m	struct:Zip64CentralDirectoryEndLocator
 display	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/lib.rs	/^mod display;$/;"	n
+dithering	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub dithering: bool,$/;"	m	struct:Site
 div	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/lib.rs	/^mod div;$/;"	n
 div	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/oldtime.rs	/^    fn div(self, rhs: i32) -> Duration {$/;"	P	implementation:Duration
 div	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    fn div(self, oth: &'b BigNumRef) -> BigNum {$/;"	P	implementation:BigNumRef
@@ -4527,10 +4527,10 @@ file_time_as_u64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/t
 file_time_to_nsec	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^    fn file_time_to_nsec(ft: &FILETIME) -> i32 {$/;"	f	module:inner
 file_time_to_unix_seconds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/sys/windows.rs	/^fn file_time_to_unix_seconds(ft: &FILETIME) -> i64 {$/;"	f
 file_time_to_unix_seconds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^    fn file_time_to_unix_seconds(ft: &FILETIME) -> i64 {$/;"	f	module:inner
-file_to_html	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^pub fn file_to_html(file_path: &str) -> Result<(), Box<dyn Error>> {$/;"	f
 file_to_html_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn file_to_html_test() {$/;"	f	module:tests
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
+filename	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub filename: String,$/;"	m	struct:Page
 filepath	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub filepath: String,$/;"	m	struct:Page
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub files: Vec<String>,$/;"	m	struct:DirContent
 files	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^    files: Vec<ZipFileData>,$/;"	m	struct:ZipArchive
@@ -6060,7 +6060,7 @@ new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    fn new() -> ZipCryptoKeys {$/;"	P	implementation:ZipCryptoKeys
 new	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/zipcrypto.rs	/^    pub fn new(file: R, password: &[u8]) -> ZipCryptoReader<R> {$/;"	P	implementation:ZipCryptoReader
 new	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn new() -> Page {$/;"	P	implementation:Page
-new	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub fn new() -> Site {$/;"	P	implementation:Site
+new	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub fn new() -> Result<Site, Box<dyn Error>> {$/;"	P	implementation:Site
 new_append	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/write.rs	/^    pub fn new_append(mut readwriter: A) -> ZipResult<ZipWriter<A>> {$/;"	P	implementation:ZipWriter
 new_decrypt	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/aes.rs	/^    pub fn new_decrypt(key: &[u8]) -> Result<AesKey, KeyError> {$/;"	P	implementation:AesKey
 new_default_tls	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/connect.rs	/^    pub(crate) fn new_default_tls<T>($/;"	P	implementation:Connector
@@ -6325,6 +6325,7 @@ other	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive
 other	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^    pub fn other(&self) -> bool {$/;"	P	implementation:Variant
 other_name	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn other_name(&mut self, other_name: &str) -> &mut SubjectAlternativeName {$/;"	P	implementation:SubjectAlternativeName
 outgoing	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/test/mod.rs	/^        outgoing: Vec<u8>,$/;"	m	struct:stateless::MemoryStream
+output_path	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub output_path: String,$/;"	m	struct:Page
 overflow_by_addition	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/scanners.rs	/^    fn overflow_by_addition() {$/;"	f	module:test
 overflow_list	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/scanners.rs	/^    fn overflow_list() {$/;"	f	module:test
 overflowing_add_signed	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/naive/time.rs	/^    pub fn overflowing_add_signed(&self, mut rhs: OldDuration) -> (NaiveTime, i64) {$/;"	P	implementation:NaiveTime
@@ -6362,6 +6363,7 @@ parse_and_collect	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/
 parse_atx_heading	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    fn parse_atx_heading(&mut self, start: usize, atx_level: HeadingLevel) -> usize {$/;"	P	implementation:FirstPass
 parse_block	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    fn parse_block(&mut self, mut start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
 parse_char	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/parse.rs	/^fn parse_char(s: &mut &str, c: char) -> Result<(), ParseError> {$/;"	f
+parse_config	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    fn parse_config(&mut self) -> Result<(), String> {$/;"	P	implementation:Site
 parse_decimal	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/scanners.rs	/^fn parse_decimal(bytes: &[u8]) -> (usize, usize) {$/;"	f
 parse_empty_chain	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkcs12.rs	/^    fn parse_empty_chain() {$/;"	f	module:test
 parse_extra_field	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/read.rs	/^fn parse_extra_field(file: &mut ZipFileData) -> ZipResult<()> {$/;"	f
@@ -6390,7 +6392,6 @@ parse_lit_into_path	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec82
 parse_lit_into_ty	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^fn parse_lit_into_ty(cx: &Ctxt, attr_name: Symbol, lit: &syn::Lit) -> Result<syn::Type, ()> {$/;"	f
 parse_lit_into_where	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^fn parse_lit_into_where($/;"	f
 parse_lit_str	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^fn parse_lit_str<T>(s: &syn::LitStr) -> parse::Result<T>$/;"	f
-parse_markdown_file	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^pub fn parse_markdown_file(filename: &str) -> Result<Page, Box<dyn Error>> {$/;"	f
 parse_node	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/parser.rs	/^    fn parse_node(&mut self, block: bool, indentless_sequence: bool) -> ParseResult {$/;"	P	implementation:Parser
 parse_paragraph	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    fn parse_paragraph(&mut self, start_ix: usize) -> usize {$/;"	P	implementation:FirstPass
 parse_refdef_label	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    fn parse_refdef_label(&self, start: usize) -> Option<(usize, CowStr<'a>)> {$/;"	P	implementation:FirstPass
@@ -6608,7 +6609,6 @@ private_key_to_pem	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823
 private_key_to_pkcs8_passphrase	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkey.rs	/^    pub fn private_key_to_pkcs8_passphrase($/;"	f
 process_content	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn process_content() -> Result<(), Box<dyn Error>> {$/;"	f
 process_mask	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    unsafe fn process_mask<F, T>($/;"	f	module:simd
-process_template	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^pub fn process_template(page: &Page, template_path: &str) -> Result<String, Box<dyn Error>> {$/;"	f
 processing	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/parse.rs	/^    pub processing: usize,$/;"	m	struct:HtmlScanGuard
 promise	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/wasm/mod.rs	/^async fn promise<T>(promise: js_sys::Promise) -> Result<T, crate::error::BoxError>$/;"	f
 protocol_version	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/mod.rs	/^    pub fn protocol_version(&self) -> SslVersion {$/;"	P	implementation:SslSessionRef
@@ -6783,6 +6783,7 @@ replace_index	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^ 
 replace_navbar	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn replace_navbar(&mut self, navbar: &str) {$/;"	P	implementation:Page
 replace_placeholder	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^fn replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {$/;"	f
 replace_receiver	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/receiver.rs	/^pub fn replace_receiver(input: &mut DeriveInput) {$/;"	f
+replace_site_name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn replace_site_name(&mut self, site_name: &str) {$/;"	P	implementation:Page
 replacement	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/try.rs	/^pub fn replacement() -> TokenStream {$/;"	f
 request	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/client.rs	/^    pub fn request<U: IntoUrl>(&self, method: Method, url: U) -> RequestBuilder {$/;"	P	implementation:Client
 request	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/mod.rs	/^pub(crate) mod request;$/;"	n
@@ -7447,7 +7448,7 @@ single	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.
 single_open_fish	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^        fn single_open_fish() {$/;"	f	module:simd::simd_test
 single_open_fish_bracket	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/parse.rs	/^    fn single_open_fish_bracket() {$/;"	f	module:test
 site_data	/mnt/c/Users/SamanthaC/rust/md_puppy/src/main.rs	/^mod site_data;$/;"	n
-site_name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub site_name: String,$/;"	m	struct:Page
+site_name	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub site_name: String,$/;"	m	struct:Site
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/dsa.rs	/^    pub fn size(&self) -> u32 {$/;"	f
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    pub fn size(&self) -> usize {$/;"	P	implementation:MessageDigest
 size	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/pkey.rs	/^    pub fn size(&self) -> usize {$/;"	P	implementation:PKeyRef
@@ -7743,6 +7744,7 @@ tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfi
 tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^    pub fn tempfile_in<P: AsRef<Path>>(&self, dir: P) -> io::Result<NamedTempFile> {$/;"	P	implementation:Builder
 template_path	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub template_path: String,$/;"	m	struct:Site
 template_replacement_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn template_replacement_test() {$/;"	f	module:tests
+template_url	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub template_url: String,$/;"	m	struct:Site
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/lib.rs	/^mod test {$/;"	n
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/aes.rs	/^mod test {$/;"	n
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/cms.rs	/^mod test {$/;"	n
