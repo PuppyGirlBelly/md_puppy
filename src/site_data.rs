@@ -16,6 +16,7 @@ pub struct Site {
     pub template_url: String,
     pub template_path: String,
     pub dithering: bool,
+    pub base_url: String,
 }
 
 impl Site {
@@ -31,6 +32,7 @@ impl Site {
             template_url: String::from("https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html"),
             template_path: String::from("template/boilerplate.html"),
             dithering: false,
+            base_url: String::from("https://www.example.com"),
         };
 
         site.parse_config()?;
@@ -58,6 +60,10 @@ impl Site {
                     .unwrap_or("https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html")
                     .to_string();
                 self.dithering = fm["dithering"].as_bool().unwrap_or(false);
+                self.base_url = fm["base_url"]
+                    .as_str()
+                    .unwrap_or("https://www.example.com")
+                    .to_string();
 
                 Ok(())
             }
@@ -71,7 +77,7 @@ impl Site {
 
         let ignored_categories = ["home", "index", "draft", ""];
         if !ignored_categories.contains(&cat) {
-            self.categories.insert(page.category.to_owned());
+            self.categories.insert(cat.to_string());
         }
 
         if cat != "draft" {
@@ -83,7 +89,8 @@ impl Site {
     }
 
     pub fn create_category_links(&mut self) -> String {
-        let mut output: String = String::from("<ul>\n<li><a href='/index.html'>Home</a></li>\n");
+        let mut output: String =
+            String::from("<nav>\n<ul>\n<li><a href='/index.html'>Home</a></li>\n");
 
         let mut categories: Vec<String> = self.categories.iter().map(String::from).collect();
         categories.sort();
@@ -92,7 +99,7 @@ impl Site {
             output.push_str(&format!("<li><a href='/{cat}/index.html'>{cat}</a></li>\n"));
         }
 
-        output.push_str("</ul>\n");
+        output.push_str("</ul>\n</nav>\n");
         output
     }
 

@@ -2,3 +2,5 @@
 /tmux*
 /site/
 /static/
+/template/
+config.yaml

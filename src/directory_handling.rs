@@ -1,8 +1,10 @@
 use fs_extra::copy_items;
 use fs_extra::dir::{get_dir_content, get_dir_content2, CopyOptions, DirOptions};
+use std::env::{current_dir, set_current_dir};
 use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
+use std::path::PathBuf;
 
 use crate::page_creation::create_index_page;
 use crate::site_data::Site;
@@ -24,7 +26,6 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
     for cat in categories {
         let cat_index: String = format!("/{cat}/index.html");
         if !site.directory.contains(&cat_index) {
-            println!("[ INFO ] Creating index for {cat}");
             create_index_page("index", &cat)?;
             let new_page = format!("content/{cat}/index.md");
             site.add_page(&new_page)?;
@@ -40,10 +41,24 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
         page.replace_index(category, &index);
         page.replace_navbar(&nav_links);
         page.replace_site_name(&site.site_name);
+        page.replace_base_url(&site.base_url);
         page.write_to_file()?;
     }
 
     Ok(())
+}
+
+pub fn move_to_project_root() -> Result<(), Box<dyn Error>> {
+    let starting_dir: PathBuf = current_dir()?;
+
+    for dir in starting_dir.ancestors() {
+        if dir.join("config.yaml").exists() {
+            set_current_dir(dir)?;
+            return Ok(());
+        }
+    }
+
+    Err("No config file found, please use 'md_puppy init' to create a new config file.".into())
 }
 
 pub fn copy_static() -> Result<(), Box<dyn Error>> {

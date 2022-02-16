@@ -3180,6 +3180,7 @@ bad_type	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0
 bad_type	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde-1.0.136/src/private/ser.rs	/^    fn bad_type(what: Unsupported) -> M::Error {$/;"	f
 base	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub base: HashMap<DirEntryAttr, DirEntryValue>,$/;"	m	struct:LsResult
 base64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/lib.rs	/^pub mod base64;$/;"	n
+base_url	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub base_url: String,$/;"	m	struct:Site
 basic	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ocsp.rs	/^    pub fn basic(&self) -> Result<OcspBasicResponse, ErrorStack> {$/;"	P	implementation:OcspResponseRef
 basic_auth	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/request.rs	/^    pub fn basic_auth<U, P>(self, username: U, password: Option<P>) -> RequestBuilder$/;"	P	implementation:RequestBuilder
 basic_auth	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/request.rs	/^    pub fn basic_auth<U, P>(self, username: U, password: Option<P>) -> RequestBuilder$/;"	P	implementation:RequestBuilder
@@ -4527,7 +4528,6 @@ file_time_as_u64	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/t
 file_time_to_nsec	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^    fn file_time_to_nsec(ft: &FILETIME) -> i32 {$/;"	f	module:inner
 file_time_to_unix_seconds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/sys/windows.rs	/^fn file_time_to_unix_seconds(ft: &FILETIME) -> i64 {$/;"	f
 file_time_to_unix_seconds	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^    fn file_time_to_unix_seconds(ft: &FILETIME) -> i64 {$/;"	f	module:inner
-file_to_html_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn file_to_html_test() {$/;"	f	module:tests
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/dir.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
 file_total_bytes	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^    pub file_total_bytes: u64,$/;"	m	struct:TransitProcess
 filename	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub filename: String,$/;"	m	struct:Page
@@ -5104,7 +5104,6 @@ get_time	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.
 get_time	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^    pub fn get_time() -> (i64, i32) {$/;"	f	module:inner
 get_title	/mnt/c/Users/SamanthaC/rust/md_puppy/src/command_line.rs	/^fn get_title() -> String {$/;"	f
 get_value	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^fn get_value(key: &str, page: &Page) -> Option<String> {$/;"	f
-get_value_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn get_value_test() {$/;"	f	module:tests
 get_where_predicates	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^fn get_where_predicates($/;"	f
 get_with_tokens	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^    fn get_with_tokens(self) -> Option<(TokenStream, T)> {$/;"	P	implementation:Attr
 getter	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/serde_derive-1.0.136/src/internals/attr.rs	/^    getter: Option<syn::ExprPath>,$/;"	m	struct:Field
@@ -5285,7 +5284,6 @@ index	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.
 index	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/yaml.rs	/^    fn index(&self, idx: usize) -> &Yaml {$/;"	P	implementation:Yaml
 index_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/stack.rs	/^    fn index_mut(&mut self, index: usize) -> &mut T::Ref {$/;"	P	implementation:StackRef
 index_mut	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/tree.rs	/^    fn index_mut(&mut self, ix: TreeIndex) -> &mut Node<T> {$/;"	P	implementation:Tree
-index_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn index_test() {$/;"	f	module:tests
 info	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/sys.rs	/^        fn info() -> &'static mach_timebase_info {$/;"	f	module:inner::mac
 info	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/scanner.rs	/^    info: String,$/;"	m	struct:ScanError
 init	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/hash.rs	/^    fn init(&mut self) -> Result<(), ErrorStack> {$/;"	P	implementation:Hasher
@@ -5833,6 +5831,7 @@ move_file	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra
 move_file_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/file.rs	/^pub fn move_file_with_progress<P, Q, F>($/;"	f
 move_items	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn move_items<P, Q>(from_items: &[P], to: Q, options: &dir::CopyOptions) -> Result<u64>$/;"	f
 move_items_with_progress	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/fs_extra-1.2.0/src/lib.rs	/^pub fn move_items_with_progress<P, Q, F>($/;"	f
+move_to_project_root	/mnt/c/Users/SamanthaC/rust/md_puppy/src/directory_handling.rs	/^pub fn move_to_project_root() -> Result<(), Box<dyn Error>> {$/;"	f
 mozilla_intermediate	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_intermediate(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> {$/;"	P	implementation:SslAcceptor
 mozilla_intermediate_v5	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_intermediate_v5(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> /;"	P	implementation:SslAcceptor
 mozilla_modern	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn mozilla_modern(method: SslMethod) -> Result<SslAcceptorBuilder, ErrorStack> {$/;"	P	implementation:SslAcceptor
@@ -6778,6 +6777,7 @@ reopen	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.
 reopen	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^pub fn reopen(file: &File, path: &Path) -> io::Result<File> {$/;"	f
 reopen	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/windows.rs	/^pub fn reopen(file: &File, _path: &Path) -> io::Result<File> {$/;"	f
 reopen	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^    pub fn reopen(&self) -> io::Result<File> {$/;"	P	implementation:NamedTempFile
+replace_base_url	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn replace_base_url(&mut self, base_url: &str) {$/;"	P	implementation:Page
 replace_headers	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/util.rs	/^pub(crate) fn replace_headers(dst: &mut HeaderMap, src: HeaderMap) {$/;"	f
 replace_index	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn replace_index(&mut self, category: &str, index: &str) {$/;"	P	implementation:Page
 replace_navbar	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    pub fn replace_navbar(&mut self, navbar: &str) {$/;"	P	implementation:Page
@@ -7743,7 +7743,6 @@ tempfile	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-
 tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^pub fn tempfile_in<P: AsRef<Path>>(dir: P) -> io::Result<File> {$/;"	f
 tempfile_in	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/lib.rs	/^    pub fn tempfile_in<P: AsRef<Path>>(&self, dir: P) -> io::Result<NamedTempFile> {$/;"	P	implementation:Builder
 template_path	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub template_path: String,$/;"	m	struct:Site
-template_replacement_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^    fn template_replacement_test() {$/;"	f	module:tests
 template_url	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    pub template_url: String,$/;"	m	struct:Site
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/lib.rs	/^mod test {$/;"	n
 test	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/aes.rs	/^mod test {$/;"	n

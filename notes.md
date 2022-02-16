@@ -12,14 +12,13 @@
 [x] Index pages for the categories?
     [x] Index created as {{ Index: <category> }} and then produces a <li> of links
 [x] Fix dates on all files
-[ ] Improve template processing; insert HTML-ified markdown in boilerplate first. Then scan for text to replace.
 [x] Generate Content pages
     - Empty markdown file with frontmatter pre-filled
-[ ] Config file?
-    - Useful for determining project root
-    - Could set it to have a default location to pull static folder; instead
-      of always pulling from repo.
-    - Base url for <base> tags might not be too useful...
+[x] Config file?
+    [x] Useful for determining project root
+    [x] Could set it to have a default location to pull static folder; instead
+        of always pulling from repo.
+    [x] Base url for <base> tags might not be too useful...
 
 ## Fun features
 [ ] Add image processing for dithering images

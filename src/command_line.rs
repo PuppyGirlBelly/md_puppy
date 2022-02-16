@@ -1,5 +1,11 @@
 pub fn usage() {
     print_long_banner();
+    println!(
+        "Usage:
+    init - Download and initalize directories needed for website
+    build - Process all files in the content/ folder and parse into a website
+    new <filepath> - Create a new file within the content/ folder with default frontmatter"
+    );
 }
 
 fn get_title() -> String {
