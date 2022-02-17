@@ -16,6 +16,9 @@ fn main() {
     print_short_banner();
 
     match args.len() {
+        1 => {
+            usage();
+        }
         arg if arg == 2 => match String::as_str(&args[1].to_lowercase()) {
             "init" => {
                 init_directories().expect("Error: Could not initalize directories.");

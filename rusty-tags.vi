@@ -3680,7 +3680,7 @@ create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempf
 create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/windows.rs	/^pub fn create_named(path: &Path, open_options: &mut OpenOptions) -> io::Result<File> {$/;"	f
 create_named	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/mod.rs	/^pub(crate) fn create_named($/;"	f
 create_node	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/tree.rs	/^    pub(crate) fn create_node(&mut self, item: T) -> TreeIndex {$/;"	P	implementation:Tree
-create_page	/mnt/c/Users/SamanthaC/rust/md_puppy/src/page_creation.rs	/^pub fn create_page(filename: &str) -> Result<(), String> {$/;"	f
+create_page	/mnt/c/Users/SamanthaC/rust/md_puppy/src/page_creation.rs	/^pub fn create_page(input: &str) -> Result<(), String> {$/;"	f
 create_unix	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^fn create_unix(dir: &Path) -> io::Result<File> {$/;"	f
 create_unlinked	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/tempfile-3.3.0/src/file/imp/unix.rs	/^fn create_unlinked(path: &Path) -> io::Result<File> {$/;"	f
 critical	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    critical: bool,$/;"	m	struct:AuthorityKeyIdentifier

@@ -22,9 +22,8 @@ pub fn print_short_banner() {
 }
 
 fn print_long_banner() {
-    print_short_banner();
     println!(
-        "Written by: {}\nHomepage: {}\nUsage: puppy_md build\n",
+        "Written by: {}\nHomepage: {}\nUsage: puppy_md <command>\n",
         env!("CARGO_PKG_AUTHORS"),
         env!("CARGO_PKG_HOMEPAGE")
     );

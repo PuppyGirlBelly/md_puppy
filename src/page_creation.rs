@@ -4,7 +4,11 @@ use std::io::Write;
 
 use crate::directory_handling::check_and_create_directory;
 
-pub fn create_page(filename: &str) -> Result<(), String> {
+pub fn create_page(input: &str) -> Result<(), String> {
+    let mut filename = input;
+    if let Some(s) = input.strip_suffix(".md") {
+        filename = s;
+    }
     let time: DateTime<Local> = Local::now();
     let timestamp: String = time.to_rfc3339();
     let output_filename: String = format!("content/{filename}.md");
@@ -20,11 +24,13 @@ date: {timestamp}
     );
 
     let mut outfile =
-        File::create(output_filename).expect("[ ERROR ] Could not create output file!");
+        File::create(&output_filename).expect("[ ERROR ] Could not create output file!");
 
     outfile
         .write_all(content.as_bytes())
         .expect("[ ERROR ] Could not write to output file!");
+
+    println!("[ INFO ] Page {output_filename} has been created!");
 
     Ok(())
 }
