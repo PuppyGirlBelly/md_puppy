@@ -3614,7 +3614,7 @@ content_to_html	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/
 context	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn context(&self) -> &SslContextRef {$/;"	P	implementation:SslAcceptor
 context	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/ssl/connector.rs	/^    pub fn context(&self) -> &SslContextRef {$/;"	P	implementation:SslConnector
 continue_list	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/pulldown-cmark-0.9.1/src/firstpass.rs	/^    fn continue_list(&mut self, start: usize, ch: u8, index: u64) {$/;"	P	implementation:FirstPass
-convert_datetime	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^fn convert_datetime(timestamp: &str) -> String {$/;"	f
+convert_datetime	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^pub fn convert_datetime(timestamp: &str) -> String {$/;"	f
 convert_datetime_test	/mnt/c/Users/SamanthaC/rust/md_puppy/src/site_data.rs	/^    fn convert_datetime_test() {$/;"	f	module:tests
 convert_from_http_request	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/async_impl/request.rs	/^    fn convert_from_http_request() {$/;"	f	module:tests
 convert_from_http_request	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/reqwest-0.11.9/src/blocking/request.rs	/^    fn convert_from_http_request() {$/;"	f	module:tests
@@ -4225,6 +4225,7 @@ email	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10
 email	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/mod.rs	/^    pub fn email(&self) -> Option<&str> {$/;"	P	implementation:GeneralNameRef
 email_protection	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    email_protection: bool,$/;"	m	struct:ExtendedKeyUsage
 email_protection	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/x509/extension.rs	/^    pub fn email_protection(&mut self) -> &mut ExtendedKeyUsage {$/;"	P	implementation:ExtendedKeyUsage
+embed_youtube	/mnt/c/Users/SamanthaC/rust/md_puppy/src/markdown_compiling.rs	/^fn embed_youtube(youtube_key: &str) -> String {$/;"	f
 emit_array	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    fn emit_array(&mut self, v: &[Yaml]) -> EmitResult {$/;"	P	implementation:escape_str::YamlEmitter
 emit_hash	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    fn emit_hash(&mut self, h: &Hash) -> EmitResult {$/;"	P	implementation:escape_str::YamlEmitter
 emit_node	/home/annalee/.cargo/registry/src/github.com-1ecc6299db9ec823/yaml-rust-0.4.5/src/emitter.rs	/^    fn emit_node(&mut self, node: &Yaml) -> EmitResult {$/;"	P	implementation:escape_str::YamlEmitter

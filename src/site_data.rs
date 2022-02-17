@@ -122,7 +122,7 @@ impl Site {
     }
 }
 
-fn convert_datetime(timestamp: &str) -> String {
+pub fn convert_datetime(timestamp: &str) -> String {
     let datetime = DateTime::parse_from_rfc3339(timestamp).unwrap();
     datetime.format("%B %e, %Y | %l:%M %P").to_string()
 }

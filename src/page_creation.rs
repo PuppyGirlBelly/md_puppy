@@ -43,7 +43,7 @@ category: {category}
 date: {timestamp}
 ---
 
-{{{{ Index: {category} }}}}
+{{{{ index {category} }}}}
 "
     );
 

@@ -9,6 +9,7 @@ use serde::Deserialize;
 use yaml_rust::YamlLoader;
 
 use crate::directory_handling::check_and_create_directory;
+use crate::site_data::convert_datetime;
 
 #[derive(Clone, Deserialize, Debug, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Page {
@@ -189,14 +190,15 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
         "{{title}}" => Some(page.title.to_string()),
         "{{description}}" => Some(page.description.to_string()),
         "{{category}}" => Some(page.category.to_string()),
-        "{{date}}" => Some(page.date.to_string()),
+        "{{date}}" => Some(convert_datetime(&page.date.to_string())),
         "{{content}}" => Some(page.content.to_string()),
         "{{base_url}}" => Some(String::from("<base href=base_url>")),
         "{{site_name}}" => Some(String::from("<div id=site_name>")),
         "{{topnav}}" => Some(String::from("<div id=topnav>")),
-        index if index.contains("Index") => {
+        youtube_key if youtube_key.contains("youtube") => Some(embed_youtube(youtube_key)),
+        index if index.contains("index") => {
             let category = index
-                .strip_prefix("{{ Index: ")
+                .strip_prefix("{{ index ")
                 .unwrap()
                 .strip_suffix(" }}")
                 .unwrap();
@@ -204,6 +206,17 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
         }
         _ => None,
     }
+}
+
+fn embed_youtube(youtube_key: &str) -> String {
+    let embed_template: &str = "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/{{video_id}}' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>'";
+    let video_id = youtube_key
+        .strip_prefix("{{ youtube ")
+        .unwrap()
+        .strip_suffix(" }}")
+        .unwrap();
+
+    embed_template.replace("{{video_id}}", video_id)
 }
 
 #[cfg(test)]
