@@ -125,7 +125,7 @@ impl Page {
     }
 
     pub fn replace_site_name(&mut self, site_name: &str) {
-        self.content = self.content.replace("<div id=site_name", site_name);
+        self.content = self.content.replace("<div id=site_name>", site_name);
     }
 
     pub fn replace_base_url(&mut self, base_url: &str) {
@@ -192,6 +192,8 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
         "{{category}}" => Some(page.category.to_string()),
         "{{date}}" => Some(convert_datetime(&page.date.to_string())),
         "{{content}}" => Some(page.content.to_string()),
+        "{{filename}}" => Some(page.filename.to_string()),
+        "{{output_path}}" => Some(page.output_path.to_string()),
         "{{base_url}}" => Some(String::from("<base href=base_url>")),
         "{{site_name}}" => Some(String::from("<div id=site_name>")),
         "{{topnav}}" => Some(String::from("<div id=topnav>")),
