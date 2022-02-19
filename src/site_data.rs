@@ -73,7 +73,7 @@ impl Site {
     pub fn add_page(&mut self, filepath: &str) -> Result<(), Box<dyn Error>> {
         let page: Page = Page::from_file(filepath)?;
         let cat: &str = &page.category.to_lowercase();
-        let path = format!("{}{}.html", page.output_path, page.filename);
+        let path = format!("{}/{}.html", page.output_path, page.filename);
 
         let ignored_categories = ["home", "index", "draft", ""];
         if !ignored_categories.contains(&cat) {
@@ -110,7 +110,7 @@ impl Site {
 
         for page in &self.pages {
             if page.category == category && !page.filepath.ends_with("index.md") {
-                let path = format!("{}{}.html", &page.output_path, &page.filename);
+                let path = format!("{}/{}.html", &page.output_path, &page.filename);
                 let date = convert_datetime(&page.date);
                 let title = &page.title;
                 output.push_str(&format!("<li><a href='{path}'>{date} - {title}</a></li>\n",));

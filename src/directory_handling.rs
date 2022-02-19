@@ -145,8 +145,8 @@ site_name: md_puppy site
 static_url: https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip
 # Url to pull boilerplate
 boilerplate_url: https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html
-# Whether to use image dithering automatically
-image_dithering: false
+# Base Url used for relative links
+base_url: https://www.example.com/
 ".to_string();
 
         let mut outfile =

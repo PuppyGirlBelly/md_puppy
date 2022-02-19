@@ -50,9 +50,9 @@ impl Page {
         page.filepath = filename.to_string();
         page.filename = get_filename_from_path(filename);
         page.parse_frontmatter(&input[0])?;
+        page.output_path = get_output_dir(&page.category);
         page.content = input[1].to_string();
         page.content_to_html("template/boilerplate.html")?;
-        page.output_path = get_output_dir(&page.category);
 
         Ok(page)
     }
@@ -158,7 +158,7 @@ pub fn get_output_dir(category: &str) -> String {
 }
 
 pub fn get_filename_from_path(path: &str) -> String {
-    path[path.rfind('/').unwrap()..path.len() - 3].to_string()
+    path[(path.rfind('/').unwrap() + 1)..path.len() - 3].to_string()
 }
 
 fn replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
@@ -291,13 +291,13 @@ date: example_date
     #[test]
     fn get_filename_from_path_test() {
         let output: String = get_filename_from_path("site/example/index.md");
-        assert_eq!(output, String::from("/index"));
+        assert_eq!(output, String::from("index"));
         let output: String = get_filename_from_path("site/index.md");
-        assert_eq!(output, String::from("/index"));
+        assert_eq!(output, String::from("index"));
         let output: String = get_filename_from_path("site/testo.md");
-        assert_eq!(output, String::from("/testo"));
+        assert_eq!(output, String::from("testo"));
         let output: String = get_filename_from_path("site/testo.html");
-        assert_ne!(output, String::from("/testo"));
+        assert_ne!(output, String::from("testo"));
     }
 
     // #[test]
