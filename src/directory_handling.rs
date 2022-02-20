@@ -36,9 +36,7 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
 
     for mut page in pages {
         println!("[ INFO ] Writing {}", &page.filepath);
-        let category = &page.category.to_owned();
-        let index = site.create_category_index(category);
-        page.replace_index(category, &index);
+        page.replace_index(&mut site);
         page.replace_navbar(&nav_links);
         page.replace_site_name(&site.site_name);
         page.replace_base_url(&site.base_url);

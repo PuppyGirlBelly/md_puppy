@@ -9,7 +9,7 @@ use serde::Deserialize;
 use yaml_rust::YamlLoader;
 
 use crate::directory_handling::check_and_create_directory;
-use crate::site_data::convert_datetime;
+use crate::site_data::{convert_datetime, Site};
 
 #[derive(Clone, Deserialize, Debug, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Page {
@@ -119,9 +119,15 @@ impl Page {
         self.content = self.content.replace("<div id=topnav>", navbar);
     }
 
-    pub fn replace_index(&mut self, category: &str, index: &str) {
-        let placeholder = format!("<div id={category}>");
-        self.content = self.content.replace(&placeholder, index);
+    pub fn replace_index(&mut self, site: &mut Site) {
+        let categories = site.categories.to_owned();
+        for cat in categories {
+            let placeholder = format!("<div id='index' class='{cat}'>");
+            if self.content.contains(&placeholder) {
+                let index = site.create_category_index(&cat);
+                self.content = self.content.replace(&placeholder, &index);
+            }
+        }
     }
 
     pub fn replace_site_name(&mut self, site_name: &str) {
@@ -204,14 +210,14 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
                 .unwrap()
                 .strip_suffix(" }}")
                 .unwrap();
-            Some(format!("<div id={category}>"))
+            Some(format!("<div id='index' class='{category}'>"))
         }
         _ => None,
     }
 }
 
 fn embed_youtube(youtube_key: &str) -> String {
-    let embed_template: &str = "<iframe width='560' height='315' src='https://www.youtube-nocookie.com/embed/{{video_id}}' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>'";
+    let embed_template: &str = "<div id='youtube-div'><iframe id='youtube-iframe' src='https://www.youtube-nocookie.com/embed/{{video_id}}' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>'";
     let video_id = youtube_key
         .strip_prefix("{{ youtube ")
         .unwrap()
