@@ -89,8 +89,7 @@ impl Site {
     }
 
     pub fn create_category_links(&mut self) -> String {
-        let mut output: String =
-            String::from("<nav>\n<ul>\n<li><a href='/index.html'>Home</a></li>\n");
+        let mut output: String = String::from("<li><a href='/index.html'>Home</a></li>\n");
 
         let mut categories: Vec<String> = self.categories.iter().map(String::from).collect();
         categories.sort();
@@ -99,7 +98,6 @@ impl Site {
             output.push_str(&format!("<li><a href='/{cat}/index.html'>{cat}</a></li>\n"));
         }
 
-        output.push_str("</ul>\n</nav>\n");
         output
     }
 
