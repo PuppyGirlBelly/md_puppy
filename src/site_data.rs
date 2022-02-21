@@ -15,7 +15,6 @@ pub struct Site {
     pub static_url: String,
     pub template_url: String,
     pub template_path: String,
-    pub dithering: bool,
     pub base_url: String,
 }
 
@@ -31,7 +30,6 @@ impl Site {
             ),
             template_url: String::from("https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html"),
             template_path: String::from("template/boilerplate.html"),
-            dithering: false,
             base_url: String::from("https://www.example.com"),
         };
 
@@ -50,7 +48,10 @@ impl Site {
             Ok(y) => {
                 let fm = &y[0];
 
-                self.site_name = fm["title"].as_str().unwrap_or("md_puppy site").to_string();
+                self.site_name = fm["site_name"]
+                    .as_str()
+                    .unwrap_or("md_puppy site")
+                    .to_string();
                 self.static_url = fm["static_url"]
                     .as_str()
                     .unwrap_or("https://github.com/SoftAnnaLee/md_puppy/releases/download/static/static.zip")
@@ -59,7 +60,6 @@ impl Site {
                     .as_str()
                     .unwrap_or("https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/template/boilerplate.html")
                     .to_string();
-                self.dithering = fm["dithering"].as_bool().unwrap_or(false);
                 self.base_url = fm["base_url"]
                     .as_str()
                     .unwrap_or("https://www.example.com")

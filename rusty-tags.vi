@@ -3921,7 +3921,6 @@ disk_with_central_directory	/home/sammi/.cargo/registry/src/github.com-1ecc6299d
 disk_with_central_directory	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub disk_with_central_directory: u32,$/;"	m	struct:Zip64CentralDirectoryEnd
 disk_with_central_directory	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/zip-0.5.13/src/spec.rs	/^    pub disk_with_central_directory: u32,$/;"	m	struct:Zip64CentralDirectoryEndLocator
 display	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/time-0.1.44/src/lib.rs	/^mod display;$/;"	n
-dithering	/home/sammi/rust/md_puppy/src/site_data.rs	/^    pub dithering: bool,$/;"	m	struct:Site
 div	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/lib.rs	/^mod div;$/;"	n
 div	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/chrono-0.4.19/src/oldtime.rs	/^    fn div(self, rhs: i32) -> Duration {$/;"	P	implementation:Duration
 div	/home/sammi/.cargo/registry/src/github.com-1ecc6299db9ec823/openssl-0.10.38/src/bn.rs	/^    fn div(self, oth: &'b BigNumRef) -> BigNum {$/;"	P	implementation:BigNumRef

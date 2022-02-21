@@ -68,7 +68,7 @@ impl Page {
                 self.title = fm["title"].as_str().unwrap_or("Default Title").to_string();
                 self.description = fm["description"]
                     .as_str()
-                    .unwrap_or("Site generated with puppy_md")
+                    .unwrap_or("Site generated with md_puppy")
                     .to_string();
                 self.date = fm["date"]
                     .as_str()
@@ -217,7 +217,7 @@ fn get_value(key: &str, page: &Page) -> Option<String> {
 }
 
 fn embed_youtube(youtube_key: &str) -> String {
-    let embed_template: &str = "<div id='youtube-div'><iframe id='youtube-iframe' src='https://www.youtube-nocookie.com/embed/{{video_id}}' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>'";
+    let embed_template: &str = "<div class='youtube-div'><iframe class='youtube-iframe' src='https://www.youtube-nocookie.com/embed/{{video_id}}' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>";
     let video_id = youtube_key
         .strip_prefix("{{ youtube ")
         .unwrap()
