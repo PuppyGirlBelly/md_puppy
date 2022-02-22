@@ -14,6 +14,7 @@
 [x] Fix dates on all files
 [x] Generate Content pages
     - Empty markdown file with frontmatter pre-filled
+    [x] Have it create unexisting directories.
 [x] Config file?
     [x] Useful for determining project root
     [x] Could set it to have a default location to pull static folder; instead
@@ -33,4 +34,4 @@
       a good way to dither images with a palette of colours
 [ ] Add page previews created on build
     - https://og-image.vercel.app/
-[ ] Embedding Youtube videos
+[x] Embedding Youtube videos

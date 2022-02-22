@@ -21,14 +21,23 @@ fn main() {
         }
         arg if arg == 2 => match String::as_str(&args[1].to_lowercase()) {
             "init" => {
-                init_directories().expect("Error: Could not initalize directories.");
+                if let Err(e) = init_directories() {
+                    eprintln!("Error: Could not initalize directories. {e}")
+                };
                 println!("[ INFO ] directories initalized successfully!");
             }
             "build" => {
-                move_to_project_root().expect("[ ERROR ]");
-                copy_static()
-                    .expect("Error: Could not copy static folder, try running 'md_puppy init'.");
-                process_content().expect("Error: Error processing content.");
+                if let Err(e) = move_to_project_root() {
+                    eprintln!("[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init': {e}");
+                }
+                if let Err(e) = copy_static() {
+                    eprintln!(
+                        "Error: Could not copy static folder, try running 'md_puppy init'. {e}"
+                    )
+                };
+                if let Err(e) = process_content() {
+                    eprintln!("Error: Error processing content. {e}")
+                };
                 println!("[ INFO ] Building completed successfully!");
             }
             _ => {
@@ -38,8 +47,12 @@ fn main() {
         },
         arg if arg == 3 => match String::as_str(&args[1].to_lowercase()) {
             "new" => {
-                move_to_project_root().expect("[ ERROR ]");
-                create_page(&args[2]).expect("Error: Could not create new page");
+                if let Err(e) = move_to_project_root() {
+                    eprintln!("[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init': {e}");
+                }
+                if let Err(e) = create_page(&args[2]) {
+                    eprintln!("Error: Could not create new page {e}")
+                };
             }
             _ => {
                 eprintln!("Error: Invalid Invocation");
