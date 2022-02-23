@@ -23,15 +23,8 @@
     
 ## For release
 [ ] Make a proper README.md
-[ ] Better help and create documentation
+[x] Add shell completion and better arguement parsing
+[ ] Add better error handling with 'anyhow' library
 
 ## Fun features
-[ ] Add image processing for dithering images
-    - https://crates.io/crates/image
-    - https://docs.rs/image/latest/image/imageops/colorops/fn.dither.html
-    - https://endtimes.dev/why-you-should-dither-images/
-    - Might not add, library for image processing is confusing and doesn't have
-      a good way to dither images with a palette of colours
-[ ] Add page previews created on build
-    - https://og-image.vercel.app/
 [x] Embedding Youtube videos

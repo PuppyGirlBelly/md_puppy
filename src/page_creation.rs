@@ -25,6 +25,11 @@ description: Default Description
 category: draft
 date: {timestamp}
 ---
+# {{{{title}}}}
+
+{{{{date}}}}
+
+---
 "
     );
 
