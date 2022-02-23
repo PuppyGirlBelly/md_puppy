@@ -1,3 +1,6 @@
+// A lot of the code used here was adapted from this blog post about rust command line compeltions
+// https://dev.to/kbknapp/cli-shell-completions-in-rust-37g1
+
 use clap::{ArgEnum, CommandFactory, Parser, Subcommand};
 use clap_complete::{generate, shells::*};
 
