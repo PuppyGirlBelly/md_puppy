@@ -2,6 +2,7 @@
 <p align="center"><em>Your assistant in making a static site!</em></p>
 
 [![GitHub license](https://img.shields.io/github/license/SoftAnnaLee/md_puppy?color=FFCDB2&style=for-the-badge)](https://github.com/SoftAnnaLee/md_puppy/blob/main/LICENSE.txt)
+[![Crates.io](https://img.shields.io/crates/v/md_puppy?color=FFCDB2&style=for-the-badge)](https://crates.io/crates/md_puppy)
 
 ## Project Description
 
