@@ -10,6 +10,7 @@ readme = "README.md"
 license = "MIT"
 keywords = ["cli", "web", "markdown", ]
 categories = ["Command line utilities", "Web programming"]
+exclud = [ "img/*", ".editorconfig", ".vimspector.json", "notes.md", "tmux_rust_session.sh", "rusty-tags.vi", "template/*", ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
