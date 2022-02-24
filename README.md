@@ -5,21 +5,27 @@
 
 A minimalist static site generator written in Rust, inspired by [Hugo](https://gohugo.io/). The site's html template and file layout is based off of [HTML5 Boilerplate](https://html5boilerplate.com/).
 
+---
+
 ### An example
 
 You can see an example of a site generated with md_puppy at [https://softannalee.neocities.org](https://softannalee.neocities.org)
 
 ![a screenshot of a site generated](https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/img/screenshot.png)
 
+---
+
 ### Pre-requisites
 
-- Rust (2021 Edition)
+- [Rust (2021 Edition)](https://www.rust-lang.org/learn/get-started)
 
 ### Installation
 
-To install, use the following command.
+To install, have Rust and Cargo installed, and use the following command.
 
 `cargo install md_puppy`
+
+---
 
 ### Usage
 
@@ -54,7 +60,7 @@ SUBCOMMANDS:
 The site generator only has a single theme, which I used in my personal site. I give free usage to copy and reuse it; but I heavily encourage you to personalize it yourself. It is only HTML and CSS, so it should be pretty easy to modify to your own personal taste.
 
 There is also a config.toml which has a default configuration of the following;
-```toml
+```
 # Name for the website across all pages
 site_name: md_puppy site
 # Url to pull the static site content/theme
@@ -66,6 +72,8 @@ base_url: https://www.example.com/
 ```
 
 If you have a different HTML boilerplate you'd like to use, or a different theme to pull into static_url, then you can change those details there.
+
+---
 
 ### Purpose
 
