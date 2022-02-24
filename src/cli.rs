@@ -44,7 +44,6 @@ impl Shell {
             Shell::Fish => generate(Fish, &mut app, "md_puppy", &mut fd),
             Shell::PowerShell => generate(PowerShell, &mut app, "md_puppy", &mut fd),
             Shell::Elvish => generate(Elvish, &mut app, "md_puppy", &mut fd),
-            _ => generate(Bash, &mut app, "md_puppy", &mut fd),
         }
     }
 }

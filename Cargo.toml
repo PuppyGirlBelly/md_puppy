@@ -1,14 +1,13 @@
 [package]
 name = "md_puppy"
 version = "1.0.0"
-authors = ["AnnaLee <jazzchamp600@gmail.com>"]
+authors = ["AnnaLee <@SoftAnnaLee>"]
 edition = "2021"
-rust-version = "2021"
+rust-version = "1.58.1"
 description = "A minimal static site generator"
 repository = "https://github.com/SoftAnnaLee/md_puppy"
 readme = "README.md"
 license = "MIT"
-license-file = "LICENSE.txt"
 keywords = ["cli", "web", "markdown", ]
 categories = ["Command line utilities", "Web programming"]
 
