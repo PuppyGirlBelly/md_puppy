@@ -1,8 +1,4 @@
-// TODO: Add anyhow library and use that for better error handling.
-// TODO: Write up a README.md
-// TODO: Get a license
-// TODO: Publish to crates.io
-
+use anyhow::{Context, Result};
 use clap::Parser;
 
 mod cli;
@@ -15,7 +11,7 @@ use cli::Commands;
 use directory_handling::{copy_static, init_directories, move_to_project_root, process_content};
 use page_creation::create_page;
 
-fn main() {
+fn main() -> Result<()> {
     let args = cli::Args::parse();
 
     if let Some(shell) = args.completions {
@@ -24,44 +20,28 @@ fn main() {
     }
 
     match args.command {
-        Some(Commands::Init) => {
-            if let Err(e) = init_directories() {
-                eprintln!("Error: Could not initalize directories. {e}");
-                std::process::exit(0);
-            };
+        Commands::Init => {
+            init_directories().with_context(|| "Error: Could not initalize directories. ")?;
             println!("[ INFO ] directories initalized successfully!");
+            Ok(())
         }
-        Some(Commands::Build) => {
-            if let Err(e) = move_to_project_root() {
-                eprintln!(
-                    "[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init': {e}"
-                );
-                std::process::exit(0);
-            }
-            if let Err(e) = copy_static() {
-                eprintln!("Error: Could not copy static folder, try running 'md_puppy init'. {e}");
-                std::process::exit(0);
-            };
-            if let Err(e) = process_content() {
-                eprintln!("Error: Error processing content. {e}");
-                std::process::exit(0);
-            };
+        Commands::Build => {
+            move_to_project_root().with_context(|| {
+                "[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init'"
+            })?;
+            copy_static().with_context(|| {
+                "Error: Could not copy static folder, try running 'md_puppy init'."
+            })?;
+            process_content().with_context(|| "Error: Error processing content.")?;
             println!("[ INFO ] Building completed successfully!");
+            Ok(())
         }
-        Some(Commands::New { file }) => {
-            if let Err(e) = move_to_project_root() {
-                eprintln!(
-                    "[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init': {e}"
-                );
-                std::process::exit(0);
-            }
-            if let Err(e) = create_page(&file) {
-                eprintln!("Error: Could not create new page {e}");
-                std::process::exit(0);
-            };
-        }
-        _ => {
-            eprintln!("Error: Invalid Invocation");
+        Commands::New { file } => {
+            move_to_project_root().with_context(|| {
+                "[ ERROR ] Could not find find cargo.yaml. Try running 'md_puppy init'"
+            })?;
+            create_page(&file).with_context(|| "Error: Could not create new page")?;
+            Ok(())
         }
     }
 }

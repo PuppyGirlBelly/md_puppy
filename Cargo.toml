@@ -1,6 +1,6 @@
 [package]
 name = "md_puppy"
-version = "1.0.0"
+version = "1.0.1"
 authors = ["AnnaLee <@SoftAnnaLee>"]
 edition = "2021"
 rust-version = "1.58.1"
@@ -26,3 +26,4 @@ fs_extra = "1.2.0"
 chrono = "0.4.19"
 clap = { version = "3.1.2", features = ["derive"] }
 clap_complete = "3.1.0"
+anyhow = "1.0.55"

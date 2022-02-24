@@ -1,7 +1,7 @@
+use anyhow::{anyhow, Result};
 use fs_extra::copy_items;
 use fs_extra::dir::{get_dir_content, get_dir_content2, CopyOptions, DirOptions};
 use std::env::{current_dir, set_current_dir};
-use std::error::Error;
 use std::fs::{create_dir_all, read_dir, File};
 use std::io::Write;
 use std::path::PathBuf;
@@ -9,7 +9,7 @@ use std::path::PathBuf;
 use crate::page_creation::create_index_page;
 use crate::site_data::Site;
 
-pub fn process_content() -> Result<(), Box<dyn Error>> {
+pub fn process_content() -> Result<()> {
     let content_dir = get_dir_content("content/")?;
     let mut site: Site = Site::new()?;
 
@@ -46,7 +46,7 @@ pub fn process_content() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn move_to_project_root() -> Result<(), Box<dyn Error>> {
+pub fn move_to_project_root() -> Result<()> {
     let starting_dir: PathBuf = current_dir()?;
 
     for dir in starting_dir.ancestors() {
@@ -56,10 +56,12 @@ pub fn move_to_project_root() -> Result<(), Box<dyn Error>> {
         }
     }
 
-    Err("No config file found, please use 'md_puppy init' to create a new config file.".into())
+    Err(anyhow!(
+        "No config file found, please use 'md_puppy init' to create a new config file."
+    ))
 }
 
-pub fn copy_static() -> Result<(), Box<dyn Error>> {
+pub fn copy_static() -> Result<()> {
     let mut dir_options = DirOptions::new();
     dir_options.depth = 1;
     let static_dir = get_dir_content2("static/", &dir_options)?;
@@ -86,7 +88,7 @@ pub fn copy_static() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn init_directories() -> Result<(), Box<dyn Error>> {
+pub fn init_directories() -> Result<()> {
     check_for_config()?;
     let site: Site = Site::new().expect("[ ERROR ] Could not parse config file!");
     check_and_create_directory("content/")?;
@@ -96,7 +98,7 @@ pub fn init_directories() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
 
-pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
+pub fn check_and_create_directory(dir: &str) -> Result<()> {
     if read_dir(dir).is_err() {
         create_dir_all(dir).expect("[ ERROR ] Could not create directory {dir}");
         Ok(())
@@ -108,7 +110,7 @@ pub fn check_and_create_directory(dir: &str) -> Result<(), Box<dyn Error>> {
 /* The code that was used to figure out how to download and unzip a file was taken from this stack
 * overflow answer;
 * https://stackoverflow.com/a/50471953 */
-fn check_for_static_folder(static_url: &str) -> Result<(), Box<dyn Error>> {
+fn check_for_static_folder(static_url: &str) -> Result<()> {
     if read_dir("static/").is_err() {
         let mut tmpfile = tempfile::tempfile()?;
         reqwest::blocking::get(static_url)
@@ -122,7 +124,7 @@ fn check_for_static_folder(static_url: &str) -> Result<(), Box<dyn Error>> {
     }
 }
 
-fn check_for_template(template_url: &str) -> Result<(), Box<dyn Error>> {
+fn check_for_template(template_url: &str) -> Result<()> {
     if File::open("template/boilerplate.html").is_err() {
         check_and_create_directory("template/")?;
         let download = reqwest::blocking::get(template_url).unwrap().bytes()?;
@@ -134,7 +136,7 @@ fn check_for_template(template_url: &str) -> Result<(), Box<dyn Error>> {
     }
 }
 
-fn check_for_config() -> Result<(), Box<dyn Error>> {
+fn check_for_config() -> Result<()> {
     if File::open("config.yaml").is_err() {
         let content: String = "\
 # Name for the website across all pages

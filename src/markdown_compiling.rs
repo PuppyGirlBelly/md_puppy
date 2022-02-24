@@ -1,4 +1,4 @@
-use std::error::Error;
+use anyhow::{anyhow, Result};
 use std::fs;
 use std::fs::File;
 use std::io::Write;
@@ -37,7 +37,7 @@ impl Page {
         }
     }
 
-    pub fn from_file(filename: &str) -> Result<Page, Box<dyn Error>> {
+    pub fn from_file(filename: &str) -> Result<Page> {
         let mut page: Page = Page::new();
         let path: &Path = Path::new(filename);
         let input: Vec<String> = fs::read_to_string(path)
@@ -57,11 +57,11 @@ impl Page {
         Ok(page)
     }
 
-    pub fn parse_frontmatter(&mut self, frontmatter: &str) -> Result<(), String> {
+    pub fn parse_frontmatter(&mut self, frontmatter: &str) -> Result<()> {
         let yaml = YamlLoader::load_from_str(frontmatter);
 
         match yaml {
-            Err(_) => Err("[ ERROR ] Frontmatter is missing".to_string()),
+            Err(_) => Err(anyhow!("[ ERROR ] Frontmatter is missing")),
             Ok(y) => {
                 let fm = &y[0];
 
@@ -81,7 +81,7 @@ impl Page {
         }
     }
 
-    pub fn content_to_html(&mut self, template_path: &str) -> Result<(), Box<dyn Error>> {
+    pub fn content_to_html(&mut self, template_path: &str) -> Result<()> {
         self.content = markdown_to_html(&self.content);
 
         let template: String =
@@ -98,7 +98,7 @@ impl Page {
         Ok(())
     }
 
-    pub fn write_to_file(&mut self) -> Result<(), Box<dyn Error>> {
+    pub fn write_to_file(&mut self) -> Result<()> {
         let output_directory: String = format!("site{}", self.output_path);
 
         check_and_create_directory(&output_directory)?;
@@ -167,13 +167,13 @@ pub fn get_filename_from_path(path: &str) -> String {
     path[(path.rfind('/').unwrap() + 1)..path.len() - 3].to_string()
 }
 
-fn replace_placeholder(input_text: &str, page: &Page) -> Result<String, String> {
+fn replace_placeholder(input_text: &str, page: &Page) -> Result<String> {
     if let Some(key) = get_placeholder(input_text) {
         if let Some(value) = get_value(key, page) {
             // Recursive to get multiple placeholders in line
             replace_placeholder(&input_text.replace(key, &value), page)
         } else {
-            Err("Invalid key, ".to_owned() + key + " in template")
+            Err(anyhow!("Invalid key, {}, in template", key))
         }
     } else {
         Ok(input_text.to_string())

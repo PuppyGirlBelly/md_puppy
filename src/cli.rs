@@ -8,7 +8,7 @@ use clap_complete::{generate, shells::*};
 #[clap(author, version, about, long_about = None)]
 pub struct Args {
     #[clap(subcommand)]
-    pub command: Option<Commands>,
+    pub command: Commands,
 
     /// Generate a SHELL completion script and print to stdout
     #[clap(long, short, arg_enum, value_name = "SHELL")]
