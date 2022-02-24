@@ -1,6 +1,8 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/SoftAnnaLee/md_puppy/main/img/title.png" alt="md_puppy"></h1>
 <p align="center"><em>Your assistant in making a static site!</em></p>
 
+[![GitHub license](https://img.shields.io/github/license/SoftAnnaLee/md_puppy?color=FFCDB2&style=for-the-badge)](https://github.com/SoftAnnaLee/md_puppy/blob/main/LICENSE.txt)
+
 ## Project Description
 
 A minimalist static site generator written in Rust, inspired by [Hugo](https://gohugo.io/). The site's html template and file layout is based off of [HTML5 Boilerplate](https://html5boilerplate.com/).
