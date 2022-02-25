@@ -1,6 +1,7 @@
+use anyhow::{anyhow, Result};
+use std::collections::HashSet;
 use std::fs;
 use std::path::Path;
-use std::{collections::HashSet, error::Error};
 
 use chrono::DateTime;
 use yaml_rust::YamlLoader;
@@ -19,7 +20,7 @@ pub struct Site {
 }
 
 impl Site {
-    pub fn new() -> Result<Site, Box<dyn Error>> {
+    pub fn new() -> Result<Site> {
         let mut site = Site {
             pages: Vec::new(),
             directory: Vec::new(),
@@ -38,13 +39,13 @@ impl Site {
         Ok(site)
     }
 
-    fn parse_config(&mut self) -> Result<(), String> {
+    fn parse_config(&mut self) -> Result<()> {
         let path: &Path = Path::new("config.yaml");
         let file: String = fs::read_to_string(path).expect("[ ERROR ] Failed to open file!");
         let yaml = YamlLoader::load_from_str(&file);
 
         match yaml {
-            Err(_) => Err("[ ERROR ] Config file is missing or corrupt".to_string()),
+            Err(_) => Err(anyhow!("[ ERROR ] Config file is missing or corrupt")),
             Ok(y) => {
                 let fm = &y[0];
 
@@ -70,7 +71,7 @@ impl Site {
         }
     }
 
-    pub fn add_page(&mut self, filepath: &str) -> Result<(), Box<dyn Error>> {
+    pub fn add_page(&mut self, filepath: &str) -> Result<()> {
         let page: Page = Page::from_file(filepath)?;
         let cat: &str = &page.category.to_lowercase();
         let path = format!("{}/{}.html", page.output_path, page.filename);

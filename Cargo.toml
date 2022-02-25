@@ -1,10 +1,16 @@
 [package]
 name = "md_puppy"
-version = "0.1.0"
+version = "1.0.1"
+authors = ["AnnaLee <@SoftAnnaLee>"]
 edition = "2021"
-authors = ["AnnaLee <softannalee.github.io>"]
-description = "A personal static site generator writeen by AnnaLee"
-homepage = "https://softannalee.github.io"
+rust-version = "1.58.1"
+description = "A minimal static site generator"
+repository = "https://github.com/SoftAnnaLee/md_puppy"
+readme = "README.md"
+license = "MIT"
+keywords = ["cli", "web", "markdown", ]
+categories = ["command-line-utilities", "web-programming"]
+exclude = [ "img/*", ".editorconfig", ".vimspector.json", "notes.md", "tmux_rust_session.sh", "rusty-tags.vi", "template/*", ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -18,3 +24,6 @@ zip = "0.5.13"
 tempfile = "3.3.0"
 fs_extra = "1.2.0"
 chrono = "0.4.19"
+clap = { version = "3.1.2", features = ["derive"] }
+clap_complete = "3.1.0"
+anyhow = "1.0.55"
